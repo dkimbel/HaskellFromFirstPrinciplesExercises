@@ -1,0 +1,1220 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-25 02:04:10.590722 UTC
+
+interface cipher-0.1.0.0-Dl43ufUPvrc1QXh284YUtq:Cipher 8002
+  interface hash: 6891563bfa3a46b0a3bee7fa8a6cf869
+  ABI hash: 86aba055070338962bfe9fa61c43e7c3
+  export-list hash: c9824685f8768808c95db2fdbe6caac8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6fc74547fbd72660fbdc96d0ba10d9b2
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Cipher.alphaOffset
+  Cipher.caesar
+  Cipher.caesarIo
+  Cipher.charToInt
+  Cipher.charsInAlpha
+  Cipher.intToChar
+  Cipher.normalCharGen
+  Cipher.normalStrGen
+  Cipher.prop_caesarLossless
+  Cipher.runQc
+  Cipher.runTests
+  Cipher.shiftAlphaChar
+  Cipher.unCaesar
+  Cipher.vigenere
+  Cipher.vigenereIo
+  Cipher.Keyword
+module dependencies:
+package dependencies: HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI
+                      QuickCheck-2.9.2@QuickCheck-2.9.2-Jyj4gc4JxkEIgGFLAsGhs9
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-3RTqikoQf47ajVD9m8zgB
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj base-4.9.1.0
+                      call-stack-0.1.0@call-stack-0.1.0-FYVrCPXGP9EGAuTW32963O
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hspec-2.4.3@hspec-2.4.3-1FDnT5qa4j3Kk2ZAmhP9xh
+                      hspec-core-2.4.3@hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp
+                      hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd
+                      integer-gmp-1.0.0.1 pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      quickcheck-io-0.1.4@quickcheck-io-0.1.4-C5t3MfRsr5zrFam5nRAFy
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      setenv-0.1.1.3@setenv-0.1.1.3-8dEhk6JWvlmCmVyBammSpu
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      template-haskell-2.11.1.0
+                      tf-random-0.5@tf-random-0.5-BGjMgO8m67W8CHiEl15kZ7
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unix-2.7.2.1@unix-2.7.2.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         quickcheck-io-0.1.4@quickcheck-io-0.1.4-C5t3MfRsr5zrFam5nRAFy:Test.QuickCheck.IO
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         hspec-core-2.4.3@hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp:Test.Hspec.Core.Example
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-Jyj4gc4JxkEIgGFLAsGhs9:Test.QuickCheck 5d7cb5b36e5406469ab226c41cc67877
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-Jyj4gc4JxkEIgGFLAsGhs9:Test.QuickCheck.Gen fcc53fc3ed5253800621dd3f6e0c2696
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-Jyj4gc4JxkEIgGFLAsGhs9:Test.QuickCheck.Property 9f5286c0aef626ffc0bbdb9b0ea85ee4
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-Jyj4gc4JxkEIgGFLAsGhs9:Test.QuickCheck.Test f505583528b918f8d0f48333304ea382
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Char 9d27e5fcb214fa9fb17cf295b3795fce
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  base-4.9.1.0:Text.Read 75c59863e882ebaec4532e9465e2ee9b
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  hspec-2.4.3@hspec-2.4.3-1FDnT5qa4j3Kk2ZAmhP9xh:Test.Hspec 66ca3762ee707172fe9b54dac53f915f
+import  -/  hspec-core-2.4.3@hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp:Test.Hspec.Core.Runner 35cc9972f000a5c28c7f50837f0ac065
+import  -/  hspec-core-2.4.3@hspec-core-2.4.3-4aSW6vl2zjIEbOOJG9KdQp:Test.Hspec.Core.Spec d10422be46a104b3ddfb25f4ce5fef40
+import  -/  hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd:Test.Hspec.Expectations 29d4e6711b7d6d8a68fed679467f46e6
+61606ebe3ed2984c283beaaf07faf1b2
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Cipher.$trModule2
+                   Cipher.$trModule1) -}
+d75b6b2040de8872d0b8a0ac7e4c1e71
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Cipher"#) -}
+60a583fdfb7cde554168d29d0b31d3e1
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "cipher-0.1.0.0-Dl43ufUPvrc1QXh284YUtq"#) -}
+e8ba75345c116f71eb9cc728c46e1955
+  $wshift :: GHC.Types.Int -> GHC.Prim.Char# -> GHC.Prim.Char#
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Int) (ww :: GHC.Prim.Char#) ->
+                 case {__pkg_ccall base-4.9.1.0 u_towlower GHC.Prim.Int#
+                                                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                           -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                 GHC.Prim.Int# #)}
+                        (GHC.Prim.ord# ww)
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.leWord# (GHC.Prim.int2Word# ds1) 1114111##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Char.chr2 ds1 ret_ty GHC.Prim.Char# of {}
+                   GHC.Types.True
+                   -> case w of wild2 { GHC.Types.I# y ->
+                      case GHC.Classes.modInt#
+                             (GHC.Prim.+# (GHC.Prim.-# ds1 97#) y)
+                             26# of ww2 { DEFAULT ->
+                      let {
+                        i# :: GHC.Prim.Int# = GHC.Prim.+# ww2 97#
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.leWord# (GHC.Prim.int2Word# i#) 1114111##) of wild3 {
+                        GHC.Types.False
+                        -> case GHC.Char.chr2 i# ret_ty GHC.Prim.Char# of {}
+                        GHC.Types.True -> GHC.Prim.chr# i# } } } } }) -}
+19e99efa1b3e93a4ac5b5a91c95f699e
+  $wshiftAlphaChar ::
+    GHC.Types.Int -> GHC.Prim.Char# -> GHC.Prim.Char#
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Int) (ww :: GHC.Prim.Char#) ->
+                 case {__pkg_ccall base-4.9.1.0 u_iswalpha GHC.Prim.Int#
+                                                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                           -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                 GHC.Prim.Int# #)}
+                        (GHC.Prim.ord# ww)
+                        GHC.Prim.realWorld# of wild1 { (#,#) ds ds1 ->
+                 case ds1 of wild2 {
+                   DEFAULT
+                   -> case {__pkg_ccall base-4.9.1.0 u_iswupper GHC.Prim.Int#
+                                                                -> GHC.Prim.State#
+                                                                     GHC.Prim.RealWorld
+                                                                -> (# GHC.Prim.State#
+                                                                        GHC.Prim.RealWorld,
+                                                                      GHC.Prim.Int# #)}
+                             (GHC.Prim.ord# ww)
+                             GHC.Prim.realWorld# of wild4 { (#,#) ds2 ds3 ->
+                      case ds3 of wild5 {
+                        DEFAULT
+                        -> case Cipher.$wshift w ww of ww1 { DEFAULT ->
+                           case {__pkg_ccall base-4.9.1.0 u_towupper GHC.Prim.Int#
+                                                                     -> GHC.Prim.State#
+                                                                          GHC.Prim.RealWorld
+                                                                     -> (# GHC.Prim.State#
+                                                                             GHC.Prim.RealWorld,
+                                                                           GHC.Prim.Int# #)}
+                                  (GHC.Prim.ord# ww1)
+                                  GHC.Prim.realWorld# of wild { (#,#) ds4 ds5 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.leWord# (GHC.Prim.int2Word# ds5) 1114111##) of wild6 {
+                             GHC.Types.False
+                             -> case GHC.Char.chr2 ds5 ret_ty GHC.Prim.Char# of {}
+                             GHC.Types.True -> GHC.Prim.chr# ds5 } } }
+                        0# -> Cipher.$wshift w ww } }
+                   0# -> ww } }) -}
+856abe493f7be420d6ca1fb3af0318a5
+  type Keyword = [GHC.Types.Char]
+d057df9b46db65ef8047ff4ea2049d63
+  alphaOffset :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 97#) -}
+15cceb6b86eff4810c3dd233795699da
+  caesar :: GHC.Types.Int -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (n :: GHC.Types.Int) (xs :: [GHC.Types.Char]) ->
+                 GHC.Base.build
+                   @ GHC.Types.Char
+                   (\ @ b1
+                      (c :: GHC.Types.Char -> b1 -> b1)[OneShot]
+                      (n1 :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ GHC.Types.Char
+                         @ b1
+                         @ GHC.Types.Char
+                         c
+                         (Cipher.shiftAlphaChar n))
+                      n1
+                      xs)) -}
+93f0e27a517d90adc9c49a05c05f09cf
+  caesarIo :: GHC.Types.IO GHC.Base.String
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Cipher.caesarIo1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+1142d7aed1ae300489001eec82689a70
+  caesarIo1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Cipher.caesarIo4
+                        GHC.Types.False
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Internals.wantReadableHandle_1
+                        @ GHC.Base.String
+                        GHC.IO.Handle.Text.hGetLine4
+                        GHC.IO.Handle.FD.stdin
+                        GHC.IO.Handle.Text.hGetLine2
+                          `cast`
+                        (<GHC.IO.Handle.Types.Handle__>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Cipher.caesarIo3
+                        GHC.Types.False
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.IO.Handle.Internals.wantReadableHandle_1
+                        @ GHC.Base.String
+                        GHC.IO.Handle.Text.hGetLine4
+                        GHC.IO.Handle.FD.stdin
+                        GHC.IO.Handle.Text.hGetLine2
+                          `cast`
+                        (<GHC.IO.Handle.Types.Handle__>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 (# ipv6,
+                    GHC.Base.map
+                      @ GHC.Types.Char
+                      @ GHC.Types.Char
+                      (let {
+                         w :: GHC.Types.Int
+                         = case Text.Read.readEither6
+                                  @ GHC.Types.Int
+                                  (Text.ParserCombinators.ReadP.run
+                                     @ GHC.Types.Int
+                                     Cipher.caesarIo2
+                                     ipv7) of wild {
+                             []
+                             -> GHC.Err.error
+                                  @ 'GHC.Types.PtrRepLifted
+                                  @ GHC.Types.Int
+                                  GHC.Err.errorWithoutStackTrace_wild1
+                                    `cast`
+                                  (Sym (GHC.Classes.N:IP[0]
+                                            <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                  Text.Read.readEither4
+                             : x ds
+                             -> case ds of wild1 {
+                                  [] -> x
+                                  : ipv8 ipv9
+                                  -> GHC.Err.error
+                                       @ 'GHC.Types.PtrRepLifted
+                                       @ GHC.Types.Int
+                                       GHC.Err.errorWithoutStackTrace_wild1
+                                         `cast`
+                                       (Sym (GHC.Classes.N:IP[0]
+                                                 <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                                       Text.Read.readEither2 } }
+                       } in
+                       \ (w1 :: GHC.Types.Char) ->
+                       case w1 of ww { GHC.Types.C# ww1 ->
+                       case Cipher.$wshiftAlphaChar w ww1 of ww2 { DEFAULT ->
+                       GHC.Types.C# ww2 } })
+                      ipv3 #) } } } }) -}
+f566bb6cb4fc2b5826a1aeb7680c19ef
+  caesarIo2 :: Text.ParserCombinators.ReadP.P GHC.Types.Int
+  {- Unfolding: (GHC.Read.$fReadInt3
+                   GHC.Read.$fReadInt_$sconvertInt
+                   Text.ParserCombinators.ReadPrec.minPrec
+                   @ GHC.Types.Int
+                   (Text.Read.readEither5 @ GHC.Types.Int)) -}
+e06ec6ed3daa4ee3c7916c7d2aac65a1
+  caesarIo3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Enter an integer offset: "#) -}
+6593e009f35d1e3ecace31cad45e0d4f
+  caesarIo4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Enter a message to encipher: "#) -}
+1584e00010725f3c8bcad08227aa7760
+  charToInt :: GHC.Types.Char -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S(S),1*U(U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Char) ->
+                 case w of ww { GHC.Types.C# ww1 ->
+                 case {__pkg_ccall base-4.9.1.0 u_towlower GHC.Prim.Int#
+                                                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                           -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                 GHC.Prim.Int# #)}
+                        (GHC.Prim.ord# ww1)
+                        GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.leWord# (GHC.Prim.int2Word# ds1) 1114111##) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Char.chr2 ds1 ret_ty GHC.Types.Int of {}
+                   GHC.Types.True -> GHC.Types.I# (GHC.Prim.-# ds1 97#) } } }) -}
+9a31761787ed95b58c3888f0a3bc92d8
+  charsInAlpha :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 26#) -}
+ea45838a674b98a36e7539facd07551a
+  intToChar :: GHC.Types.Int -> GHC.Types.Char
+  {- Arity: 1, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (n :: GHC.Types.Int) ->
+                 case n of wild { GHC.Types.I# x ->
+                 let {
+                   i# :: GHC.Prim.Int# = GHC.Prim.+# x 97#
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.leWord# (GHC.Prim.int2Word# i#) 1114111##) of wild1 {
+                   GHC.Types.False -> GHC.Char.chr2 i#
+                   GHC.Types.True -> GHC.Types.C# (GHC.Prim.chr# i#) } }) -}
+00d255bf28e87873006fec899a141fc4
+  normalCharGen :: Test.QuickCheck.Gen.Gen GHC.Types.Char
+  {- Unfolding: (Test.QuickCheck.Gen.elements
+                   @ GHC.Types.Char
+                   Cipher.normalCharGen1) -}
+cc3e199f9abcda0c55006e430169329b
+  normalCharGen1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Cipher.normalCharGen9
+                   Cipher.normalCharGen2) -}
+beb268eea36f92da3c155f08a5fcee25
+  normalCharGen2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Cipher.normalCharGen8
+                   Cipher.normalCharGen3) -}
+3b05d61702118ed3fcf367685056e348
+  normalCharGen3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Cipher.normalCharGen7
+                   Cipher.normalCharGen4) -}
+7ad8b9e9e71f4472612533d8fd76836b
+  normalCharGen4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Cipher.normalCharGen6
+                   Cipher.normalCharGen5) -}
+c7011e270393fdc6a9ae131a81304609
+  normalCharGen5 :: GHC.Base.String
+  {- Unfolding: (GHC.Enum.eftChar 65# 122#) -}
+18498305e5c975f3158883ab3f518964
+  normalCharGen6 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '!'#) -}
+1c4a2951ae775df5637cf14c3dcd6c9a
+  normalCharGen7 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# ','#) -}
+80a80ba35bf2332bfcd70166cd42bdaf
+  normalCharGen8 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '.'#) -}
+d7bc88d9a75625cefc9482dfcc56d63c
+  normalCharGen9 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# ' '#) -}
+2451e84fc6f7d873265d62fbd65102d9
+  normalStrGen :: Test.QuickCheck.Gen.Gen GHC.Base.String
+  {- Arity: 2,
+     Unfolding: InlineRule (0, True, True)
+                Cipher.normalStrGen1
+                  `cast`
+                (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R)) -}
+716f3bc85f7e7ce56c5b0fcd29be251d
+  normalStrGen1 ::
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (Cipher.normalStrGen3 Cipher.normalStrGen2) -}
+e71c6a604f1b2aa729bf4ce103b65277
+  normalStrGen2 :: [Test.QuickCheck.Gen.Gen GHC.Types.Char]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Test.QuickCheck.Gen.Gen GHC.Types.Char)
+                   Cipher.normalCharGen
+                   (GHC.Types.[] @ (Test.QuickCheck.Gen.Gen GHC.Types.Char))) -}
+d4c341c404b697ec610f23f9e4493228
+  normalStrGen3 ::
+    [Test.QuickCheck.Gen.Gen GHC.Types.Char]
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> [GHC.Types.Char]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U,U,U,1*U,A,A)><L,U> -}
+7bda43f215b90df41a1a6c4261900b77
+  prop_caesarLossless :: Test.QuickCheck.Property.Property
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Cipher.prop_caesarLossless1
+                  `cast`
+                (Trans
+                     (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                               (Test.QuickCheck.Property.N:Prop[0])))
+                     (Sym (Test.QuickCheck.Property.N:Property[0]))) -}
+bc131e09e848d7ebeb3d40748e551499
+  prop_caesarLossless1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: Test.QuickCheck.Random.QCGen) (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ GHC.Base.String
+                   @ (GHC.Types.Int -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Cipher.prop_caesarLossless2
+                     `cast`
+                   (Trans
+                        (<GHC.Types.Int -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <GHC.Types.Int -> GHC.Types.Bool>_N)))
+                   Cipher.normalStrGen1
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   (Test.QuickCheck.Property.forAll2 @ GHC.Base.String)
+                   Cipher.prop_caesarLossless_pf
+                   eta
+                   eta1) -}
+b38d1cdfd11e7eb87852b398db3e722f
+  prop_caesarLossless2 ::
+    (GHC.Types.Int -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3, Strictness: <L,C(U)><L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (f :: GHC.Types.Int -> GHC.Types.Bool)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ GHC.Types.Int
+                   @ GHC.Types.Bool
+                   GHC.Show.$fShowInt
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                   Test.QuickCheck.Arbitrary.$fArbitraryInt3
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <GHC.Types.Int>_R))
+                   Test.QuickCheck.Arbitrary.$fArbitraryInt_$sshrinkIntegral
+                   f
+                   eta
+                   eta1) -}
+a2638326a0d1a5b60e70a47a5c2bfbc9
+  prop_caesarLossless_pf ::
+    GHC.Base.String -> GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,U><L,U(U)>,
+     Unfolding: (\ (s :: GHC.Base.String) (i :: GHC.Types.Int) ->
+                 let {
+                   c :: GHC.Types.Int
+                   = case i of wild { GHC.Types.I# x ->
+                     GHC.Types.I# (GHC.Prim.negateInt# x) }
+                 } in
+                 GHC.Base.eqString
+                   (GHC.Base.map
+                      @ GHC.Types.Char
+                      @ GHC.Types.Char
+                      (\ (x :: GHC.Types.Char) ->
+                       case x of ww { GHC.Types.C# ww1 ->
+                       case Cipher.$wshiftAlphaChar i ww1 of ww2 { DEFAULT ->
+                       case Cipher.$wshiftAlphaChar c ww2 of ww3 { DEFAULT ->
+                       GHC.Types.C# ww3 } } })
+                      s)
+                   s) -}
+d3f3afdda7bdd4eb00aaab7243b38224
+  runQc :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Cipher.runQc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+3ac64afaf0f2d96ecc2f023a4ac1da2e
+  runQc1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.QuickCheck.Test.$wquickCheckWithResult
+                        @ Test.QuickCheck.Property.Property
+                        Test.QuickCheck.Property.$fTestable(->)6
+                          `cast`
+                        (Trans
+                             (<Test.QuickCheck.Property.Property>_R
+                              ->_R Trans
+                                       (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                                 (Test.QuickCheck.Property.N:Prop[0])))
+                                       (Sym (Test.QuickCheck.Property.N:Property[0])))
+                             (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                       <Test.QuickCheck.Property.Property>_N)))
+                        (GHC.Base.Nothing @ (Test.QuickCheck.Random.QCGen, GHC.Types.Int))
+                        Test.QuickCheck.Test.stdArgs2
+                        Test.QuickCheck.Test.stdArgs1
+                        Test.QuickCheck.Test.stdArgs2
+                        GHC.Types.True
+                        Cipher.prop_caesarLossless1
+                          `cast`
+                        (Trans
+                             (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                       (Test.QuickCheck.Property.N:Prop[0])))
+                             (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Tuple.() #) }) -}
+5808d2efb61b8652c6f6cf7da7c39c24
+  runTests :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Cipher.runTests1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+dc067d3dbf79fefa7dc7a36e5e2ea71a
+  runTests1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Hspec.Core.Runner.hspec2
+                        Test.Hspec.Core.Options.defaultConfig
+                        Cipher.runTests2
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Types.N:IO[0]
+                                       <((), [Test.Hspec.Core.Tree.SpecTree ()])>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Writer.Lazy.N:WriterT[0]
+                                            <[Test.Hspec.Core.Tree.SpecTree ()]>_N
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                  (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Test.Hspec.Core.Runner.Summary ds ds2 ->
+                 case ds2 of wild1 { GHC.Types.I# x ->
+                 case x of wild2 {
+                   DEFAULT -> System.Exit.die2 @ () ipv
+                   0# -> (# ipv, GHC.Tuple.() #) } } } }) -}
+5ef4f7243fa57689a451494b7dffc78f
+  runTests10 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Cipher.runTests11) -}
+cd229d529f9ac7d1d02237f0327a06bd
+  runTests11 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Cipher.runTests17
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Cipher.runTests16
+                   Cipher.runTests12) -}
+37914ff26804bcc7139329023665a791
+  runTests12 :: [GHC.Types.Char]
+  {- Unfolding: (Cipher.runTests_go
+                   Cipher.runTests15
+                   Cipher.runTests13) -}
+243eddf788173d0a24425c2cfb8aa6e0
+  runTests13 :: [GHC.Types.Int]
+  {- Unfolding: (case GHC.Base.map
+                        @ GHC.Types.Char
+                        @ GHC.Types.Int
+                        Cipher.charToInt
+                        Cipher.runTests14 of wild {
+                   [] -> GHC.List.cycle1 @ GHC.Types.Int
+                   : ipv ipv1
+                   -> letrec {
+                        xs' :: [GHC.Types.Int] = GHC.Base.++ @ GHC.Types.Int wild xs'
+                      } in
+                      xs' }) -}
+6b1a839f7bdbab3bbc8f663bce88d80e
+  runTests14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ALLY"#) -}
+f4376fa08805de317cf695a190110716
+  runTests15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "MEET AT DAWN"#) -}
+3dcdb00f6d9b3aaa622a07e85479cbe2
+  runTests16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "MPPR AE OYWY"#) -}
+a2fb865d11cf462ae7614ffe393e473e
+  runTests17 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Cipher.runTests18
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+c5919f5cc5556a686cad0cdca4bfacda
+  runTests18 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Cipher.runTests19) -}
+cd599f205d457724a4dc3896c299cb1d
+  runTests19 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Cipher.runTests20) -}
+18ae835fa6c51ea6f9009df2d60e0529
+  runTests2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), [Test.Hspec.Core.Tree.SpecTree ()]) #)
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s, Cipher.runTests3 #)) -}
+159e5ca07e587ae4a0d54e8cccf23943
+  runTests20 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Cipher.runTests28
+                   Cipher.runTests21
+                   GHC.Stack.Types.EmptyCallStack) -}
+6ed099fe269e3b32a7a31dd02fc094d2
+  runTests21 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Cipher.runTests27
+                   Cipher.runTests26
+                   Cipher.runTests25
+                   Cipher.runTests24
+                   Cipher.runTests23
+                   Cipher.runTests24
+                   Cipher.runTests22) -}
+c605657e2d7656b8df434bb72e40d29b
+  runTests22 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 46#) -}
+561cc5811e9de9ae03a1ca0d418bb4b2
+  runTests23 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 7#) -}
+a2fe9b1527431c06b60b7aba5c8f36ae
+  runTests24 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 105#) -}
+6684286a31096c966170bd9f691d9cd0
+  runTests25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Cipher.hs"#) -}
+b81d3e84b26d6369aa7352bd057f510e
+  runTests26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Cipher"#) -}
+2361766fdd1243525334e5a0a7be2930
+  runTests27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "cipher-0.1.0.0-Dl43ufUPvrc1QXh284YUtq"#) -}
+6987978c6fee4ed9524d5dc2cf621f1c
+  runTests28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "shouldBe"#) -}
+c014afd1b63dbe6d06eedc6134986596
+  runTests29 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Cipher.runTests30
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+dab2fe67706f82e7d7e1e4513c203be6
+  runTests3 :: ((), [Test.Hspec.Core.Tree.SpecTree ()])
+  {- Unfolding: ((GHC.Tuple.(), Cipher.runTests4)) -}
+4e0f534eebacb7d88d2d62642080b06a
+  runTests30 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Cipher.runTests31) -}
+de8d8253c2d50177e4af5d47092f40b7
+  runTests31 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack Cipher.runTests32) -}
+f7be6d12abee7078611e9f897769c1dd
+  runTests32 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Cipher.runTests33) -}
+c5b82409304cbc6520317213c39d0bec
+  runTests33 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Cipher.runTests34) -}
+0f81dc7c4aa00b9bb25da7e55c79a567
+  runTests34 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Cipher.runTests38
+                   Cipher.runTests35
+                   GHC.Stack.Types.EmptyCallStack) -}
+0d60fcf75d4985c651c98e8a1a463ceb
+  runTests35 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Cipher.runTests27
+                   Cipher.runTests26
+                   Cipher.runTests25
+                   Cipher.runTests37
+                   Cipher.runTests36
+                   Cipher.runTests37
+                   Cipher.runTests22) -}
+56804a30f2c81b25c1b74f7f0bec0184
+  runTests36 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 5#) -}
+21b9660c156f0d0c9d3c5e1783b83eb0
+  runTests37 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 102#) -}
+73ada64ea0cffc2021fb32feb8848039
+  runTests38 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "it"#) -}
+79bf1688aceb4049617fab82b89c8a27
+  runTests39 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Cipher.runTests41
+                   Cipher.runTests40) -}
+868e92bb97c294495fd2989cc3bbcf42
+  runTests4 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Cipher.runTests45
+                   Cipher.runTests5) -}
+e716202e76f07e26fd1fd34a196db565
+  runTests40 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "ffsets only alphanumeric characters"#) -}
+dc93e31e9b703eaaecb1916e97fea31a
+  runTests41 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'O'#) -}
+ceb3fc0d05ec9b29642cf99d52d601e8
+  runTests42 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Cipher.runTests44
+                   Cipher.runTests43) -}
+8b4870e953265b7f0bc6e620edadc4dc
+  runTests43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "igenere Cipher"#) -}
+79de9e914c7584e4d274a6ddf7551c5d
+  runTests44 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'V'#) -}
+9fb1ce6f0273ed31b73cd02cf9f22e75
+  runTests45 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith ())
+      (Test.Hspec.Core.Tree.Item ())
+  {- Unfolding: (Test.Hspec.Core.Tree.Node
+                   @ (Test.Hspec.Core.Example.ActionWith ())
+                   @ (Test.Hspec.Core.Tree.Item ())
+                   Cipher.runTests71
+                   Cipher.runTests46
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R) -}
+dfbf04d7d087c2ac5bcba3527b847669
+  runTests46 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Cipher.runTests47
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+a6c5c0d3ba383af10c4f965322b406d9
+  runTests47 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Cipher.runTests48) -}
+8ce124dbd77ab2a19ffd9c358cbd5824
+  runTests48 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Cipher.runTests39
+                   Cipher.runTests63
+                   GHC.Types.False
+                   Cipher.runTests49
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+ff1f979e9ab680e022a804f68afd4870
+  runTests49 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Cipher.runTests50) -}
+31cbb00c20634464a14d7150cf098667
+  runTests5 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Cipher.runTests6
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.Tree
+                           (Test.Hspec.Core.Example.ActionWith ())
+                           (Test.Hspec.Core.Tree.Item ())))) -}
+f39bfa0e51315265e4ca9ee2fe302396
+  runTests50 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Cipher.runTests56
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Cipher.runTests55
+                   Cipher.runTests51) -}
+b94b5221513256986241a45134c1da2d
+  runTests51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.map
+                   @ GHC.Types.Char
+                   @ GHC.Types.Char
+                   Cipher.runTests53
+                   Cipher.runTests52) -}
+d877b99c4a30bc1f95470f9d00946408
+  runTests52 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Meet at dawn"#) -}
+86c183089aa3aae3e953317c92c5285c
+  runTests53 :: GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 1,
+     Unfolding: (\ (w :: GHC.Types.Char) ->
+                 case w of ww { GHC.Types.C# ww1 ->
+                 case Cipher.$wshiftAlphaChar
+                        Cipher.runTests54
+                        ww1 of ww2 { DEFAULT ->
+                 GHC.Types.C# ww2 } }) -}
+cb3853d8df3d0d26837835cb3253f20d
+  runTests54 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
+20f2c7fa0ca7b461ac1d0ed2f1e91d87
+  runTests55 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Nffu bu ebxo"#) -}
+be49565feabe989cdb425669d0a7b219
+  runTests56 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Cipher.runTests57
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+9e93c7a5e341895cc7a668946132913e
+  runTests57 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Cipher.runTests58) -}
+31b0a0c93ea174f13fcce35fd7c4d60d
+  runTests58 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Cipher.runTests59) -}
+d66707e94375f271587c86c8a009780f
+  runTests59 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Cipher.runTests28
+                   Cipher.runTests60
+                   GHC.Stack.Types.EmptyCallStack) -}
+22a021e70c78a1fd351e926cdb3f07c9
+  runTests6 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith ())
+      (Test.Hspec.Core.Tree.Item ())
+  {- Unfolding: (Test.Hspec.Core.Tree.Node
+                   @ (Test.Hspec.Core.Example.ActionWith ())
+                   @ (Test.Hspec.Core.Tree.Item ())
+                   Cipher.runTests42
+                   Cipher.runTests7
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R) -}
+7832a635aa78e08300657090c50e4de1
+  runTests60 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Cipher.runTests27
+                   Cipher.runTests26
+                   Cipher.runTests25
+                   Cipher.runTests62
+                   Cipher.runTests23
+                   Cipher.runTests62
+                   Cipher.runTests61) -}
+8cb899c0de1c388328bbd67eb4580e05
+  runTests61 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 39#) -}
+a36221403eceb2c2adad7b16ea713273
+  runTests62 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 99#) -}
+888d6704038fd0a9aab7d9c4d2dd769d
+  runTests63 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Cipher.runTests64
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (GHC.Stack.Types.srcLocFile loc)
+                           (GHC.Stack.Types.srcLocStartLine loc)
+                           (GHC.Stack.Types.srcLocStartCol loc)
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+8ecf22cdb11a9004d83375f125440681
+  runTests64 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Cipher.runTests65) -}
+076a12b44ac516378d0154149a13a462
+  runTests65 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack Cipher.runTests66) -}
+6a370eec9618a4330a9a4973ed1585e9
+  runTests66 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Cipher.runTests67) -}
+9dae98f94a8095460852ed1f8408ebc0
+  runTests67 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Cipher.runTests68) -}
+87a1992dc2d59d45910a273504099e21
+  runTests68 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Cipher.runTests38
+                   Cipher.runTests69
+                   GHC.Stack.Types.EmptyCallStack) -}
+76074869bad79ea98ff81933a347bfd2
+  runTests69 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Cipher.runTests27
+                   Cipher.runTests26
+                   Cipher.runTests25
+                   Cipher.runTests70
+                   Cipher.runTests36
+                   Cipher.runTests70
+                   Cipher.runTests22) -}
+2e97e35d82c5a5e0ff9d7e7bab9bd7fc
+  runTests7 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Cipher.runTests8
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+e6cbfbfb76c0be4c1300e787bf8d4a16
+  runTests70 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 96#) -}
+d5cf7cc5b867f8d22824a2de63447e0f
+  runTests71 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Cipher.runTests73
+                   Cipher.runTests72) -}
+24433abd18d9b4f6ea537412adac49c0
+  runTests72 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "aesar Cipher"#) -}
+4544af929441ca63614b9d68289502c0
+  runTests73 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'C'#) -}
+0deeb4dfb5c55aba31ede840c9813eda
+  runTests8 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Cipher.runTests9) -}
+7580562330b439ecfd0e6bd82e509a74
+  runTests9 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Cipher.runTests39
+                   Cipher.runTests29
+                   GHC.Types.False
+                   Cipher.runTests10
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+392fe4afc7df0d3e6756e7a9ff78fd95
+  runTests_go ::
+    [GHC.Types.Char] -> [GHC.Types.Int] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
+e2bfd2452e059211b78131f36d16cb19
+  shiftAlphaChar :: GHC.Types.Int -> GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 2, Strictness: <L,1*U(U)><S(S),1*U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Char) ->
+                 case w1 of ww { GHC.Types.C# ww1 ->
+                 case Cipher.$wshiftAlphaChar w ww1 of ww2 { DEFAULT ->
+                 GHC.Types.C# ww2 } }) -}
+8169172d1e091b9afec7ff9cee5146db
+  unCaesar :: GHC.Types.Int -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (n :: GHC.Types.Int) (xs :: [GHC.Types.Char]) ->
+                 GHC.Base.build
+                   @ GHC.Types.Char
+                   (\ @ b1
+                      (c :: GHC.Types.Char -> b1 -> b1)[OneShot]
+                      (n1 :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ GHC.Types.Char
+                         @ b1
+                         @ GHC.Types.Char
+                         c
+                         (Cipher.shiftAlphaChar (GHC.Num.$fNumInt_$cnegate n)))
+                      n1
+                      xs)) -}
+bd6a33eb75e16cc65f5d5274d1a2f5df
+  vigenere :: Cipher.Keyword -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,1*U><S,1*U>,
+     Unfolding: (\ (key :: Cipher.Keyword) (s :: [GHC.Types.Char]) ->
+                 Cipher.runTests_go
+                   s
+                   (case GHC.Base.map
+                           @ GHC.Types.Char
+                           @ GHC.Types.Int
+                           Cipher.charToInt
+                           key of wild {
+                      [] -> GHC.List.cycle1 @ GHC.Types.Int
+                      : ipv ipv1
+                      -> letrec {
+                           xs' :: [GHC.Types.Int] = GHC.Base.++ @ GHC.Types.Int wild xs'
+                         } in
+                         xs' })) -}
+3bc295d2803a71d098e7ec570f4074d5
+  vigenereIo :: GHC.Types.IO GHC.Base.String
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Cipher.vigenereIo1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
+8ada31a02b261160908f36703a39d5be
+  vigenereIo1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Cipher.caesarIo4
+                        GHC.Types.False
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Internals.wantReadableHandle_1
+                        @ GHC.Base.String
+                        GHC.IO.Handle.Text.hGetLine4
+                        GHC.IO.Handle.FD.stdin
+                        GHC.IO.Handle.Text.hGetLine2
+                          `cast`
+                        (<GHC.IO.Handle.Types.Handle__>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Cipher.vigenereIo2
+                        GHC.Types.False
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.IO.Handle.Internals.wantReadableHandle_1
+                        @ GHC.Base.String
+                        GHC.IO.Handle.Text.hGetLine4
+                        GHC.IO.Handle.FD.stdin
+                        GHC.IO.Handle.Text.hGetLine2
+                          `cast`
+                        (<GHC.IO.Handle.Types.Handle__>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 (# ipv6, Cipher.vigenere ipv7 ipv3 #) } } } }) -}
+e047259d56111fdda716a7109d64ecdd
+  vigenereIo2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Enter a keyword: "#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

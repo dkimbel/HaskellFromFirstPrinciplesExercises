@@ -1,0 +1,76 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-25 00:52:02.890292 UTC
+
+interface main@main:Test 8002
+  interface hash: 347cee11519192e2742aa488fd11d25d
+  ABI hash: 5608053b403efece562d760d0994ffc0
+  export-list hash: 46bd2c126f783eb59e00dcbfed37141a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3d700e8003ad3fc341e9ee6bc1e8113e
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Test.main
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      hangman-0.1.0.0@hangman-0.1.0.0-nj5xyex6SZEB8WXJhB7h8
+                      integer-gmp-1.0.0.1 random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      time-1.6.0.1@time-1.6.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  hangman-0.1.0.0@hangman-0.1.0.0-nj5xyex6SZEB8WXJhB7h8:Main d3314ae68fbb22b16b9de56bedc8069a
+c9636d36ba32f559746eb04495d1986c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Test.$trModule2 Test.$trModule1) -}
+91d4ed5c7338fdf222d99ee11c723740
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Test"#) -}
+a915a602557e44507d8ca1b4a9c5abac
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+82660fae58bd6a30383d6ce285f674f4
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Test.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+c142130aad0a9850b076261fd25abb10
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (GHC.Base.build
+                      @ GHC.Types.Char
+                      (\ @ b -> GHC.CString.unpackFoldrCString# @ b "hi"#))
+                   GHC.Types.True
+                   eta) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

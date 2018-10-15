@@ -1,0 +1,238 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-08 03:28:49.958878 UTC
+
+interface ioInstances-0.1.0.0-8euCeeuFL7d10tc64xt57k:IoInstances 8002
+  interface hash: f1bce049ea92f9d975dbf7e5275145e3
+  ABI hash: efeb947ecc8036173d39ab464a51cc72
+  export-list hash: 3ecfbc107832d3c9b0ee5d155a1bf969
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7490d7cac6634bc5fe5046a945644d55
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  IoInstances.EitherT{IoInstances.EitherT runEitherT}
+  IoInstances.StateT{IoInstances.StateT runStateT}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Class 45530f1305724ee3931a9be21b40ca7e
+1dc19bc53374fb28f45ef61ace6c0ff1
+  $fMonadTransEitherT ::
+    Control.Monad.Trans.Class.MonadTrans (IoInstances.EitherT e)
+  DFunId
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(A,1*C1(C1(U)),A,C(U),A)><L,U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                IoInstances.$fMonadTransEitherT_$clift
+                  `cast`
+                (forall (e :: <*>_N).
+                 Sym (Control.Monad.Trans.Class.N:MonadTrans[0]
+                          <IoInstances.EitherT e>_N)) -}
+8f3c1b43485cb510739d242430e6a402
+  $fMonadTransEitherT1 ::
+    GHC.Base.Monad m => m a -> m (Data.Either.Either e a)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(A,1*C1(C1(U)),A,C(U),A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ e
+                   @ (m :: * -> *)
+                   @ a
+                   ($dMonad :: GHC.Base.Monad m)
+                   (eta :: m a) ->
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ a
+                   @ (Data.Either.Either e a)
+                   eta
+                   (\ (x1 :: a) ->
+                    GHC.Base.return
+                      @ m
+                      $dMonad
+                      @ (Data.Either.Either e a)
+                      (Data.Either.Right @ e @ a x1))) -}
+1dc19bc53374fb28f45ef61ace6c0ff1
+  $fMonadTransEitherT_$clift ::
+    GHC.Base.Monad m => m a -> IoInstances.EitherT e m a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(A,1*C1(C1(U)),A,C(U),A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                IoInstances.$fMonadTransEitherT1
+                  `cast`
+                (forall (e :: <*>_N) (m :: <* -> *>_N) (a :: <*>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R <m a>_R
+                 ->_R Sym (IoInstances.N:EitherT[0] <e>_N <m>_R <a>_N)) -}
+85f97a877fd37f317f92e0b0457cd03e
+  $fMonadTransStateT ::
+    Control.Monad.Trans.Class.MonadTrans (IoInstances.StateT s)
+  DFunId
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(A,1*C1(C1(U)),A,C(U),A)><L,U><L,U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                IoInstances.$fMonadTransStateT_$clift
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Control.Monad.Trans.Class.N:MonadTrans[0]
+                          <IoInstances.StateT s>_N)) -}
+dce3e596d75150940085521ada278360
+  $fMonadTransStateT1 :: GHC.Base.Monad m => m a -> s -> m (a, s)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(A,1*C1(C1(U)),A,C(U),A)><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ (m :: * -> *)
+                   @ a
+                   ($dMonad :: GHC.Base.Monad m)
+                   (ma :: m a)
+                   (s1 :: s) ->
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ a
+                   @ (a, s)
+                   ma
+                   (\ (x1 :: a) -> GHC.Base.return @ m $dMonad @ (a, s) (x1, s1))) -}
+85f97a877fd37f317f92e0b0457cd03e
+  $fMonadTransStateT_$clift ::
+    GHC.Base.Monad m => m a -> IoInstances.StateT s m a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(A,1*C1(C1(U)),A,C(U),A)><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                IoInstances.$fMonadTransStateT1
+                  `cast`
+                (forall (s :: <*>_N) (m :: <* -> *>_N) (a :: <*>_N).
+                 <GHC.Base.Monad m>_R
+                 ->_R <m a>_R
+                 ->_R Sym (IoInstances.N:StateT[0] <s>_N <m>_R <a>_N)) -}
+7c4d327b749944527e5f3b7655431352
+  $tc'EitherT :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13003234739872501547##
+                   17619718400941496666##
+                   IoInstances.$trModule
+                   IoInstances.$tc'EitherT1) -}
+e0bd7d977984bd6f888740481e5826ad
+  $tc'EitherT1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'EitherT"#) -}
+e26dbd63b85ca72e7d937f65d5271cd8
+  $tc'StateT :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14902353031809333770##
+                   6702982367915115637##
+                   IoInstances.$trModule
+                   IoInstances.$tc'StateT1) -}
+6373cb65e7357421a9424b38e844cf45
+  $tc'StateT1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'StateT"#) -}
+c882827274be99dbdf3860340f8010d7
+  $tcEitherT :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6804160657906261716##
+                   439244204397192348##
+                   IoInstances.$trModule
+                   IoInstances.$tcEitherT1) -}
+e422b1a95758c31ce256757fda01db23
+  $tcEitherT1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "EitherT"#) -}
+ee5eb930d62ab7d4af64111e7de9ff52
+  $tcStateT :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15651691641157648939##
+                   2311244352417895200##
+                   IoInstances.$trModule
+                   IoInstances.$tcStateT1) -}
+8814a9a1d72135742366cdc2d331ec1e
+  $tcStateT1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "StateT"#) -}
+6ae84b3e04b167426e33cf8116193e5c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   IoInstances.$trModule2
+                   IoInstances.$trModule1) -}
+ebe16059d50508b8e7816cb039b67ab0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "IoInstances"#) -}
+cc99c2669db495f29dc89db874b96cea
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "ioInstances-0.1.0.0-8euCeeuFL7d10tc64xt57k"#) -}
+1dc19bc53374fb28f45ef61ace6c0ff1
+  type role EitherT nominal representational nominal
+  newtype EitherT e (m :: * -> *) a
+    = EitherT {runEitherT :: m (Data.Either.Either e a)}
+85f97a877fd37f317f92e0b0457cd03e
+  type role StateT nominal representational nominal
+  newtype StateT s (m :: * -> *) a
+    = StateT {runStateT :: s -> m (a, s)}
+2e661e617fad3f79f366439e3eb363e3
+  runEitherT ::
+    IoInstances.EitherT e m a -> m (Data.Either.Either e a)
+  RecSel Left IoInstances.EitherT
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                IoInstances.runEitherT1
+                  `cast`
+                (forall (e :: <*>_N) (m :: <* -> *>_N) (a :: <*>_N).
+                 <IoInstances.EitherT e m a>_R
+                 ->_R IoInstances.N:EitherT[0] <e>_N <m>_R <a>_N) -}
+50a41ebc52890cf4eeb47bd098371fb4
+  runEitherT1 ::
+    IoInstances.EitherT e m a -> IoInstances.EitherT e m a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ e @ (m :: * -> *) @ a (ds :: IoInstances.EitherT e m a) ->
+                 ds) -}
+bb59abea693a918b5db724ff09f713ea
+  runStateT :: IoInstances.StateT s m a -> s -> m (a, s)
+  RecSel Left IoInstances.StateT
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                IoInstances.runStateT1
+                  `cast`
+                (forall (s :: <*>_N) (m :: <* -> *>_N) (a :: <*>_N).
+                 <IoInstances.StateT s m a>_R
+                 ->_R IoInstances.N:StateT[0] <s>_N <m>_R <a>_N) -}
+d607e33a5c0341673aa8166ac19d6065
+  runStateT1 :: IoInstances.StateT s m a -> IoInstances.StateT s m a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ s @ (m :: * -> *) @ a (ds :: IoInstances.StateT s m a) ->
+                 ds) -}
+instance [safe] Control.Monad.Trans.Class.MonadTrans [IoInstances.EitherT]
+  = IoInstances.$fMonadTransEitherT
+instance [safe] Control.Monad.Trans.Class.MonadTrans [IoInstances.StateT]
+  = IoInstances.$fMonadTransStateT
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,239 @@
+
+==================== FINAL INTERFACE ====================
+2017-09-06 03:19:04.23787 UTC
+
+interface outerInner-0.1.0.0-BaaLYtB9D9VCKHwCwSCpib:OuterInner 8002
+  interface hash: 349a0cde0075fc81834585810b7fc331
+  ABI hash: 9a7ea530d84944e25a4405155665bcaf
+  export-list hash: dab7247966ad4f5cd7dc74eea1fc8ba5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6fc74547fbd72660fbdc96d0ba10d9b2
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  OuterInner.eitherUnwrap
+  OuterInner.embedded
+  OuterInner.embedded'
+  OuterInner.embedded''
+  OuterInner.maybeUnwrap
+  OuterInner.readerUnwrap
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity base-4.9.1.0:Data.List.NonEmpty
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Semigroup
+                         base-4.9.1.0:Data.Type.Equality base-4.9.1.0:Data.Version
+                         base-4.9.1.0:Data.Void base-4.9.1.0:GHC.Exts
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Except cf549ed58fbe6804d519833d92803f4c
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Maybe fb717b7ffb317f01e5849d6be7e862b4
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Reader 1b607a084a390ae0e50e8f8dcbf2541a
+d6a8600ceb81145862f98e1ff047b95b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   OuterInner.$trModule2
+                   OuterInner.$trModule1) -}
+ab14b352c8fc22dfe596214e69c77884
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "OuterInner"#) -}
+df020d401d548ace953d6b2baaba2ee3
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "outerInner-0.1.0.0-BaaLYtB9D9VCKHwCwSCpib"#) -}
+6a92f3ce5744cf5af262686204c749f6
+  eitherUnwrap ::
+    Control.Monad.Trans.Reader.ReaderT
+      ()
+      GHC.Types.IO
+      (Data.Either.Either GHC.Base.String (GHC.Base.Maybe GHC.Types.Int))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                OuterInner.eitherUnwrap1
+                  `cast`
+                (Trans
+                     (<()>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       [GHC.Types.Char] (GHC.Base.Maybe GHC.Types.Int)>_R))
+                     (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <*>_N
+                               <()>_R
+                               <GHC.Types.IO>_R
+                               <Data.Either.Either
+                                  [GHC.Types.Char] (GHC.Base.Maybe GHC.Types.Int)>_N))) -}
+4d769838d7be5f637a588c8fbda990fe
+  eitherUnwrap1 ::
+    ()
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            [GHC.Types.Char] (GHC.Base.Maybe GHC.Types.Int) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (r1 :: ()) (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s,
+                    Data.Either.Right
+                      @ [GHC.Types.Char]
+                      @ (GHC.Base.Maybe GHC.Types.Int)
+                      (GHC.Base.Just @ GHC.Types.Int OuterInner.eitherUnwrap2) #)) -}
+2360adf968b4fe0ebe911120c4f052b6
+  eitherUnwrap2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+be3b80bb9ff02c65e05f25510a36bade
+  embedded ::
+    Control.Monad.Trans.Maybe.MaybeT
+      (Control.Monad.Trans.Except.ExceptT
+         GHC.Base.String
+         (Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO))
+      GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                OuterInner.eitherUnwrap1
+                  `cast`
+                (Trans
+                     (<()>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       [GHC.Types.Char] (GHC.Base.Maybe GHC.Types.Int)>_R))
+                     (Trans
+                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                    <*>_N
+                                    <()>_R
+                                    <GHC.Types.IO>_R
+                                    <Data.Either.Either
+                                       [GHC.Types.Char] (GHC.Base.Maybe GHC.Types.Int)>_N))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                         <[GHC.Types.Char]>_N
+                                         <Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO>_R
+                                         <GHC.Base.Maybe GHC.Types.Int>_N))
+                               (Sym (Control.Monad.Trans.Maybe.N:MaybeT[0]
+                                         <Control.Monad.Trans.Except.ExceptT
+                                            GHC.Base.String
+                                            (Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO)>_R
+                                         <GHC.Types.Int>_N))))) -}
+8011d52cc5458225313996529b44c3ff
+  embedded' ::
+    Control.Monad.Trans.Maybe.MaybeT
+      (Control.Monad.Trans.Except.ExceptT
+         GHC.Base.String
+         (Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO))
+      GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                OuterInner.eitherUnwrap1
+                  `cast`
+                (Trans
+                     (<()>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       [GHC.Types.Char] (GHC.Base.Maybe GHC.Types.Int)>_R))
+                     (Trans
+                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                    <*>_N
+                                    <()>_R
+                                    <GHC.Types.IO>_R
+                                    <Data.Either.Either
+                                       GHC.Base.String (GHC.Base.Maybe GHC.Types.Int)>_N))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                         <GHC.Base.String>_N
+                                         <Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO>_R
+                                         <GHC.Base.Maybe GHC.Types.Int>_N))
+                               (Sym (Control.Monad.Trans.Maybe.N:MaybeT[0]
+                                         <Control.Monad.Trans.Except.ExceptT
+                                            GHC.Base.String
+                                            (Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO)>_R
+                                         <GHC.Types.Int>_N))))) -}
+493edec543661e796f0bc13fb05c9d22
+  embedded'' ::
+    Control.Monad.Trans.Maybe.MaybeT
+      (Control.Monad.Trans.Except.ExceptT
+         GHC.Base.String
+         (Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO))
+      GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                OuterInner.eitherUnwrap1
+                  `cast`
+                (Trans
+                     (<()>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       GHC.Base.String (GHC.Base.Maybe GHC.Types.Int)>_R))
+                     (Trans
+                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                    <*>_N
+                                    <()>_R
+                                    <GHC.Types.IO>_R
+                                    <Data.Either.Either
+                                       GHC.Base.String (GHC.Base.Maybe GHC.Types.Int)>_N))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                         <GHC.Base.String>_N
+                                         <Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO>_R
+                                         <GHC.Base.Maybe GHC.Types.Int>_N))
+                               (Sym (Control.Monad.Trans.Maybe.N:MaybeT[0]
+                                         <Control.Monad.Trans.Except.ExceptT
+                                            GHC.Base.String
+                                            (Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO)>_R
+                                         <GHC.Types.Int>_N))))) -}
+aa4674bbeadfd1717509fdc1dcce7c35
+  maybeUnwrap ::
+    Control.Monad.Trans.Except.ExceptT
+      GHC.Base.String
+      (Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO)
+      (GHC.Base.Maybe GHC.Types.Int)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                OuterInner.eitherUnwrap1
+                  `cast`
+                (Trans
+                     (<()>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Data.Either.Either
+                                       [GHC.Types.Char] (GHC.Base.Maybe GHC.Types.Int)>_R))
+                     (Trans
+                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                    <*>_N
+                                    <()>_R
+                                    <GHC.Types.IO>_R
+                                    <Data.Either.Either
+                                       [GHC.Types.Char] (GHC.Base.Maybe GHC.Types.Int)>_N))
+                          (Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                    <[GHC.Types.Char]>_N
+                                    <Control.Monad.Trans.Reader.ReaderT () GHC.Types.IO>_R
+                                    <GHC.Base.Maybe GHC.Types.Int>_N)))) -}
+e24fa938c15d9fe59949eaa157e5044f
+  readerUnwrap ::
+    ()
+    -> GHC.Types.IO
+         (Data.Either.Either GHC.Base.String (GHC.Base.Maybe GHC.Types.Int))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                OuterInner.eitherUnwrap1
+                  `cast`
+                (<()>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Data.Either.Either
+                                  [GHC.Types.Char] (GHC.Base.Maybe GHC.Types.Int)>_R)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

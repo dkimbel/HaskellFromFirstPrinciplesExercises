@@ -1,0 +1,227 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-02 01:27:44.46357 UTC
+
+interface main@main:Main 8002
+  interface hash: f948276ba11d46394a86a31a89e03f95
+  ABI hash: dfcf856d8e502dec6b4cbd63f6251320
+  export-list hash: f9f431f5ea6cb77c3f982909a97474c3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3004db7be48575948e309fd92ffa605b
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.logAndEcho
+  Main.main
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz:Network.Socket
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz:Network.Socket 52f9b9614bf018ecf5fec5f2570dad23
+import  -/  network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz:Network.Socket.ByteString 76c730219ba9b2aa4b3df5020ee2a55e
+import  -/  network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz:Network.Socket.Types 2eb8a83dc42cc86a12e652ce3294cbda
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+c322820b0478572fe2b54cbb17931c3f
+  $wlogAndEcho ::
+    Foreign.C.Types.CInt
+    -> Network.Socket.Types.Family
+    -> Network.Socket.Types.SocketType
+    -> Network.Socket.Types.ProtocolNumber
+    -> GHC.Prim.MVar#
+         GHC.Prim.RealWorld Network.Socket.Types.SocketStatus
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 6, Strictness: <L,U(U)><S,U><L,U><L,U(U)><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Foreign.C.Types.CInt)
+                   (ww1 :: Network.Socket.Types.Family)
+                   (ww2 :: Network.Socket.Types.SocketType)
+                   (ww3 :: Network.Socket.Types.ProtocolNumber)
+                   (ww4 :: GHC.Prim.MVar#
+                             GHC.Prim.RealWorld Network.Socket.Types.SocketStatus)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 letrec {
+                   a' :: GHC.Prim.State# GHC.Prim.RealWorld
+                         -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                     case Network.Socket.$waccept
+                            ww
+                            ww1
+                            ww2
+                            ww3
+                            ww4
+                            s of ds1 { (#,#) ipv ipv1 ->
+                     case ipv1 of wild { (,) soc ds ->
+                     case Network.Socket.ByteString.$wrecv
+                            soc
+                            1024#
+                            ipv of ds2 { (#,#) ipv2 ipv3 ->
+                     case GHC.IO.Handle.Text.hPutStr2
+                            GHC.IO.Handle.FD.stdout
+                            (Data.ByteString.Internal.$fShowByteString_$cshow ipv3)
+                            GHC.Types.True
+                            ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                     case soc of ww5 { Network.Socket.Types.MkSocket ww6 ww7 ww8 ww9 ww10 ->
+                     case ipv3 of ww11 { Data.ByteString.Internal.PS ww12 ww13 ww14 ww15 ->
+                     case Network.Socket.ByteString.$wsendAll
+                            ww6
+                            ww12
+                            ww13
+                            ww14
+                            ww15
+                            ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                     case ww10 of ww16 { GHC.MVar.MVar ww17 ->
+                     case Network.Socket.$wclose
+                            ww6
+                            ww17
+                            ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                     a' ipv8 } } } } } } } } }
+                 } in
+                 a' w) -}
+f25b53674b16c1d23d6d9e6b82caf488
+  logAndEcho :: Network.Socket.Types.Socket -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S(LSLLS(S)),U(U(U),U,U,U(U),U(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.logAndEcho1
+                  `cast`
+                (<Network.Socket.Types.Socket>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+d28a7c9e01f19bd6f80cc31c120c023c
+  logAndEcho1 ::
+    Network.Socket.Types.Socket
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S(LSLLS(S)),U(U(U),U,U,U(U),U(U))><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Network.Socket.Types.Socket)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Network.Socket.Types.MkSocket ww1 ww2 ww3 ww4 ww5 ->
+                 case ww5 of ww6 { GHC.MVar.MVar ww7 ->
+                 Main.$wlogAndEcho ww1 ww2 ww3 ww4 ww7 w1 } }) -}
+30da3ad7a6f0bfc059fa34dd849bbc5c
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+078ee5e895250889c6152189883e3090
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Network.Socket.getAddrInfo1
+                        Main.main5
+                        (GHC.Base.Nothing @ Network.Socket.HostName)
+                        Main.main3
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   []
+                   -> case GHC.List.badHead
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                      of {}
+                   : x ds2
+                   -> case x of ww { Network.Socket.AddrInfo ww1 ww2 ww3 ww4 ww5 ww6 ->
+                      case Network.Socket.$wsocket
+                             ww2
+                             Network.Socket.Types.Stream
+                             0#
+                             ipv of ds3 { (#,#) ipv2 ipv3 ->
+                      case ipv3 of ww7 { Network.Socket.Types.MkSocket ww8 ww9 ww10 ww11 ww12 ->
+                      case ww12 of ww13 { GHC.MVar.MVar ww14 ->
+                      case Network.Socket.$wbind
+                             ww8
+                             ww14
+                             ww5
+                             ipv2 of ds4 { (#,#) ipv4 ipv5 ->
+                      case Network.Socket.$wlisten
+                             ww8
+                             ww14
+                             Main.main2
+                             ipv4 of ds5 { (#,#) ipv6 ipv7 ->
+                      case Main.$wlogAndEcho
+                             ww8
+                             ww9
+                             ww10
+                             ww11
+                             ww14
+                             ipv6 of ds6 { (#,#) ipv8 ipv9 ->
+                      Network.Socket.$wclose ww8 ww14 ipv8 } } } } } } } } }) -}
+a907be4ac6b0f6bf727cae3cc1eb6075
+  main2 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
+b24e0597d294c52b4da09fc7c43e49fc
+  main3 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just @ [GHC.Types.Char] Main.main4) -}
+e54b7659b9ea2e5abc4bc0285927f0cf
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "79"#) -}
+a2fd4d3876e776e0f74ef21a78ec819c
+  main5 :: GHC.Base.Maybe Network.Socket.AddrInfo
+  {- Unfolding: (GHC.Base.Just
+                   @ Network.Socket.AddrInfo
+                   Main.main6) -}
+2c13b0e7a98eb5efc067904a73a367fa
+  main6 :: Network.Socket.AddrInfo
+  {- Unfolding: (Network.Socket.AddrInfo
+                   Main.main7
+                   Network.Socket.Types.AF_UNSPEC
+                   Network.Socket.Types.NoSocketType
+                   Network.Socket.defaultHints3
+                     `cast`
+                   (Sym (Foreign.C.Types.N:CInt[0]))
+                   Network.Socket.defaultHints2
+                   Network.Socket.defaultHints1) -}
+7df1eebdcf1210d7c0e199125b013411
+  main7 :: [Network.Socket.AddrInfoFlag]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Network.Socket.AddrInfoFlag
+                   Network.Socket.AI_PASSIVE
+                   (GHC.Types.[] @ Network.Socket.AddrInfoFlag)) -}
+359a4deabe3917240d09165d3b8054d5
+  main8 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

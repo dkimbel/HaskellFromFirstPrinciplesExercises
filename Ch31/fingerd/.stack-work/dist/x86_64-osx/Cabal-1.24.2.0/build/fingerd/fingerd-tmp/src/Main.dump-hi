@@ -1,0 +1,1991 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-02 05:04:37.512869 UTC
+
+interface main@main:Main 8002
+  interface hash: 8beef756566f4f6abf07bfe38ae6cf56
+  ABI hash: fc4c61b2ca6055a75b302bb500bfab87
+  export-list hash: c90ec0d7b9732974dea17c4a18ff0482
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 677f0321d7c3c48aa2e4a899af796ccf
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Main.allUsers
+  Main.createDatabase
+  Main.createUsers
+  Main.formatStr
+  Main.formatUser
+  Main.getUser
+  Main.getUserQuery
+  Main.handleQueries
+  Main.handleQuery
+  Main.insertUser
+  Main.main
+  Main.returnUser
+  Main.returnUsers
+  Main.DuplicateData{Main.DuplicateData}
+  Main.User{Main.User homeDirectory phone realName shell userId username}
+  Main.UserRow
+module dependencies:
+package dependencies: Only-0.1@Only-0.1-1dkiXHtbc8zGqo2Q6b73I6
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
+                      base-4.9.1.0 binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-LxClHUTiKUUAxWtvJ5Oeoy
+                      blaze-textual-0.2.1.0@blaze-textual-0.2.1.0-E9nR6fgytNGJgg5b67u8hm
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      direct-sqlite-2.3.20@direct-sqlite-2.3.20-FIMP2HHBou515HppImYqVA
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      raw-strings-qq-1.1@raw-strings-qq-1.1-HjO0jIPgyz3nrMVQqTSCs
+                      scientific-0.3.5.2@scientific-0.3.5.2-FM2NdrNTcdbCDq9wuNnhIA
+                      sqlite-simple-0.4.14.0@sqlite-simple-0.4.14.0-C2AYrK9CCIU873dMDv6zKd
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz:Network.Socket
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: Only-0.1@Only-0.1-1dkiXHtbc8zGqo2Q6b73I6:Data.Tuple.Only
+                         attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  Only-0.1@Only-0.1-1dkiXHtbc8zGqo2Q6b73I6:Data.Tuple.Only fd55b41633a086e22ab09f1752162653
+import  -/  base-4.9.1.0:Control.Exception a76dd9666251322fe34dbcca3a0817bf
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:Data.Typeable 9257e47d10882145c67c5b489965cfb7
+import  -/  base-4.9.1.0:Data.Typeable.Internal 0e9bdefa4325a0112d8e73b5e1e1f85d
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Exception e38fa3e73d54022fb9e3ce06477dfd07
+import  -/  base-4.9.1.0:GHC.IO eb504c57b397cf133849f8586f15dafb
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString 21ce1800689b373b38139d788d9bbd62
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Internal 55dd939197544e08d4254aa7d070fa6c
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz:Network.Socket 52f9b9614bf018ecf5fec5f2570dad23
+import  -/  network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz:Network.Socket.ByteString 76c730219ba9b2aa4b3df5020ee2a55e
+import  -/  network-2.6.3.2@network-2.6.3.2-IsLM4TXcLoRI0fmmBYVyQz:Network.Socket.Types 2eb8a83dc42cc86a12e652ce3294cbda
+import  -/  raw-strings-qq-1.1@raw-strings-qq-1.1-HjO0jIPgyz3nrMVQqTSCs:Text.RawString.QQ 049903e110b50d2e2afc78f5648fcd4b
+import  -/  sqlite-simple-0.4.14.0@sqlite-simple-0.4.14.0-C2AYrK9CCIU873dMDv6zKd:Database.SQLite.Simple 1c014a9fa7692485bd998a4f86b7737c
+import  -/  sqlite-simple-0.4.14.0@sqlite-simple-0.4.14.0-C2AYrK9CCIU873dMDv6zKd:Database.SQLite.Simple.FromRow 52dd1b385322e159306ed0da0430c0d3
+import  -/  sqlite-simple-0.4.14.0@sqlite-simple-0.4.14.0-C2AYrK9CCIU873dMDv6zKd:Database.SQLite.Simple.Internal 0ab0c03549688691cac1116443227cad
+import  -/  sqlite-simple-0.4.14.0@sqlite-simple-0.4.14.0-C2AYrK9CCIU873dMDv6zKd:Database.SQLite.Simple.ToRow 8f79417e2731615fb8ed5524c92ac58a
+import  -/  sqlite-simple-0.4.14.0@sqlite-simple-0.4.14.0-C2AYrK9CCIU873dMDv6zKd:Database.SQLite.Simple.Types f40b95ebd1f483d97c4149f4c814eaa6
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text f7d3d648ffeef1043fe2e522e7e66c1b
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Encoding 03fe2a5ea343372ed1f58467f68fc421
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 9bfcbbbe07ecef48f631025a838df7da
+37613dd9b2e9c5b75991b1fdc5542136
+  $fEqDuplicateData :: GHC.Classes.Eq Main.DuplicateData
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.DuplicateData
+                  Main.$fEqDuplicateData_$c==
+                  Main.$fEqDuplicateData_$c/= -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fEqDuplicateData_$c/= ::
+    Main.DuplicateData -> Main.DuplicateData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Main.DuplicateData) (b :: Main.DuplicateData) ->
+                 case a of wild { Main.DuplicateData ->
+                 case b of wild1 { Main.DuplicateData -> GHC.Types.False } }) -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fEqDuplicateData_$c== ::
+    Main.DuplicateData -> Main.DuplicateData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*H><S,1*H>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Main.DuplicateData) (ds1 :: Main.DuplicateData) ->
+                 case ds of wild { Main.DuplicateData ->
+                 case ds1 of wild1 { Main.DuplicateData -> GHC.Types.True } }) -}
+0e6b03095baa2d555297f6f57410e90a
+  $fEqUser :: GHC.Classes.Eq Main.User
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.User Main.$fEqUser_$c== Main.$fEqUser_$c/= -}
+0e6b03095baa2d555297f6f57410e90a
+  $fEqUser_$c/= :: Main.User -> Main.User -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLL),1*U(1*U,1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U))><S(SLLLLL),1*U(1*U,1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Main.User) (b :: Main.User) ->
+                 case Main.$fEqUser_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+0e6b03095baa2d555297f6f57410e90a
+  $fEqUser_$c== :: Main.User -> Main.User -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLLL),1*U(1*U,1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U))><S(SLLLLL),1*U(1*U,1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Main.User) (w1 :: Main.User) ->
+                 case w of ww { Main.User ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case w1 of ww7 { Main.User ww8 ww9 ww10 ww11 ww12 ww13 ->
+                 Main.$w$c==
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12
+                   ww13 } }) -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fExceptionDuplicateData ::
+    GHC.Exception.Exception Main.DuplicateData
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.DuplicateData
+                  Main.$fExceptionDuplicateData_$cp1Exception
+                  Main.$fShowDuplicateData
+                  Main.$fExceptionDuplicateData_$ctoException
+                  Main.$fExceptionDuplicateData_$cfromException
+                  Main.$fExceptionDuplicateData_$cdisplayException -}
+94d793a0aeabfc71be46e452449b3756
+  $fExceptionDuplicateData1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DuplicateData"#) -}
+55c4c7deef817b27c8816dd76aea5858
+  $fExceptionDuplicateData2 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Main.$fExceptionDuplicateData3
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   Main.$tcDuplicateData
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+e9bfcbcb2c9f1fa71f44ce084361fec7
+  $fExceptionDuplicateData3 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   9972418726897685402##
+                   17634604285359108975##) -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fExceptionDuplicateData4 ::
+    GHC.Prim.Proxy# Main.DuplicateData
+    -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy# Main.DuplicateData) ->
+                 Main.$fExceptionDuplicateData2) -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fExceptionDuplicateData_$cdisplayException ::
+    Main.DuplicateData -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*H>,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fExceptionDuplicateData_$cshow -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fExceptionDuplicateData_$cfromException ::
+    GHC.Exception.SomeException -> GHC.Base.Maybe Main.DuplicateData
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (eta :: GHC.Exception.SomeException) ->
+                 case eta of wild { GHC.Exception.SomeException e10 $dException1 e2 ->
+                 case (GHC.Exception.$p1Exception @ e10 $dException1)
+                        `cast`
+                      (Data.Typeable.Internal.N:Typeable[0] <*>_N <e10>_N)
+                        (GHC.Prim.proxy#
+                           @ *
+                           @ e10) of wild1 { Data.Typeable.Internal.TypeRep dt dt1 ds2 ds3 ds4 ->
+                 case Main.$fExceptionDuplicateData2 of wild2 { Data.Typeable.Internal.TypeRep dt2 dt3 ds5 ds6 ds7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# dt dt2) of wild3 {
+                   GHC.Types.False -> GHC.Base.Nothing @ Main.DuplicateData
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqWord# dt1 dt3) of wild4 {
+                        GHC.Types.False -> GHC.Base.Nothing @ Main.DuplicateData
+                        GHC.Types.True
+                        -> GHC.Base.Just
+                             @ Main.DuplicateData
+                             e2
+                               `cast`
+                             (UnsafeCo representational e10 Main.DuplicateData) } } } } }) -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fExceptionDuplicateData_$cp1Exception ::
+    Data.Typeable.Internal.Typeable Main.DuplicateData
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fExceptionDuplicateData4
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N <Main.DuplicateData>_N)) -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fExceptionDuplicateData_$cshow ::
+    Main.DuplicateData -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Main.DuplicateData) ->
+                 case x of wild { Main.DuplicateData ->
+                 Main.$fExceptionDuplicateData1 }) -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fExceptionDuplicateData_$ctoException ::
+    Main.DuplicateData -> GHC.Exception.SomeException
+  {- Arity: 1 -}
+0e6b03095baa2d555297f6f57410e90a
+  $fFromRowUser :: Database.SQLite.Simple.FromRow.FromRow Main.User
+  DFunId
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(S(S)L),1*U(1*U(U),1*U)>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Main.$fFromRowUser_$cfromRow
+                  `cast`
+                (Sym (Database.SQLite.Simple.FromRow.N:FromRow[0]) <Main.User>_N) -}
+0e6b03095baa2d555297f6f57410e90a
+  $fFromRowUser1 ::
+    Database.SQLite.Simple.Internal.RowParseRO
+    -> (GHC.Types.Int, [Database.SQLite3.SQLData])
+    -> Database.SQLite.Simple.Ok.Ok
+         (Main.User, (GHC.Types.Int, [Database.SQLite3.SQLData]))
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(S(S)L),1*U(1*U(U),1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Database.SQLite.Simple.Internal.RowParseRO)
+                   (w1 :: (GHC.Types.Int, [Database.SQLite3.SQLData])) ->
+                 case w `cast`
+                      (Database.SQLite.Simple.Internal.N:RowParseRO[0]) of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { (,) ww3 ww4 ->
+                 case ww3 of ww5 { GHC.Types.I# ww6 ->
+                 Main.$w$cfromRow ww1 ww6 ww4 } } }) -}
+0e6b03095baa2d555297f6f57410e90a
+  $fFromRowUser_$cfromRow ::
+    Database.SQLite.Simple.Internal.RowParser Main.User
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(S(S)L),1*U(1*U(U),1*U)>,
+     Unfolding: InlineRule (0, True, True)
+                Main.$fFromRowUser1
+                  `cast`
+                (Trans
+                     (<Database.SQLite.Simple.Internal.RowParseRO>_R
+                      ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                    <(GHC.Types.Int, [Database.SQLite3.SQLData])>_N
+                                    <Database.SQLite.Simple.Ok.Ok>_R
+                                    <Main.User>_N))
+                     (Trans
+                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                    <*>_N
+                                    <Database.SQLite.Simple.Internal.RowParseRO>_R
+                                    <Control.Monad.Trans.State.Strict.StateT
+                                       (GHC.Types.Int, [Database.SQLite3.SQLData])
+                                       Database.SQLite.Simple.Ok.Ok>_R
+                                    <Main.User>_N))
+                          (Sym (Database.SQLite.Simple.Internal.N:RowParser[0]) <Main.User>_N))) -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fShowDuplicateData :: GHC.Show.Show Main.DuplicateData
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.DuplicateData
+                  Main.$fShowDuplicateData_$cshowsPrec
+                  Main.$fExceptionDuplicateData_$cshow
+                  Main.$fShowDuplicateData_$cshowList -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fShowDuplicateData1 :: Main.DuplicateData -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*H><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Main.DuplicateData) (eta :: GHC.Base.String) ->
+                 case ds of wild { Main.DuplicateData ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      Main.$fExceptionDuplicateData1)
+                   eta }) -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fShowDuplicateData_$cshowList ::
+    [Main.DuplicateData] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Main.DuplicateData
+                   Main.$fShowDuplicateData1) -}
+37613dd9b2e9c5b75991b1fdc5542136
+  $fShowDuplicateData_$cshowsPrec ::
+    GHC.Types.Int -> Main.DuplicateData -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*H><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: Main.DuplicateData)
+                   (eta :: GHC.Base.String) ->
+                 case ds1 of wild { Main.DuplicateData ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      Main.$fExceptionDuplicateData1)
+                   eta }) -}
+0e6b03095baa2d555297f6f57410e90a
+  $fShowUser :: GHC.Show.Show Main.User
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.User
+                  Main.$fShowUser_$cshowsPrec
+                  Main.$fShowUser_$cshow
+                  Main.$fShowUser_$cshowList -}
+0e6b03095baa2d555297f6f57410e90a
+  $fShowUser1 :: Main.User -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: Main.User) (w1 :: GHC.Base.String) ->
+                 case w of ww { Main.User ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 Main.$w$cshowsPrec 0# ww1 ww2 ww3 ww4 ww5 ww6 w1 }) -}
+0e6b03095baa2d555297f6f57410e90a
+  $fShowUser_$cshow :: Main.User -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(U,1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Main.User) ->
+                 Main.$fShowUser_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+0e6b03095baa2d555297f6f57410e90a
+  $fShowUser_$cshowList :: [Main.User] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__ @ Main.User Main.$fShowUser1) -}
+0e6b03095baa2d555297f6f57410e90a
+  $fShowUser_$cshowsPrec ::
+    GHC.Types.Int -> Main.User -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S(S),1*U(U)><S,1*U(U,1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Main.User)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Main.User ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Main.$w$cshowsPrec ww1 ww3 ww4 ww5 ww6 ww7 ww8 w2 } }) -}
+0e6b03095baa2d555297f6f57410e90a
+  $fToRowUser :: Database.SQLite.Simple.ToRow.ToRow Main.User
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(1*U,U,U,U,U,U)>m2,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Main.$fToRowUser_$ctoRow
+                  `cast`
+                (Sym (Database.SQLite.Simple.ToRow.N:ToRow[0] <Main.User>_N)) -}
+0e6b03095baa2d555297f6f57410e90a
+  $fToRowUser_$ctoRow :: Main.User -> [Database.SQLite3.SQLData]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(1*U,U,U,U,U,U)>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Main.User) ->
+                 case w of ww { Main.User ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case Main.$w$ctoRow
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6 of ww7 { (#,#) ww8 ww9 ->
+                 GHC.Types.: @ Database.SQLite3.SQLData ww8 ww9 } }) -}
+cec140d7a6aa4d9055b447c68e3e8f2e
+  $tc'DuplicateData :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15475311271242533389##
+                   3657414974536498288##
+                   Main.$trModule
+                   Main.$tc'DuplicateData1) -}
+620ed17b7d563bba96acbd470857ae4c
+  $tc'DuplicateData1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DuplicateData"#) -}
+cf21eebefbba4d6af162ff86914e3a11
+  $tc'User :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3398051356673441841##
+                   13421728234541805440##
+                   Main.$trModule
+                   Main.$tc'User1) -}
+048f6897aa6ff8183e515c598de191a7
+  $tc'User1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'User"#) -}
+a4f6b1d63c71e19e577fe208351d3fd9
+  $tcDuplicateData :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9972418726897685402##
+                   17634604285359108975##
+                   Main.$trModule
+                   Main.$tcDuplicateData1) -}
+5f7d38f1e73a198f3719e4a695a31972
+  $tcDuplicateData1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "DuplicateData"#) -}
+45bc40711479749f25cb097885d72de9
+  $tcUser :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8072041860742076866##
+                   8858956647680378335##
+                   Main.$trModule
+                   Main.$tcUser1) -}
+a84f013004a37a979358c3944a61d996
+  $tcUser1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "User"#) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+8b7c2fc245f81c36db9d80f0c3572957
+  $w$c== ::
+    GHC.Integer.Type.Integer
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> GHC.Integer.Type.Integer
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> GHC.Types.Bool
+  {- Arity: 12, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)><S,1*U><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Integer.Type.Integer)
+                   (ww1 :: Data.Text.Internal.Text)
+                   (ww2 :: Data.Text.Internal.Text)
+                   (ww3 :: Data.Text.Internal.Text)
+                   (ww4 :: Data.Text.Internal.Text)
+                   (ww5 :: Data.Text.Internal.Text)
+                   (ww6 :: GHC.Integer.Type.Integer)
+                   (ww7 :: Data.Text.Internal.Text)
+                   (ww8 :: Data.Text.Internal.Text)
+                   (ww9 :: Data.Text.Internal.Text)
+                   (ww10 :: Data.Text.Internal.Text)
+                   (ww11 :: Data.Text.Internal.Text) ->
+                 case GHC.Integer.Type.eqInteger# ww ww6 of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case ww1 of wild2 { Data.Text.Internal.Text dt dt1 dt2 ->
+                      case ww7 of wild3 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# dt2 dt5) of wild4 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> case {__pkg_ccall text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00 _hs_text_memcmp GHC.Prim.ByteArray#
+                                                                                                              -> GHC.Prim.Word#
+                                                                                                              -> GHC.Prim.ByteArray#
+                                                                                                              -> GHC.Prim.Word#
+                                                                                                              -> GHC.Prim.Word#
+                                                                                                              -> GHC.Prim.State#
+                                                                                                                   GHC.Prim.RealWorld
+                                                                                                              -> (# GHC.Prim.State#
+                                                                                                                      GHC.Prim.RealWorld,
+                                                                                                                    GHC.Prim.Int# #)}
+                                  dt
+                                  (GHC.Prim.int2Word# dt1)
+                                  dt3
+                                  (GHC.Prim.int2Word# dt4)
+                                  (GHC.Prim.int2Word# dt2)
+                                  GHC.Prim.realWorld# of wild5 { (#,#) ds11 ds12 ->
+                           case GHC.Prim.narrow32Int# ds12 of wild6 {
+                             DEFAULT -> GHC.Types.False
+                             0#
+                             -> case ww2 of wild7 { Data.Text.Internal.Text dt7 dt8 dt9 ->
+                                case ww8 of wild8 { Data.Text.Internal.Text dt10 dt11 dt12 ->
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# dt9 dt12) of wild9 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True
+                                  -> case {__pkg_ccall text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00 _hs_text_memcmp GHC.Prim.ByteArray#
+                                                                                                                        -> GHC.Prim.Word#
+                                                                                                                        -> GHC.Prim.ByteArray#
+                                                                                                                        -> GHC.Prim.Word#
+                                                                                                                        -> GHC.Prim.Word#
+                                                                                                                        -> GHC.Prim.State#
+                                                                                                                             GHC.Prim.RealWorld
+                                                                                                                        -> (# GHC.Prim.State#
+                                                                                                                                GHC.Prim.RealWorld,
+                                                                                                                              GHC.Prim.Int# #)}
+                                            dt7
+                                            (GHC.Prim.int2Word# dt8)
+                                            dt10
+                                            (GHC.Prim.int2Word# dt11)
+                                            (GHC.Prim.int2Word# dt9)
+                                            GHC.Prim.realWorld# of wild10 { (#,#) ds1 ds2 ->
+                                     case GHC.Prim.narrow32Int# ds2 of wild11 {
+                                       DEFAULT -> GHC.Types.False
+                                       0#
+                                       -> case ww3 of wild12 { Data.Text.Internal.Text dt13 dt14 dt15 ->
+                                          case ww9 of wild13 { Data.Text.Internal.Text dt16 dt17 dt18 ->
+                                          case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.==# dt15 dt18) of wild14 {
+                                            GHC.Types.False -> GHC.Types.False
+                                            GHC.Types.True
+                                            -> case {__pkg_ccall text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00 _hs_text_memcmp GHC.Prim.ByteArray#
+                                                                                                                                  -> GHC.Prim.Word#
+                                                                                                                                  -> GHC.Prim.ByteArray#
+                                                                                                                                  -> GHC.Prim.Word#
+                                                                                                                                  -> GHC.Prim.Word#
+                                                                                                                                  -> GHC.Prim.State#
+                                                                                                                                       GHC.Prim.RealWorld
+                                                                                                                                  -> (# GHC.Prim.State#
+                                                                                                                                          GHC.Prim.RealWorld,
+                                                                                                                                        GHC.Prim.Int# #)}
+                                                      dt13
+                                                      (GHC.Prim.int2Word# dt14)
+                                                      dt16
+                                                      (GHC.Prim.int2Word# dt17)
+                                                      (GHC.Prim.int2Word# dt15)
+                                                      GHC.Prim.realWorld# of wild15 { (#,#) ds3 ds4 ->
+                                               case GHC.Prim.narrow32Int# ds4 of wild16 {
+                                                 DEFAULT -> GHC.Types.False
+                                                 0#
+                                                 -> case ww4 of wild17 { Data.Text.Internal.Text dt19 dt20 dt21 ->
+                                                    case ww10 of wild18 { Data.Text.Internal.Text dt22 dt23 dt24 ->
+                                                    case GHC.Prim.tagToEnum#
+                                                           @ GHC.Types.Bool
+                                                           (GHC.Prim.==# dt21 dt24) of wild19 {
+                                                      GHC.Types.False -> GHC.Types.False
+                                                      GHC.Types.True
+                                                      -> case {__pkg_ccall text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00 _hs_text_memcmp GHC.Prim.ByteArray#
+                                                                                                                                            -> GHC.Prim.Word#
+                                                                                                                                            -> GHC.Prim.ByteArray#
+                                                                                                                                            -> GHC.Prim.Word#
+                                                                                                                                            -> GHC.Prim.Word#
+                                                                                                                                            -> GHC.Prim.State#
+                                                                                                                                                 GHC.Prim.RealWorld
+                                                                                                                                            -> (# GHC.Prim.State#
+                                                                                                                                                    GHC.Prim.RealWorld,
+                                                                                                                                                  GHC.Prim.Int# #)}
+                                                                dt19
+                                                                (GHC.Prim.int2Word# dt20)
+                                                                dt22
+                                                                (GHC.Prim.int2Word# dt23)
+                                                                (GHC.Prim.int2Word# dt21)
+                                                                GHC.Prim.realWorld# of wild20 { (#,#) ds5 ds6 ->
+                                                         case GHC.Prim.narrow32Int# ds6 of wild21 {
+                                                           DEFAULT -> GHC.Types.False
+                                                           0#
+                                                           -> Data.Text.$fEqText_$c==
+                                                                ww5
+                                                                ww11 } } } } } } } } } } } } } } } } } } } } } }) -}
+0e6b03095baa2d555297f6f57410e90a
+  $w$cfromRow ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> [Database.SQLite3.SQLData]
+    -> Database.SQLite.Simple.Ok.Ok
+         (Main.User, (GHC.Types.Int, [Database.SQLite3.SQLData]))
+  {- Arity: 3, Strictness: <S,U><S,U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: [Database.SQLite3.SQLData]) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww1 ww) of wild {
+                   GHC.Types.False
+                   -> case ww2 of wild1 {
+                        []
+                        -> case GHC.List.badHead
+                           ret_ty (Database.SQLite.Simple.Ok.Ok
+                                     (Main.User, (GHC.Types.Int, [Database.SQLite3.SQLData])))
+                           of {}
+                        : x ds1
+                        -> case Database.SQLite.Simple.FromField.$w$stakeInt5 x of wild2 {
+                             Database.SQLite.Simple.Ok.Errors es
+                             -> Database.SQLite.Simple.Ok.Errors
+                                  @ (Main.User, (GHC.Types.Int, [Database.SQLite3.SQLData]))
+                                  es
+                             Database.SQLite.Simple.Ok.Ok a1
+                             -> let {
+                                  s' :: GHC.Prim.Int# = GHC.Prim.+# ww1 1#
+                                } in
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.>=# s' ww) of wild3 {
+                                  GHC.Types.False
+                                  -> case ds1 of wild4 {
+                                       []
+                                       -> case GHC.List.badHead
+                                          ret_ty (Database.SQLite.Simple.Ok.Ok
+                                                    (Main.User,
+                                                     (GHC.Types.Int, [Database.SQLite3.SQLData])))
+                                          of {}
+                                       : x1 ds2
+                                       -> case Database.SQLite.Simple.FromField.$w$cfromField9
+                                                 x1 of wild5 {
+                                            Database.SQLite.Simple.Ok.Errors es
+                                            -> Database.SQLite.Simple.Ok.Errors
+                                                 @ (Main.User,
+                                                    (GHC.Types.Int, [Database.SQLite3.SQLData]))
+                                                 es
+                                            Database.SQLite.Simple.Ok.Ok a2
+                                            -> let {
+                                                 s'' :: GHC.Prim.Int# = GHC.Prim.+# s' 1#
+                                               } in
+                                               case GHC.Prim.tagToEnum#
+                                                      @ GHC.Types.Bool
+                                                      (GHC.Prim.>=# s'' ww) of wild6 {
+                                                 GHC.Types.False
+                                                 -> case ds2 of wild7 {
+                                                      []
+                                                      -> case GHC.List.badHead
+                                                         ret_ty (Database.SQLite.Simple.Ok.Ok
+                                                                   (Main.User,
+                                                                    (GHC.Types.Int,
+                                                                     [Database.SQLite3.SQLData])))
+                                                         of {}
+                                                      : x2 ds3
+                                                      -> case Database.SQLite.Simple.FromField.$w$cfromField9
+                                                                x2 of wild8 {
+                                                           Database.SQLite.Simple.Ok.Errors es
+                                                           -> Database.SQLite.Simple.Ok.Errors
+                                                                @ (Main.User,
+                                                                   (GHC.Types.Int,
+                                                                    [Database.SQLite3.SQLData]))
+                                                                es
+                                                           Database.SQLite.Simple.Ok.Ok a3
+                                                           -> let {
+                                                                s''1 :: GHC.Prim.Int#
+                                                                = GHC.Prim.+# s'' 1#
+                                                              } in
+                                                              case GHC.Prim.tagToEnum#
+                                                                     @ GHC.Types.Bool
+                                                                     (GHC.Prim.>=#
+                                                                        s''1
+                                                                        ww) of wild9 {
+                                                                GHC.Types.False
+                                                                -> case ds3 of wild10 {
+                                                                     []
+                                                                     -> case GHC.List.badHead
+                                                                        ret_ty (Database.SQLite.Simple.Ok.Ok
+                                                                                  (Main.User,
+                                                                                   (GHC.Types.Int,
+                                                                                    [Database.SQLite3.SQLData])))
+                                                                        of {}
+                                                                     : x3 ds4
+                                                                     -> case Database.SQLite.Simple.FromField.$w$cfromField9
+                                                                               x3 of wild11 {
+                                                                          Database.SQLite.Simple.Ok.Errors es
+                                                                          -> Database.SQLite.Simple.Ok.Errors
+                                                                               @ (Main.User,
+                                                                                  (GHC.Types.Int,
+                                                                                   [Database.SQLite3.SQLData]))
+                                                                               es
+                                                                          Database.SQLite.Simple.Ok.Ok a4
+                                                                          -> let {
+                                                                               s''2 :: GHC.Prim.Int#
+                                                                               = GHC.Prim.+# s''1 1#
+                                                                             } in
+                                                                             case GHC.Prim.tagToEnum#
+                                                                                    @ GHC.Types.Bool
+                                                                                    (GHC.Prim.>=#
+                                                                                       s''2
+                                                                                       ww) of wild12 {
+                                                                               GHC.Types.False
+                                                                               -> case ds4 of wild13 {
+                                                                                    []
+                                                                                    -> case GHC.List.badHead
+                                                                                       ret_ty (Database.SQLite.Simple.Ok.Ok
+                                                                                                 (Main.User,
+                                                                                                  (GHC.Types.Int,
+                                                                                                   [Database.SQLite3.SQLData])))
+                                                                                       of {}
+                                                                                    : x4 ds5
+                                                                                    -> case Database.SQLite.Simple.FromField.$w$cfromField9
+                                                                                              x4 of wild14 {
+                                                                                         Database.SQLite.Simple.Ok.Errors es
+                                                                                         -> Database.SQLite.Simple.Ok.Errors
+                                                                                              @ (Main.User,
+                                                                                                 (GHC.Types.Int,
+                                                                                                  [Database.SQLite3.SQLData]))
+                                                                                              es
+                                                                                         Database.SQLite.Simple.Ok.Ok a5
+                                                                                         -> let {
+                                                                                              s''3 :: GHC.Prim.Int#
+                                                                                              = GHC.Prim.+#
+                                                                                                  s''2
+                                                                                                  1#
+                                                                                            } in
+                                                                                            case GHC.Prim.tagToEnum#
+                                                                                                   @ GHC.Types.Bool
+                                                                                                   (GHC.Prim.>=#
+                                                                                                      s''3
+                                                                                                      ww) of wild15 {
+                                                                                              GHC.Types.False
+                                                                                              -> case ds5 of wild16 {
+                                                                                                   []
+                                                                                                   -> case GHC.List.badHead
+                                                                                                      ret_ty (Database.SQLite.Simple.Ok.Ok
+                                                                                                                (Main.User,
+                                                                                                                 (GHC.Types.Int,
+                                                                                                                  [Database.SQLite3.SQLData])))
+                                                                                                      of {}
+                                                                                                   : x5 ds6
+                                                                                                   -> case Database.SQLite.Simple.FromField.$w$cfromField9
+                                                                                                             x5 of wild17 {
+                                                                                                        Database.SQLite.Simple.Ok.Errors es
+                                                                                                        -> Database.SQLite.Simple.Ok.Errors
+                                                                                                             @ (Main.User,
+                                                                                                                (GHC.Types.Int,
+                                                                                                                 [Database.SQLite3.SQLData]))
+                                                                                                             es
+                                                                                                        Database.SQLite.Simple.Ok.Ok a6
+                                                                                                        -> Database.SQLite.Simple.Ok.Ok
+                                                                                                             @ (Main.User,
+                                                                                                                (GHC.Types.Int,
+                                                                                                                 [Database.SQLite3.SQLData]))
+                                                                                                             (Main.User
+                                                                                                                a1
+                                                                                                                a2
+                                                                                                                a3
+                                                                                                                a4
+                                                                                                                a5
+                                                                                                                a6,
+                                                                                                              (GHC.Types.I#
+                                                                                                                 (GHC.Prim.+#
+                                                                                                                    s''3
+                                                                                                                    1#),
+                                                                                                               ds6)) } }
+                                                                                              GHC.Types.True
+                                                                                              -> Database.SQLite.Simple.Ok.Errors
+                                                                                                   @ (Main.User,
+                                                                                                      (GHC.Types.Int,
+                                                                                                       [Database.SQLite3.SQLData]))
+                                                                                                   (GHC.Types.:
+                                                                                                      @ GHC.Exception.SomeException
+                                                                                                      (GHC.Exception.SomeException
+                                                                                                         @ Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                                                                                         Database.SQLite.Simple.Internal.$fExceptionColumnOutOfBounds
+                                                                                                         (Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                                                                                            (GHC.Prim.+#
+                                                                                                               s''3
+                                                                                                               1#)))
+                                                                                                      (GHC.Types.[]
+                                                                                                         @ GHC.Exception.SomeException)) } } }
+                                                                               GHC.Types.True
+                                                                               -> Database.SQLite.Simple.Ok.Errors
+                                                                                    @ (Main.User,
+                                                                                       (GHC.Types.Int,
+                                                                                        [Database.SQLite3.SQLData]))
+                                                                                    (GHC.Types.:
+                                                                                       @ GHC.Exception.SomeException
+                                                                                       (GHC.Exception.SomeException
+                                                                                          @ Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                                                                          Database.SQLite.Simple.Internal.$fExceptionColumnOutOfBounds
+                                                                                          (Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                                                                             (GHC.Prim.+#
+                                                                                                s''2
+                                                                                                1#)))
+                                                                                       (GHC.Types.[]
+                                                                                          @ GHC.Exception.SomeException)) } } }
+                                                                GHC.Types.True
+                                                                -> Database.SQLite.Simple.Ok.Errors
+                                                                     @ (Main.User,
+                                                                        (GHC.Types.Int,
+                                                                         [Database.SQLite3.SQLData]))
+                                                                     (GHC.Types.:
+                                                                        @ GHC.Exception.SomeException
+                                                                        (GHC.Exception.SomeException
+                                                                           @ Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                                                           Database.SQLite.Simple.Internal.$fExceptionColumnOutOfBounds
+                                                                           (Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                                                              (GHC.Prim.+#
+                                                                                 s''1
+                                                                                 1#)))
+                                                                        (GHC.Types.[]
+                                                                           @ GHC.Exception.SomeException)) } } }
+                                                 GHC.Types.True
+                                                 -> Database.SQLite.Simple.Ok.Errors
+                                                      @ (Main.User,
+                                                         (GHC.Types.Int,
+                                                          [Database.SQLite3.SQLData]))
+                                                      (GHC.Types.:
+                                                         @ GHC.Exception.SomeException
+                                                         (GHC.Exception.SomeException
+                                                            @ Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                                            Database.SQLite.Simple.Internal.$fExceptionColumnOutOfBounds
+                                                            (Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                                               (GHC.Prim.+# s'' 1#)))
+                                                         (GHC.Types.[]
+                                                            @ GHC.Exception.SomeException)) } } }
+                                  GHC.Types.True
+                                  -> Database.SQLite.Simple.Ok.Errors
+                                       @ (Main.User, (GHC.Types.Int, [Database.SQLite3.SQLData]))
+                                       (GHC.Types.:
+                                          @ GHC.Exception.SomeException
+                                          (GHC.Exception.SomeException
+                                             @ Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                             Database.SQLite.Simple.Internal.$fExceptionColumnOutOfBounds
+                                             (Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                                (GHC.Prim.+# s' 1#)))
+                                          (GHC.Types.[] @ GHC.Exception.SomeException)) } } }
+                   GHC.Types.True
+                   -> Database.SQLite.Simple.Ok.Errors
+                        @ (Main.User, (GHC.Types.Int, [Database.SQLite3.SQLData]))
+                        (GHC.Types.:
+                           @ GHC.Exception.SomeException
+                           (GHC.Exception.SomeException
+                              @ Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                              Database.SQLite.Simple.Internal.$fExceptionColumnOutOfBounds
+                              (Database.SQLite.Simple.Internal.ColumnOutOfBounds
+                                 (GHC.Prim.+# ww1 1#)))
+                           (GHC.Types.[] @ GHC.Exception.SomeException)) }) -}
+2ac5cfea772dab3c4cb993d3aece188f
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Integer.Type.Integer
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 8,
+     Strictness: <S,U><L,U><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)><L,U>,
+     Inline: [0] -}
+1fed2f75efb9579a239a50a8900293d4
+  $w$ctoRow ::
+    GHC.Integer.Type.Integer
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> (# Database.SQLite3.SQLData, [Database.SQLite3.SQLData] #)
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,1*U><L,U><L,U><L,U><L,U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Integer.Type.Integer)
+                   (ww1 :: Data.Text.Internal.Text)
+                   (ww2 :: Data.Text.Internal.Text)
+                   (ww3 :: Data.Text.Internal.Text)
+                   (ww4 :: Data.Text.Internal.Text)
+                   (ww5 :: Data.Text.Internal.Text) ->
+                 (# case GHC.Integer.Type.integerToInt ww of wild { DEFAULT ->
+                    Database.SQLite3.SQLInteger wild },
+                    GHC.Types.:
+                      @ Database.SQLite3.SQLData
+                      (Database.SQLite3.$WSQLText ww1)
+                      (GHC.Types.:
+                         @ Database.SQLite3.SQLData
+                         (Database.SQLite3.$WSQLText ww2)
+                         (GHC.Types.:
+                            @ Database.SQLite3.SQLData
+                            (Database.SQLite3.$WSQLText ww3)
+                            (GHC.Types.:
+                               @ Database.SQLite3.SQLData
+                               (Database.SQLite3.$WSQLText ww4)
+                               (GHC.Types.:
+                                  @ Database.SQLite3.SQLData
+                                  (Database.SQLite3.$WSQLText ww5)
+                                  (GHC.Types.[] @ Database.SQLite3.SQLData))))) #)) -}
+67c23375c046683cb4b0a1a79a9ec020
+  $wformatUser ::
+    Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.ByteString.Internal.ByteString
+  {- Arity: 4,
+     Strictness: <L,1*U(U,U,1*U)><L,1*U(U,U,1*U)><L,1*U(U,U,1*U)><L,1*U(U,U,1*U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Data.Text.Internal.Text)
+                   (ww1 :: Data.Text.Internal.Text)
+                   (ww2 :: Data.Text.Internal.Text)
+                   (ww3 :: Data.Text.Internal.Text) ->
+                 Data.ByteString.Internal.$fMonoidByteString_$cmconcat
+                   (GHC.Types.:
+                      @ Data.ByteString.Internal.ByteString
+                      Main.formatUser9
+                      (GHC.Types.:
+                         @ Data.ByteString.Internal.ByteString
+                         (Data.Text.Encoding.encodeUtf8 ww)
+                         (GHC.Types.:
+                            @ Data.ByteString.Internal.ByteString
+                            Main.formatUser8
+                            (GHC.Types.:
+                               @ Data.ByteString.Internal.ByteString
+                               Main.formatUser7
+                               (GHC.Types.:
+                                  @ Data.ByteString.Internal.ByteString
+                                  (Data.Text.Encoding.encodeUtf8 ww3)
+                                  (GHC.Types.:
+                                     @ Data.ByteString.Internal.ByteString
+                                     Main.formatUser6
+                                     (GHC.Types.:
+                                        @ Data.ByteString.Internal.ByteString
+                                        Main.formatUser5
+                                        (GHC.Types.:
+                                           @ Data.ByteString.Internal.ByteString
+                                           (Data.Text.Encoding.encodeUtf8 ww2)
+                                           (GHC.Types.:
+                                              @ Data.ByteString.Internal.ByteString
+                                              Main.formatUser4
+                                              (GHC.Types.:
+                                                 @ Data.ByteString.Internal.ByteString
+                                                 Main.formatUser3
+                                                 (GHC.Types.:
+                                                    @ Data.ByteString.Internal.ByteString
+                                                    (Data.Text.Encoding.encodeUtf8 ww1)
+                                                    Main.formatUser1)))))))))))) -}
+fc5d16208c06d00fd5828d4368f252f0
+  $whandleQueries ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Foreign.C.Types.CInt
+    -> Network.Socket.Types.Family
+    -> Network.Socket.Types.SocketType
+    -> Network.Socket.Types.ProtocolNumber
+    -> GHC.Prim.MVar#
+         GHC.Prim.RealWorld Network.Socket.Types.SocketStatus
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 7,
+     Strictness: <L,U(U)><L,U(U)><S,U><L,U><L,U(U)><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: Database.SQLite.Simple.Internal.Connection)
+                   (ww :: Foreign.C.Types.CInt)
+                   (ww1 :: Network.Socket.Types.Family)
+                   (ww2 :: Network.Socket.Types.SocketType)
+                   (ww3 :: Network.Socket.Types.ProtocolNumber)
+                   (ww4 :: GHC.Prim.MVar#
+                             GHC.Prim.RealWorld Network.Socket.Types.SocketStatus)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 letrec {
+                   a' :: GHC.Prim.State# GHC.Prim.RealWorld
+                         -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                     case Network.Socket.$waccept
+                            ww
+                            ww1
+                            ww2
+                            ww3
+                            ww4
+                            s of ds1 { (#,#) ipv ipv1 ->
+                     case ipv1 of wild { (,) soc ds ->
+                     case GHC.IO.Handle.Text.hPutStr2
+                            GHC.IO.Handle.FD.stdout
+                            Main.handleQueries8
+                            GHC.Types.True
+                            ipv of ds2 { (#,#) ipv2 ipv3 ->
+                     case Main.handleQueries2 w soc ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                     case soc of ww5 { Network.Socket.Types.MkSocket ww6 ww7 ww8 ww9 ww10 ->
+                     case ww10 of ww11 { GHC.MVar.MVar ww12 ->
+                     case Network.Socket.$wclose
+                            ww6
+                            ww12
+                            ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                     a' ipv6 } } } } } } }
+                 } in
+                 a' w1) -}
+3cd3dfa3249ad605ad1541d2e5030afb
+  $wouter ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><L,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+37613dd9b2e9c5b75991b1fdc5542136
+  data DuplicateData = DuplicateData
+0e6b03095baa2d555297f6f57410e90a
+  data User
+    = User {userId :: GHC.Integer.Type.Integer,
+            username :: Data.Text.Internal.Text,
+            shell :: Data.Text.Internal.Text,
+            homeDirectory :: Data.Text.Internal.Text,
+            realName :: Data.Text.Internal.Text,
+            phone :: Data.Text.Internal.Text}
+19f78cb3f195ba50b59eaa85f51f4ee6
+  type UserRow =
+    (Database.SQLite.Simple.Types.Null, Data.Text.Internal.Text,
+     Data.Text.Internal.Text, Data.Text.Internal.Text,
+     Data.Text.Internal.Text, Data.Text.Internal.Text)
+f7a6ab3e8b65c2ae983dc0966e86d601
+  allUsers :: Database.SQLite.Simple.Types.Query
+  {- Unfolding: InlineRule (0, True, True)
+                Main.allUsers1
+                  `cast`
+                (Sym (Database.SQLite.Simple.Types.N:Query[0])) -}
+adfccd8086f469d1d775f8a90cb9a56a
+  allUsers1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "SELECT * FROM users"#) -}
+5a9d7d4694de1555611a550703957db6
+  createDatabase :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.createDatabase1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+177c3512dd0140dde170756531b40760
+  createDatabase1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Database.SQLite.Simple.open1
+                        Main.createDatabase12
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Main.createDatabase11 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 case Database.SQLite.Simple.$wexecute_
+                        ipv1
+                        ww1
+                        ww2
+                        ww3
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case Main.createDatabase10 of ww4 { Data.Text.Internal.Text ww5 ww6 ww7 ->
+                 case Database.SQLite.Simple.$wwithStatementParams
+                        @ Main.UserRow
+                        @ ()
+                        Main.createDatabase9
+                          `cast`
+                        (Sym (Database.SQLite.Simple.ToRow.N:ToRow[0]
+                                  <(Database.SQLite.Simple.Types.Null, Data.Text.Internal.Text,
+                                    Data.Text.Internal.Text, Data.Text.Internal.Text,
+                                    Data.Text.Internal.Text, Data.Text.Internal.Text)>_N))
+                        ipv1
+                        ww5
+                        ww6
+                        ww7
+                        Main.createDatabase3
+                        Database.SQLite.Simple.execute2
+                          `cast`
+                        (<Database.SQLite.Simple.Statement>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case Main.allUsers1 of ww8 { Data.Text.Internal.Text ww9 ww10 ww11 ->
+                 case Database.SQLite.Simple.$wqueryWith_
+                        @ Main.User
+                        Main.$fFromRowUser1
+                          `cast`
+                        (Trans
+                             (<Database.SQLite.Simple.Internal.RowParseRO>_R
+                              ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                            <(GHC.Types.Int, [Database.SQLite3.SQLData])>_N
+                                            <Database.SQLite.Simple.Ok.Ok>_R
+                                            <Main.User>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Database.SQLite.Simple.Internal.RowParseRO>_R
+                                            <Control.Monad.Trans.State.Strict.StateT
+                                               (GHC.Types.Int, [Database.SQLite3.SQLData])
+                                               Database.SQLite.Simple.Ok.Ok>_R
+                                            <Main.User>_N))
+                                  (Sym (Database.SQLite.Simple.Internal.N:RowParser[0]) <Main.User>_N)))
+                        ipv1
+                        ww9
+                        ww10
+                        ww11
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case Main.createDatabase2 ipv7 ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                 Database.SQLite3.close1
+                   ipv1 `cast` (Database.SQLite.Simple.Internal.N:Connection[0])
+                   ipv8 } } } } } } } }) -}
+f2f366e2b3eed2f4197dc4ba5be5e668
+  createDatabase10 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "INSERT INTO users VALUES (?, ?, ?, ?, ?, ?)"#) -}
+04e0ab1b932d5aebe8421fd9ef94ec60
+  createDatabase11 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "\n\
+                   \CREATE TABLE IF NOT EXISTS users\n\
+                   \  (id INTEGER PRIMARY KEY AUTOINCREMENT,\n\
+                   \   username TEXT UNIQUE,\n\
+                   \   shell TEXT,\n\
+                   \   homeDirectory TEXT,\n\
+                   \   realName TEXT,\n\
+                   \   phone TEXT)\n"#) -}
+1be158719d1c7b78b5c862702d64c6a6
+  createDatabase12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "finger.db"#) -}
+a29d9ddea04209c7fb097fe1f73f6d9f
+  createDatabase2 ::
+    [Main.User]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U><S,U> -}
+79ebd13c1ee179e5645b19b074e16974
+  createDatabase3 ::
+    (Database.SQLite.Simple.Types.Null, Data.Text.Internal.Text,
+     Data.Text.Internal.Text, Data.Text.Internal.Text,
+     Data.Text.Internal.Text, Data.Text.Internal.Text)
+  {- Unfolding: ((Database.SQLite.Simple.Types.Null,
+                  Main.createDatabase8, Main.createDatabase7, Main.createDatabase6,
+                  Main.createDatabase5, Main.createDatabase4)) -}
+6a3a2b17c80d8671547c5934c44bf2f7
+  createDatabase4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "000-000-0000"#) -}
+520589dd9126a747aa86c204c0da8521
+  createDatabase5 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Daniel Kimbel"#) -}
+bc8ba73b58d789931008d2c96f6d35da
+  createDatabase6 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "/Users/dkimbel"#) -}
+8448aba9578e5a65aca66b41bcef46ee
+  createDatabase7 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "/bin/zsh"#) -}
+6143dbc8b8332ccae2f751bac88a6b8f
+  createDatabase8 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "dkimbel"#) -}
+5415e2295f520adf2b2528c18d12e79a
+  createDatabase9 ::
+    (Database.SQLite.Simple.Types.Null, Data.Text.Internal.Text,
+     Data.Text.Internal.Text, Data.Text.Internal.Text,
+     Data.Text.Internal.Text, Data.Text.Internal.Text)
+    -> [Database.SQLite3.SQLData]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (w6 :: (Database.SQLite.Simple.Types.Null,
+                           Data.Text.Internal.Text, Data.Text.Internal.Text,
+                           Data.Text.Internal.Text, Data.Text.Internal.Text,
+                           Data.Text.Internal.Text))[OneShot] ->
+                 case w6 of ww { (,,,,,) ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 GHC.Types.:
+                   @ Database.SQLite3.SQLData
+                   Database.SQLite3.SQLNull
+                   (GHC.Types.:
+                      @ Database.SQLite3.SQLData
+                      (Database.SQLite3.$WSQLText ww2)
+                      (GHC.Types.:
+                         @ Database.SQLite3.SQLData
+                         (Database.SQLite3.$WSQLText ww3)
+                         (GHC.Types.:
+                            @ Database.SQLite3.SQLData
+                            (Database.SQLite3.$WSQLText ww4)
+                            (GHC.Types.:
+                               @ Database.SQLite3.SQLData
+                               (Database.SQLite3.$WSQLText ww5)
+                               (GHC.Types.:
+                                  @ Database.SQLite3.SQLData
+                                  (Database.SQLite3.$WSQLText ww6)
+                                  (GHC.Types.[] @ Database.SQLite3.SQLData)))))) }) -}
+462f183c122f896f3dc56744e95ea890
+  createUsers :: Database.SQLite.Simple.Types.Query
+  {- Unfolding: InlineRule (0, True, True)
+                Main.createDatabase11
+                  `cast`
+                (Sym (Database.SQLite.Simple.Types.N:Query[0])) -}
+d35f010ad5cbbf1f5c280a7931e2642a
+  formatStr :: GHC.Base.String -> Data.ByteString.Internal.ByteString
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (s :: GHC.Base.String) ->
+                 case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.Text.Internal.Text
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                10#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         Main.$wouter ipv1 4# s 0# ipv }) of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Data.Text.Encoding.$wencodeUtf8 ww1 ww2 ww3 } }) -}
+a8ee93e1128581864fba34d27674a6dc
+  formatUser :: Main.User -> Data.ByteString.Internal.ByteString
+  {- Arity: 1,
+     Strictness: <S,1*U(A,1*U(U,U,1*U),1*U(U,U,1*U),1*U(U,U,1*U),1*U(U,U,1*U),A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Main.User) ->
+                 case w of ww { Main.User ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 Main.$wformatUser ww2 ww3 ww4 ww5 }) -}
+91de765f646eadffd49a94b8308034c4
+  formatUser1 :: [Data.ByteString.Internal.ByteString]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.ByteString.Internal.ByteString
+                   Main.formatUser2
+                   (GHC.Types.[] @ Data.ByteString.Internal.ByteString)) -}
+84cb7d1a7d28ca80a681ff0ed6d23cc5
+  formatUser2 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                 let {
+                   addr# :: GHC.Prim.Addr# = "\n"#
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.1@bytestring-0.10.8.1 strlen GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld,
+                                                                                        GHC.Prim.Word# #)}
+                        addr#
+                        ipv of wild { (#,#) ds3 ds4 ->
+                 Data.ByteString.Internal.PS
+                   addr#
+                   (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                   0#
+                   (GHC.Prim.word2Int# ds4) } }) -}
+427d28f5f3a831ffa85b9baa536aa88e
+  formatUser3 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                 let {
+                   addr# :: GHC.Prim.Addr# = "Shell: "#
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.1@bytestring-0.10.8.1 strlen GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld,
+                                                                                        GHC.Prim.Word# #)}
+                        addr#
+                        ipv of wild { (#,#) ds3 ds4 ->
+                 Data.ByteString.Internal.PS
+                   addr#
+                   (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                   0#
+                   (GHC.Prim.word2Int# ds4) } }) -}
+15d6703dcf8d19267445641931aea75e
+  formatUser4 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                 let {
+                   addr# :: GHC.Prim.Addr# = "\t\t"#
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.1@bytestring-0.10.8.1 strlen GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld,
+                                                                                        GHC.Prim.Word# #)}
+                        addr#
+                        ipv of wild { (#,#) ds3 ds4 ->
+                 Data.ByteString.Internal.PS
+                   addr#
+                   (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                   0#
+                   (GHC.Prim.word2Int# ds4) } }) -}
+b775da0f389b9e3deec83b3dce6742c0
+  formatUser5 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                 let {
+                   addr# :: GHC.Prim.Addr# = "Directory: "#
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.1@bytestring-0.10.8.1 strlen GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld,
+                                                                                        GHC.Prim.Word# #)}
+                        addr#
+                        ipv of wild { (#,#) ds3 ds4 ->
+                 Data.ByteString.Internal.PS
+                   addr#
+                   (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                   0#
+                   (GHC.Prim.word2Int# ds4) } }) -}
+cc6ce96c180ed673e5135cca694b1bb1
+  formatUser6 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                 let {
+                   addr# :: GHC.Prim.Addr# = "\n"#
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.1@bytestring-0.10.8.1 strlen GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld,
+                                                                                        GHC.Prim.Word# #)}
+                        addr#
+                        ipv of wild { (#,#) ds3 ds4 ->
+                 Data.ByteString.Internal.PS
+                   addr#
+                   (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                   0#
+                   (GHC.Prim.word2Int# ds4) } }) -}
+b0b1fce25614fd31ad64a9760b7daa54
+  formatUser7 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                 let {
+                   addr# :: GHC.Prim.Addr# = "Name: "#
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.1@bytestring-0.10.8.1 strlen GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld,
+                                                                                        GHC.Prim.Word# #)}
+                        addr#
+                        ipv of wild { (#,#) ds3 ds4 ->
+                 Data.ByteString.Internal.PS
+                   addr#
+                   (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                   0#
+                   (GHC.Prim.word2Int# ds4) } }) -}
+df25871efc1da47c526a9d554ca6dc87
+  formatUser8 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                 let {
+                   addr# :: GHC.Prim.Addr# = "\t\t\t\t"#
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.1@bytestring-0.10.8.1 strlen GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld,
+                                                                                        GHC.Prim.Word# #)}
+                        addr#
+                        ipv of wild { (#,#) ds3 ds4 ->
+                 Data.ByteString.Internal.PS
+                   addr#
+                   (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                   0#
+                   (GHC.Prim.word2Int# ds4) } }) -}
+8e4f20a084914d26add2c38b190f041d
+  formatUser9 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                 let {
+                   addr# :: GHC.Prim.Addr# = "Login: "#
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.1@bytestring-0.10.8.1 strlen GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld,
+                                                                                        GHC.Prim.Word# #)}
+                        addr#
+                        ipv of wild { (#,#) ds3 ds4 ->
+                 Data.ByteString.Internal.PS
+                   addr#
+                   (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                   0#
+                   (GHC.Prim.word2Int# ds4) } }) -}
+d4fe6eb5263b873e6d2825ca29f45299
+  getUser ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Data.Text.Internal.Text
+    -> GHC.Types.IO (GHC.Base.Maybe Main.User)
+  {- Arity: 3, Strictness: <L,U(U)><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.getUser1
+                  `cast`
+                (<Database.SQLite.Simple.Internal.Connection>_R
+                 ->_R <Data.Text.Internal.Text>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.Maybe Main.User>_R)) -}
+3d9f83cf6b0a54457bf48a3b91132214
+  getUser1 ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Data.Text.Internal.Text
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Base.Maybe Main.User #)
+  {- Arity: 3, Strictness: <L,U(U)><L,U><S,U>,
+     Unfolding: (\ (conn :: Database.SQLite.Simple.Internal.Connection)
+                   (username1 :: Data.Text.Internal.Text)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Main.getUser4 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 case Database.SQLite.Simple.$wquery
+                        @ (Data.Tuple.Only.Only Data.Text.Internal.Text)
+                        @ Main.User
+                        Main.getUser3
+                          `cast`
+                        (Sym (Database.SQLite.Simple.ToRow.N:ToRow[0]
+                                  <Data.Tuple.Only.Only Data.Text.Internal.Text>_N))
+                        Main.$fFromRowUser1
+                          `cast`
+                        (Trans
+                             (<Database.SQLite.Simple.Internal.RowParseRO>_R
+                              ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                            <(GHC.Types.Int, [Database.SQLite3.SQLData])>_N
+                                            <Database.SQLite.Simple.Ok.Ok>_R
+                                            <Main.User>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Database.SQLite.Simple.Internal.RowParseRO>_R
+                                            <Control.Monad.Trans.State.Strict.StateT
+                                               (GHC.Types.Int, [Database.SQLite3.SQLData])
+                                               Database.SQLite.Simple.Ok.Ok>_R
+                                            <Main.User>_N))
+                                  (Trans
+                                       (Sym (Database.SQLite.Simple.Internal.N:RowParser[0]))
+                                       (Sym (Database.SQLite.Simple.FromRow.N:FromRow[0])) <Main.User>_N)))
+                        conn
+                        ww1
+                        ww2
+                        ww3
+                        username1
+                          `cast`
+                        (Sym (Data.Tuple.Only.N:Only[0] <Data.Text.Internal.Text>_R))
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   [] -> (# ipv, GHC.Base.Nothing @ Main.User #)
+                   : user ds
+                   -> case ds of wild1 {
+                        [] -> (# ipv, GHC.Base.Just @ Main.User user #)
+                        : ipv2 ipv3
+                        -> GHC.Prim.raiseIO#
+                             @ GHC.Exception.SomeException
+                             @ (GHC.Base.Maybe Main.User)
+                             Main.getUser2
+                             ipv } } } }) -}
+9d63444cbd54261b43e871475e8ff33a
+  getUser2 :: GHC.Exception.SomeException
+  {- Unfolding: (Main.$fExceptionDuplicateData_$ctoException
+                   Main.DuplicateData) -}
+d39b1c8250f779c6903b78633f01622f
+  getUser3 ::
+    Data.Tuple.Only.Only Data.Text.Internal.Text
+    -> [Database.SQLite3.SQLData]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Tuple.Only.Only Data.Text.Internal.Text) ->
+                 GHC.Types.:
+                   @ Database.SQLite3.SQLData
+                   (Database.SQLite3.$WSQLText
+                      ds `cast` (Data.Tuple.Only.N:Only[0] <Data.Text.Internal.Text>_R))
+                   (GHC.Types.[] @ Database.SQLite3.SQLData)) -}
+5d7c789b0c101d6c288d2f00f225b8bb
+  getUser4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "SELECT * FROM users WHERE username = ?"#) -}
+7a876692de1b75b1079096ea916b791c
+  getUserQuery :: Database.SQLite.Simple.Types.Query
+  {- Unfolding: InlineRule (0, True, True)
+                Main.getUser4
+                  `cast`
+                (Sym (Database.SQLite.Simple.Types.N:Query[0])) -}
+58a3751b6f2204f4fb2be27e91021444
+  handleQueries ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Network.Socket.Types.Socket -> GHC.Types.IO ()
+  {- Arity: 3,
+     Strictness: <L,U(U)><S(LSLLS(S)),U(U(U),U,U,U(U),U(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.handleQueries1
+                  `cast`
+                (<Database.SQLite.Simple.Internal.Connection>_R
+                 ->_R <Network.Socket.Types.Socket>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+5d69e26cf70a1a4cb863ab62dc00b36a
+  handleQueries1 ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Network.Socket.Types.Socket
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3,
+     Strictness: <L,U(U)><S(LSLLS(S)),U(U(U),U,U,U(U),U(U))><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Database.SQLite.Simple.Internal.Connection)
+                   (w1 :: Network.Socket.Types.Socket)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1 of ww { Network.Socket.Types.MkSocket ww1 ww2 ww3 ww4 ww5 ->
+                 case ww5 of ww6 { GHC.MVar.MVar ww7 ->
+                 Main.$whandleQueries w ww1 ww2 ww3 ww4 ww7 w2 } }) -}
+fa8ff5cd24c3526436b9b5cec509d353
+  handleQueries2 ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Network.Socket.Types.Socket
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U(U)><L,U(U(U),A,A,A,A)><S,U>,
+     Unfolding: (\ (dbConn :: Database.SQLite.Simple.Internal.Connection)
+                   (soc :: Network.Socket.Types.Socket)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Network.Socket.ByteString.$wrecv
+                        soc
+                        1024#
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                 case Main.handleQueries7 of wild1 { Data.ByteString.Internal.PS dt4 dt5 dt6 dt7 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim./=# dt3 dt7) of wild2 {
+                   GHC.Types.False
+                   -> let {
+                        $j :: GHC.Prim.Void#
+                              -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                          {- Arity: 1, Strictness: <L,A> -}
+                        = \ (w :: GHC.Prim.Void#)[OneShot] ->
+                          case Data.ByteString.Internal.$wcompareBytes
+                                 dt
+                                 dt1
+                                 dt2
+                                 dt3
+                                 dt4
+                                 dt5
+                                 dt6
+                                 dt7 of wild4 {
+                            DEFAULT
+                            -> Main.handleQueries6
+                                 dbConn
+                                 soc
+                                 (Data.Text.Encoding.$wdecodeUtf8With
+                                    Data.Text.Encoding.Error.strictDecode
+                                    dt
+                                    dt1
+                                    dt2
+                                    dt3)
+                                 ipv
+                            GHC.Types.EQ -> Main.handleQueries3 dbConn soc ipv }
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqAddr# dt dt4) of wild4 {
+                        GHC.Types.False -> $j GHC.Prim.void#
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# dt2 dt6) of wild3 {
+                             GHC.Types.False -> $j GHC.Prim.void#
+                             GHC.Types.True -> Main.handleQueries3 dbConn soc ipv } }
+                   GHC.Types.True
+                   -> Main.handleQueries6
+                        dbConn
+                        soc
+                        (Data.Text.Encoding.$wdecodeUtf8With
+                           Data.Text.Encoding.Error.strictDecode
+                           dt
+                           dt1
+                           dt2
+                           dt3)
+                        ipv } } } }) -}
+8e5383d63c5fe914b3670a8af6a688cb
+  handleQueries3 ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Network.Socket.Types.Socket
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U(U)><L,1*U(U(U),A,A,A,A)><S,U>,
+     Unfolding: (\ (dbConn :: Database.SQLite.Simple.Internal.Connection)
+                   (soc :: Network.Socket.Types.Socket)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Main.allUsers1 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 case Database.SQLite.Simple.$wqueryWith_
+                        @ Main.User
+                        Main.$fFromRowUser1
+                          `cast`
+                        (Trans
+                             (<Database.SQLite.Simple.Internal.RowParseRO>_R
+                              ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                            <(GHC.Types.Int, [Database.SQLite3.SQLData])>_N
+                                            <Database.SQLite.Simple.Ok.Ok>_R
+                                            <Main.User>_N))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Database.SQLite.Simple.Internal.RowParseRO>_R
+                                            <Control.Monad.Trans.State.Strict.StateT
+                                               (GHC.Types.Int, [Database.SQLite3.SQLData])
+                                               Database.SQLite.Simple.Ok.Ok>_R
+                                            <Main.User>_N))
+                                  (Sym (Database.SQLite.Simple.Internal.N:RowParser[0]) <Main.User>_N)))
+                        dbConn
+                        ww1
+                        ww2
+                        ww3
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Base.map
+                        @ Main.User
+                        @ Data.Text.Internal.Text
+                        Main.username
+                        ipv1 of wild {
+                   []
+                   -> case soc of ww4 { Network.Socket.Types.MkSocket ww5 ww6 ww7 ww8 ww9 ->
+                      case Main.handleQueries5 of ww10 { Data.Text.Internal.Text ww11 ww12 ww13 ->
+                      case Data.Text.Encoding.$wencodeUtf8
+                             ww11
+                             ww12
+                             ww13 of ww14 { Data.ByteString.Internal.PS ww15 ww16 ww17 ww18 ->
+                      Network.Socket.ByteString.$wsendAll
+                        ww5
+                        ww15
+                        ww16
+                        ww17
+                        ww18
+                        ipv } } }
+                   : x xs
+                   -> case soc of ww4 { Network.Socket.Types.MkSocket ww5 ww6 ww7 ww8 ww9 ->
+                      case Data.Text.concat
+                             (GHC.Types.:
+                                @ Data.Text.Internal.Text
+                                x
+                                (Data.OldList.prependToAll
+                                   @ Data.Text.Internal.Text
+                                   Main.handleQueries4
+                                   xs)) of ww10 { Data.Text.Internal.Text ww11 ww12 ww13 ->
+                      case Data.Text.Encoding.$wencodeUtf8
+                             ww11
+                             ww12
+                             ww13 of ww14 { Data.ByteString.Internal.PS ww15 ww16 ww17 ww18 ->
+                      Network.Socket.ByteString.$wsendAll
+                        ww5
+                        ww15
+                        ww16
+                        ww17
+                        ww18
+                        ipv } } } } } }) -}
+1f1253e6b32ab08c18f51e034fc439dc
+  handleQueries4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "\n"#) -}
+c7035ad3a32bfbaac8308a1c341e4524
+  handleQueries5 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.concat
+                   (GHC.Types.[] @ Data.Text.Internal.Text)) -}
+be987de2a0b933abc76576bfe5c86cba
+  handleQueries6 ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Network.Socket.Types.Socket
+    -> Data.Text.Internal.Text
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4,
+     Strictness: <L,U(U)><L,1*U(U(U),A,A,A,A)><L,U(U,U,U)><S,U> -}
+33355353dc38b705a2d2d24ead08ef25
+  handleQueries7 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case GHC.Prim.newMutVar#
+                        @ GHC.ForeignPtr.Finalizers
+                        @ GHC.Prim.RealWorld
+                        GHC.ForeignPtr.NoFinalizers
+                        GHC.Prim.realWorld# of ds1 { (#,#) ipv ipv1 ->
+                 let {
+                   addr# :: GHC.Prim.Addr# = "\r\n"#
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.1@bytestring-0.10.8.1 strlen GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld,
+                                                                                        GHC.Prim.Word# #)}
+                        addr#
+                        ipv of wild { (#,#) ds3 ds4 ->
+                 Data.ByteString.Internal.PS
+                   addr#
+                   (GHC.ForeignPtr.PlainForeignPtr ipv1)
+                   0#
+                   (GHC.Prim.word2Int# ds4) } }) -}
+d604d788684b7d918dd3bf604debcd07
+  handleQueries8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Got connection, handling query"#) -}
+fb5df79ae3bf2c05f482c338ab8bcbce
+  handleQuery ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Network.Socket.Types.Socket -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,U(U)><L,U(U(U),A,A,A,A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.handleQueries2
+                  `cast`
+                (<Database.SQLite.Simple.Internal.Connection>_R
+                 ->_R <Network.Socket.Types.Socket>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+27739eef74b9526a27d410bc27910669
+  homeDirectory :: Main.User -> Data.Text.Internal.Text
+  RecSel Left Main.User
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLL),1*U(A,A,A,1*U(U,U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.User) ->
+                 case ds of wild { Main.User ds1 ds2 ds3 ds4 ds5 ds6 -> ds4 }) -}
+c0f93b503baa7bbb7b3a75f1696af90d
+  insertUser :: Database.SQLite.Simple.Types.Query
+  {- Unfolding: InlineRule (0, True, True)
+                Main.createDatabase10
+                  `cast`
+                (Sym (Database.SQLite.Simple.Types.N:Query[0])) -}
+8a67b86b6f7a666055a793ce6542f0c9
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+2a18ce10d6fdac0e7412de2366357f46
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Network.Socket.getAddrInfo1
+                        Main.main5
+                        (GHC.Base.Nothing @ Network.Socket.HostName)
+                        Main.main3
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   []
+                   -> case GHC.List.badHead
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                      of {}
+                   : x ds2
+                   -> case x of ww { Network.Socket.AddrInfo ww1 ww2 ww3 ww4 ww5 ww6 ->
+                      case Network.Socket.$wsocket
+                             ww2
+                             Network.Socket.Types.Stream
+                             0#
+                             ipv of ds3 { (#,#) ipv2 ipv3 ->
+                      case ipv3 of ww7 { Network.Socket.Types.MkSocket ww8 ww9 ww10 ww11 ww12 ->
+                      case ww12 of ww13 { GHC.MVar.MVar ww14 ->
+                      case Network.Socket.$wbind
+                             ww8
+                             ww14
+                             ww5
+                             ipv2 of ds4 { (#,#) ipv4 ipv5 ->
+                      case Network.Socket.$wlisten
+                             ww8
+                             ww14
+                             Main.main2
+                             ipv4 of ds5 { (#,#) ipv6 ipv7 ->
+                      case Database.SQLite.Simple.open1
+                             Main.createDatabase12
+                             ipv6 of ds6 { (#,#) ipv8 ipv9 ->
+                      case Main.$whandleQueries
+                             ipv9
+                             ww8
+                             ww9
+                             ww10
+                             ww11
+                             ww14
+                             ipv8 of ds7 { (#,#) ipv10 ipv11 ->
+                      case ipv9
+                             `cast`
+                           (Trans
+                                (Database.SQLite.Simple.Internal.N:Connection[0])
+                                (Database.SQLite3.Direct.N:Database[0])) of ww15 { GHC.Ptr.Ptr ww16 ->
+                      case Database.SQLite3.$wclose
+                             ww16
+                             ipv10 of ds8 { (#,#) ipv12 ipv13 ->
+                      Network.Socket.$wclose ww8 ww14 ipv12 } } } } } } } } } } } }) -}
+a907be4ac6b0f6bf727cae3cc1eb6075
+  main2 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
+ebbc87e764310363cdfa4c908db44e73
+  main3 :: GHC.Base.Maybe Network.Socket.ServiceName
+  {- Unfolding: (GHC.Base.Just
+                   @ Network.Socket.ServiceName
+                   Main.main4) -}
+e54b7659b9ea2e5abc4bc0285927f0cf
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "79"#) -}
+a2fd4d3876e776e0f74ef21a78ec819c
+  main5 :: GHC.Base.Maybe Network.Socket.AddrInfo
+  {- Unfolding: (GHC.Base.Just
+                   @ Network.Socket.AddrInfo
+                   Main.main6) -}
+2c13b0e7a98eb5efc067904a73a367fa
+  main6 :: Network.Socket.AddrInfo
+  {- Unfolding: (Network.Socket.AddrInfo
+                   Main.main7
+                   Network.Socket.Types.AF_UNSPEC
+                   Network.Socket.Types.NoSocketType
+                   Network.Socket.defaultHints3
+                     `cast`
+                   (Sym (Foreign.C.Types.N:CInt[0]))
+                   Network.Socket.defaultHints2
+                   Network.Socket.defaultHints1) -}
+7df1eebdcf1210d7c0e199125b013411
+  main7 :: [Network.Socket.AddrInfoFlag]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Network.Socket.AddrInfoFlag
+                   Network.Socket.AI_PASSIVE
+                   (GHC.Types.[] @ Network.Socket.AddrInfoFlag)) -}
+70dd1a050b052990f183e27dac1b82d1
+  main8 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+a25983be637e42aec51eccd8eafa7f37
+  phone :: Main.User -> Data.Text.Internal.Text
+  RecSel Left Main.User
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLS),1*U(A,A,A,A,A,1*U(U,U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.User) ->
+                 case ds of wild { Main.User ds1 ds2 ds3 ds4 ds5 ds6 -> ds6 }) -}
+05f4100237462615ff750950900fbd4c
+  realName :: Main.User -> Data.Text.Internal.Text
+  RecSel Left Main.User
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSL),1*U(A,A,A,A,1*U(U,U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.User) ->
+                 case ds of wild { Main.User ds1 ds2 ds3 ds4 ds5 ds6 -> ds5 }) -}
+7e841edabf96aa411e94f87d6ea1546a
+  returnUser ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Network.Socket.Types.Socket
+    -> Data.Text.Internal.Text
+    -> GHC.Types.IO ()
+  {- Arity: 4,
+     Strictness: <L,U(U)><L,1*U(U(U),A,A,A,A)><L,U(U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.handleQueries6
+                  `cast`
+                (<Database.SQLite.Simple.Internal.Connection>_R
+                 ->_R <Network.Socket.Types.Socket>_R
+                 ->_R <Data.Text.Internal.Text>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+f5b7d41edd3f361aba171f8b4d728d2c
+  returnUsers ::
+    Database.SQLite.Simple.Internal.Connection
+    -> Network.Socket.Types.Socket -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,U(U)><L,1*U(U(U),A,A,A,A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.handleQueries3
+                  `cast`
+                (<Database.SQLite.Simple.Internal.Connection>_R
+                 ->_R <Network.Socket.Types.Socket>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+886cf73ea58026ebe34784b4928ca31f
+  shell :: Main.User -> Data.Text.Internal.Text
+  RecSel Left Main.User
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLL),1*U(A,A,1*U(U,U,U),A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.User) ->
+                 case ds of wild { Main.User ds1 ds2 ds3 ds4 ds5 ds6 -> ds3 }) -}
+bed56da4fb481f0cd39ebf5341a45680
+  userId :: Main.User -> GHC.Integer.Type.Integer
+  RecSel Left Main.User
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLL),1*U(1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.User) ->
+                 case ds of wild { Main.User ds1 ds2 ds3 ds4 ds5 ds6 -> ds1 }) -}
+699334b9db04caa3247abe2641a66358
+  username :: Main.User -> Data.Text.Internal.Text
+  RecSel Left Main.User
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLL),1*U(A,1*U(U,U,U),A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.User) ->
+                 case ds of wild { Main.User ds1 ds2 ds3 ds4 ds5 ds6 -> ds2 }) -}
+instance GHC.Classes.Eq [Main.DuplicateData]
+  = Main.$fEqDuplicateData
+instance GHC.Classes.Eq [Main.User] = Main.$fEqUser
+instance GHC.Exception.Exception [Main.DuplicateData]
+  = Main.$fExceptionDuplicateData
+instance Database.SQLite.Simple.FromRow.FromRow [Main.User]
+  = Main.$fFromRowUser
+instance GHC.Show.Show [Main.DuplicateData]
+  = Main.$fShowDuplicateData
+instance GHC.Show.Show [Main.User] = Main.$fShowUser
+instance Database.SQLite.Simple.ToRow.ToRow [Main.User]
+  = Main.$fToRowUser
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

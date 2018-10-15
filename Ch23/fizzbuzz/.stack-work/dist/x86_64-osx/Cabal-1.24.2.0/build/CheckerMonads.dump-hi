@@ -1,0 +1,3443 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-07 23:08:39.127461 UTC
+
+interface checkerMonads-0.1.0.0-1dUTmT0lVnoKvZ36kJZsPa:CheckerMonads [orphan module] 8002
+  interface hash: 9775ef53d89f2252cea11fcf7d79722a
+  ABI hash: c1d9e6549f04f170e22daf7cd4c73679
+  export-list hash: 56d8988170769f0836682b848ee6d935
+  orphan hash: 08c057216533154180625ee785ec5b5e
+  flag hash: 6fc74547fbd72660fbdc96d0ba10d9b2
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  CheckerMonads.append
+  CheckerMonads.concat'
+  CheckerMonads.eitherToValid
+  CheckerMonads.errorsGen
+  CheckerMonads.flatMap
+  CheckerMonads.fold
+  CheckerMonads.funcsApplied
+  CheckerMonads.functions
+  CheckerMonads.listGen
+  CheckerMonads.main
+  CheckerMonads.repeat'
+  CheckerMonads.take'
+  CheckerMonads.validToEither
+  CheckerMonads.validationGen
+  CheckerMonads.values
+  CheckerMonads.z
+  CheckerMonads.z'
+  CheckerMonads.z''
+  CheckerMonads.zAp
+  CheckerMonads.zAp'
+  CheckerMonads.zipListGen
+  CheckerMonads.zipWith'
+  CheckerMonads.Errors{CheckerMonads.DividedByZero CheckerMonads.MooglesChewedWires CheckerMonads.StackOverflow}
+  CheckerMonads.List{CheckerMonads.Cons CheckerMonads.Nil}
+  CheckerMonads.Validation{CheckerMonads.Failure' CheckerMonads.Success'}
+  CheckerMonads.ZipList'{CheckerMonads.ZipList'}
+module dependencies:
+package dependencies: QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      checkers-0.4.7@checkers-0.4.7-JCilnLl5HALEbvtY44GPJt
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1 pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      template-haskell-2.11.1.0
+                      tf-random-0.5@tf-random-0.5-CJZw1ZWS5MOJlR60HqKEZL
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-4.9.1.0:Text.Show.Functions
+         checkers-0.4.7@checkers-0.4.7-JCilnLl5HALEbvtY44GPJt:Test.QuickCheck.Checkers
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck 7a1791e2e66f06ce3b95a443f0d4b1ed
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Arbitrary 7186418da62e356916f17711482dca2f
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Gen 8c21a18006b7ca28eeb63c6653bc55ab
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:Data.Monoid 51cc9cd8c130d49ba96b7c2c2406022b
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  checkers-0.4.7@checkers-0.4.7-JCilnLl5HALEbvtY44GPJt:Test.QuickCheck.Checkers c0d9f231420cecf268fbc6cdcc71847d
+import  -/  checkers-0.4.7@checkers-0.4.7-JCilnLl5HALEbvtY44GPJt:Test.QuickCheck.Classes c5fcc590b7abd6f25ab55fae9d49e81c
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+83443204ef0d13f857f5ec1189e23abe
+  $fApplicativeList :: GHC.Base.Applicative CheckerMonads.List
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ CheckerMonads.List
+                  CheckerMonads.$fFunctorList
+                  CheckerMonads.$fApplicativeList1
+                  CheckerMonads.$fApplicativeList_$c<*>
+                  CheckerMonads.$fApplicativeList_$c*>
+                  CheckerMonads.$fApplicativeList_$c<* -}
+83443204ef0d13f857f5ec1189e23abe
+  $fApplicativeList1 :: a -> CheckerMonads.List a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: a) ->
+                 CheckerMonads.Cons @ a x (CheckerMonads.Nil @ a)) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fApplicativeList_$c*> ::
+    CheckerMonads.List a
+    -> CheckerMonads.List b -> CheckerMonads.List b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (eta :: CheckerMonads.List a)
+                   (eta1 :: CheckerMonads.List b) ->
+                 CheckerMonads.$fApplicativeList_$c<*>
+                   @ b
+                   @ b
+                   (CheckerMonads.$fApplicativeList_$cfmap
+                      @ a
+                      @ (b -> b)
+                      (\ (ds :: a) (eta2 :: b) -> eta2)
+                      eta)
+                   eta1) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fApplicativeList_$c<* ::
+    CheckerMonads.List a
+    -> CheckerMonads.List b -> CheckerMonads.List a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (eta :: CheckerMonads.List a)
+                   (eta1 :: CheckerMonads.List b) ->
+                 CheckerMonads.$fApplicativeList_$c<*>
+                   @ b
+                   @ a
+                   (CheckerMonads.$fApplicativeList_$cfmap
+                      @ a
+                      @ (b -> a)
+                      (GHC.Base.const @ a @ b)
+                      eta)
+                   eta1) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fApplicativeList_$c<*> ::
+    CheckerMonads.List (a -> b)
+    -> CheckerMonads.List a -> CheckerMonads.List b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+83443204ef0d13f857f5ec1189e23abe
+  $fApplicativeList_$cfmap ::
+    (a -> b) -> CheckerMonads.List a -> CheckerMonads.List b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation ::
+    GHC.Base.Monoid e =>
+    GHC.Base.Applicative (CheckerMonads.Validation e)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ e ($dMonoid :: GHC.Base.Monoid e).
+                  @ (CheckerMonads.Validation e)
+                  (CheckerMonads.$fApplicativeValidation_$cp1Applicative
+                     @ e
+                     $dMonoid)
+                  (CheckerMonads.$fApplicativeValidation_$cpure @ e $dMonoid)
+                  (CheckerMonads.$fApplicativeValidation_$c<*> @ e $dMonoid)
+                  (CheckerMonads.$fApplicativeValidation_$c*> @ e $dMonoid)
+                  (CheckerMonads.$fApplicativeValidation_$c<* @ e $dMonoid) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation1 ::
+    CheckerMonads.Validation [CheckerMonads.Errors] (a -> b)
+    -> CheckerMonads.Validation [CheckerMonads.Errors] a
+    -> CheckerMonads.Validation [CheckerMonads.Errors] b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (ds :: CheckerMonads.Validation [CheckerMonads.Errors] (a -> b))
+                   (ds1 :: CheckerMonads.Validation [CheckerMonads.Errors] a) ->
+                 case ds of wild {
+                   CheckerMonads.Failure' e0
+                   -> case ds1 of wild1 {
+                        CheckerMonads.Failure' e1
+                        -> CheckerMonads.Failure'
+                             @ [CheckerMonads.Errors]
+                             @ b
+                             (GHC.Base.++ @ CheckerMonads.Errors e0 e1)
+                        CheckerMonads.Success' ipv
+                        -> CheckerMonads.Failure' @ [CheckerMonads.Errors] @ b e0 }
+                   CheckerMonads.Success' ipv
+                   -> case ds1 of wild1 {
+                        CheckerMonads.Failure' e
+                        -> CheckerMonads.Failure' @ [CheckerMonads.Errors] @ b e
+                        CheckerMonads.Success' ipv1
+                        -> CheckerMonads.Success'
+                             @ [CheckerMonads.Errors]
+                             @ b
+                             (ipv ipv1) } }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation_$c*> ::
+    GHC.Base.Monoid e =>
+    forall a b.
+    CheckerMonads.Validation e a
+    -> CheckerMonads.Validation e b -> CheckerMonads.Validation e b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ e
+                   ($dMonoid :: GHC.Base.Monoid e)
+                   @ a
+                   @ b
+                   (eta :: CheckerMonads.Validation e a)
+                   (eta1 :: CheckerMonads.Validation e b) ->
+                 case eta of wild {
+                   CheckerMonads.Failure' e1
+                   -> CheckerMonads.$fApplicativeValidation_$c<*>
+                        @ e
+                        $dMonoid
+                        @ b
+                        @ b
+                        (CheckerMonads.Failure' @ e @ (b -> b) e1)
+                        eta1
+                   CheckerMonads.Success' a1
+                   -> CheckerMonads.$fApplicativeValidation_$c<*>
+                        @ e
+                        $dMonoid
+                        @ b
+                        @ b
+                        (CheckerMonads.Success' @ e @ (b -> b) (GHC.Base.breakpoint @ b))
+                        eta1 }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation_$c<* ::
+    GHC.Base.Monoid e =>
+    forall a b.
+    CheckerMonads.Validation e a
+    -> CheckerMonads.Validation e b -> CheckerMonads.Validation e a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ e
+                   ($dMonoid :: GHC.Base.Monoid e)
+                   @ a
+                   @ b
+                   (eta :: CheckerMonads.Validation e a)
+                   (eta1 :: CheckerMonads.Validation e b) ->
+                 case eta of wild {
+                   CheckerMonads.Failure' e1
+                   -> CheckerMonads.$fApplicativeValidation_$c<*>
+                        @ e
+                        $dMonoid
+                        @ b
+                        @ a
+                        (CheckerMonads.Failure' @ e @ (b -> a) e1)
+                        eta1
+                   CheckerMonads.Success' a1
+                   -> CheckerMonads.$fApplicativeValidation_$c<*>
+                        @ e
+                        $dMonoid
+                        @ b
+                        @ a
+                        (CheckerMonads.Success' @ e @ (b -> a) (\ (ds :: b) -> a1))
+                        eta1 }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation_$c<*> ::
+    GHC.Base.Monoid e =>
+    forall a b.
+    CheckerMonads.Validation e (a -> b)
+    -> CheckerMonads.Validation e a -> CheckerMonads.Validation e b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ e
+                   ($dMonoid :: GHC.Base.Monoid e)
+                   @ a
+                   @ b
+                   (ds :: CheckerMonads.Validation e (a -> b))
+                   (ds1 :: CheckerMonads.Validation e a) ->
+                 case ds of wild {
+                   CheckerMonads.Failure' e0
+                   -> case ds1 of wild1 {
+                        CheckerMonads.Failure' e1
+                        -> CheckerMonads.Failure'
+                             @ e
+                             @ b
+                             (GHC.Base.mappend @ e $dMonoid e0 e1)
+                        CheckerMonads.Success' ipv -> CheckerMonads.Failure' @ e @ b e0 }
+                   CheckerMonads.Success' ipv
+                   -> case ds1 of wild1 {
+                        CheckerMonads.Failure' e1 -> CheckerMonads.Failure' @ e @ b e1
+                        CheckerMonads.Success' ipv1
+                        -> CheckerMonads.Success' @ e @ b (ipv ipv1) } }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation_$cp1Applicative ::
+    GHC.Base.Monoid e => GHC.Base.Functor (CheckerMonads.Validation e)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ e ($dMonoid :: GHC.Base.Monoid e) ->
+                 CheckerMonads.$fFunctorValidation @ e) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation_$cpure ::
+    GHC.Base.Monoid e => forall a. a -> CheckerMonads.Validation e a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ e ($dMonoid :: GHC.Base.Monoid e) @ a (eta :: a) ->
+                 CheckerMonads.Success' @ e @ a eta) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation_$s$c*> ::
+    CheckerMonads.Validation [CheckerMonads.Errors] a
+    -> CheckerMonads.Validation [CheckerMonads.Errors] b
+    -> CheckerMonads.Validation [CheckerMonads.Errors] b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (eta :: CheckerMonads.Validation [CheckerMonads.Errors] a)
+                   (eta1 :: CheckerMonads.Validation [CheckerMonads.Errors] b) ->
+                 case eta of wild {
+                   CheckerMonads.Failure' e
+                   -> CheckerMonads.$fApplicativeValidation1
+                        @ b
+                        @ b
+                        (CheckerMonads.Failure' @ [CheckerMonads.Errors] @ (b -> b) e)
+                        eta1
+                   CheckerMonads.Success' a1
+                   -> CheckerMonads.$fApplicativeValidation1
+                        @ b
+                        @ b
+                        (CheckerMonads.Success'
+                           @ [CheckerMonads.Errors]
+                           @ (b -> b)
+                           (GHC.Base.breakpoint @ b))
+                        eta1 }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation_$s$c<* ::
+    CheckerMonads.Validation [CheckerMonads.Errors] a
+    -> CheckerMonads.Validation [CheckerMonads.Errors] b
+    -> CheckerMonads.Validation [CheckerMonads.Errors] a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (eta :: CheckerMonads.Validation [CheckerMonads.Errors] a)
+                   (eta1 :: CheckerMonads.Validation [CheckerMonads.Errors] b) ->
+                 case eta of wild {
+                   CheckerMonads.Failure' e
+                   -> CheckerMonads.$fApplicativeValidation1
+                        @ b
+                        @ a
+                        (CheckerMonads.Failure' @ [CheckerMonads.Errors] @ (b -> a) e)
+                        eta1
+                   CheckerMonads.Success' a1
+                   -> CheckerMonads.$fApplicativeValidation1
+                        @ b
+                        @ a
+                        (CheckerMonads.Success'
+                           @ [CheckerMonads.Errors]
+                           @ (b -> a)
+                           (\ (ds :: b) -> a1))
+                        eta1 }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation_$s$cp1Applicative ::
+    GHC.Base.Functor (CheckerMonads.Validation [CheckerMonads.Errors])
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                (CheckerMonads.$fFunctorValidation @ [CheckerMonads.Errors]) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation_$s$cpure ::
+    a -> CheckerMonads.Validation [CheckerMonads.Errors] a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (0, True, True)
+                (CheckerMonads.Success' @ [CheckerMonads.Errors]) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fApplicativeValidation_$s$fApplicativeValidation ::
+    GHC.Base.Applicative
+      (CheckerMonads.Validation [CheckerMonads.Errors])
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (CheckerMonads.Validation [CheckerMonads.Errors])
+                  CheckerMonads.$fApplicativeValidation_$s$cp1Applicative
+                  CheckerMonads.$fApplicativeValidation_$s$cpure
+                  CheckerMonads.$fApplicativeValidation1
+                  CheckerMonads.$fApplicativeValidation_$s$c*>
+                  CheckerMonads.$fApplicativeValidation_$s$c<* -}
+915eff50066bcbf94d47d12af2494ff5
+  $fApplicativeZipList' ::
+    GHC.Base.Applicative CheckerMonads.ZipList'
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ CheckerMonads.ZipList'
+                  CheckerMonads.$fFunctorZipList'
+                  CheckerMonads.$fApplicativeZipList'_$cpure
+                  CheckerMonads.$fApplicativeZipList'_$c<*>
+                  CheckerMonads.$fApplicativeZipList'_$c*>
+                  CheckerMonads.$fApplicativeZipList'_$c<* -}
+b1eb532038754586b7abeefb52cca908
+  $fApplicativeZipList'1 :: a -> b -> b
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ @ b @ a (ds :: a) (eta :: b) -> eta) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fApplicativeZipList'_$c*> ::
+    CheckerMonads.ZipList' a
+    -> CheckerMonads.ZipList' b -> CheckerMonads.ZipList' b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (eta :: CheckerMonads.ZipList' a)
+                   (eta1 :: CheckerMonads.ZipList' b) ->
+                 case CheckerMonads.$fApplicativeList_$cfmap
+                        @ a
+                        @ (b -> b)
+                        (CheckerMonads.$fApplicativeZipList'1 @ b @ a)
+                        eta `cast` (CheckerMonads.N:ZipList'[0] <a>_N) of wild {
+                   CheckerMonads.Nil
+                   -> (CheckerMonads.Nil @ b)
+                        `cast`
+                      (Sym (CheckerMonads.N:ZipList'[0]) <b>_N)
+                   CheckerMonads.Cons ipv ipv1
+                   -> case eta1 `cast` (CheckerMonads.N:ZipList'[0] <b>_N) of wild1 {
+                        CheckerMonads.Nil
+                        -> (CheckerMonads.Nil @ b)
+                             `cast`
+                           (Sym (CheckerMonads.N:ZipList'[0]) <b>_N)
+                        CheckerMonads.Cons ipv2 ipv3
+                        -> (CheckerMonads.zipWith'
+                              @ (b -> b)
+                              @ b
+                              @ b
+                              (GHC.Base.$ @ 'GHC.Types.PtrRepLifted @ b @ b)
+                              wild
+                              wild1)
+                             `cast`
+                           (Sym (CheckerMonads.N:ZipList'[0]) <b>_N) } }) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fApplicativeZipList'_$c<* ::
+    CheckerMonads.ZipList' a
+    -> CheckerMonads.ZipList' b -> CheckerMonads.ZipList' a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   (eta :: CheckerMonads.ZipList' a)
+                   (eta1 :: CheckerMonads.ZipList' b) ->
+                 case CheckerMonads.$fApplicativeList_$cfmap
+                        @ a
+                        @ (b -> a)
+                        (GHC.Base.const @ a @ b)
+                        eta `cast` (CheckerMonads.N:ZipList'[0] <a>_N) of wild {
+                   CheckerMonads.Nil
+                   -> (CheckerMonads.Nil @ a)
+                        `cast`
+                      (Sym (CheckerMonads.N:ZipList'[0]) <a>_N)
+                   CheckerMonads.Cons ipv ipv1
+                   -> case eta1 `cast` (CheckerMonads.N:ZipList'[0] <b>_N) of wild1 {
+                        CheckerMonads.Nil
+                        -> (CheckerMonads.Nil @ a)
+                             `cast`
+                           (Sym (CheckerMonads.N:ZipList'[0]) <a>_N)
+                        CheckerMonads.Cons ipv2 ipv3
+                        -> (CheckerMonads.zipWith'
+                              @ (b -> a)
+                              @ b
+                              @ a
+                              (GHC.Base.$ @ 'GHC.Types.PtrRepLifted @ b @ a)
+                              wild
+                              wild1)
+                             `cast`
+                           (Sym (CheckerMonads.N:ZipList'[0]) <a>_N) } }) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fApplicativeZipList'_$c<*> ::
+    CheckerMonads.ZipList' (a -> b)
+    -> CheckerMonads.ZipList' a -> CheckerMonads.ZipList' b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (ds :: CheckerMonads.ZipList' (a -> b))
+                   (ds1 :: CheckerMonads.ZipList' a) ->
+                 case ds `cast` (CheckerMonads.N:ZipList'[0] <a -> b>_N) of wild {
+                   CheckerMonads.Nil
+                   -> (CheckerMonads.Nil @ b)
+                        `cast`
+                      (Sym (CheckerMonads.N:ZipList'[0]) <b>_N)
+                   CheckerMonads.Cons ipv ipv1
+                   -> case ds1 `cast` (CheckerMonads.N:ZipList'[0] <a>_N) of wild1 {
+                        CheckerMonads.Nil
+                        -> (CheckerMonads.Nil @ b)
+                             `cast`
+                           (Sym (CheckerMonads.N:ZipList'[0]) <b>_N)
+                        CheckerMonads.Cons ipv2 ipv3
+                        -> (CheckerMonads.zipWith'
+                              @ (a -> b)
+                              @ a
+                              @ b
+                              (GHC.Base.$ @ 'GHC.Types.PtrRepLifted @ a @ b)
+                              wild
+                              wild1)
+                             `cast`
+                           (Sym (CheckerMonads.N:ZipList'[0]) <b>_N) } }) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fApplicativeZipList'_$cpure :: a -> CheckerMonads.ZipList' a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fApplicativeList1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <a>_R ->_R Sym (CheckerMonads.N:ZipList'[0]) <a>_N) -}
+c355d3f1b1968482049617b5de42955d
+  $fArbitraryErrors ::
+    Test.QuickCheck.Arbitrary.Arbitrary CheckerMonads.Errors
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ CheckerMonads.Errors
+                  CheckerMonads.errorsGen
+                  CheckerMonads.$fArbitraryErrors_$cshrink -}
+c355d3f1b1968482049617b5de42955d
+  $fArbitraryErrors_$cshrink ::
+    CheckerMonads.Errors -> [CheckerMonads.Errors]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds1 :: CheckerMonads.Errors) ->
+                 GHC.Types.[] @ CheckerMonads.Errors) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fArbitraryList ::
+    Test.QuickCheck.Arbitrary.Arbitrary a =>
+    Test.QuickCheck.Arbitrary.Arbitrary (CheckerMonads.List a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a).
+                  @ (CheckerMonads.List a)
+                  (CheckerMonads.listGen @ a $dArbitrary)
+                  (CheckerMonads.$fArbitraryList_$cshrink @ a $dArbitrary) -}
+5b55109dcd754a27446de29567d34be1
+  $fArbitraryList1 ::
+    Test.QuickCheck.Arbitrary.Arbitrary
+      (GHC.Types.Int -> GHC.Types.Int)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fArbitraryList_$s$fArbitrary(->) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fArbitraryList_$cshrink ::
+    Test.QuickCheck.Arbitrary.Arbitrary a =>
+    CheckerMonads.List a -> [CheckerMonads.List a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                   (ds1 :: CheckerMonads.List a) ->
+                 GHC.Types.[] @ (CheckerMonads.List a)) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fArbitraryList_$s$cshrink ::
+    CheckerMonads.List GHC.Types.Int
+    -> [CheckerMonads.List GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds1 :: CheckerMonads.List GHC.Types.Int) ->
+                 GHC.Types.[] @ (CheckerMonads.List GHC.Types.Int)) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fArbitraryList_$s$cshrink1 ::
+    CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int)
+    -> [CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds1 :: CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int)) ->
+                 GHC.Types.[]
+                   @ (CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int))) -}
+a26ccecfb0cfc6a77afe1f1ba7582384
+  $fArbitraryList_$s$fArbitrary(->) ::
+    Test.QuickCheck.Arbitrary.Arbitrary
+      (GHC.Types.Int -> GHC.Types.Int)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Types.Int -> GHC.Types.Int)
+                  (Test.QuickCheck.Arbitrary.$fArbitrary(->)_$carbitrary
+                     @ GHC.Types.Int
+                     @ GHC.Types.Int
+                     Test.QuickCheck.Arbitrary.$fCoArbitraryInt_$ccoarbitrary
+                       `cast`
+                     (Sym (Test.QuickCheck.Arbitrary.N:CoArbitrary[0]
+                               <GHC.Types.Int>_N))
+                     Test.QuickCheck.Arbitrary.$fArbitraryInt)
+                  CheckerMonads.$fArbitraryList_$s$fArbitrary(->)_$cshrink -}
+7c04803737ed3cefd151e4fbadcbf31b
+  $fArbitraryList_$s$fArbitrary(->)_$cshrink ::
+    (GHC.Types.Int -> GHC.Types.Int)
+    -> [GHC.Types.Int -> GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds1 :: GHC.Types.Int -> GHC.Types.Int) ->
+                 GHC.Types.[] @ (GHC.Types.Int -> GHC.Types.Int)) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fArbitraryList_$s$fArbitraryList ::
+    Test.QuickCheck.Arbitrary.Arbitrary
+      (CheckerMonads.List GHC.Types.Int)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (CheckerMonads.List GHC.Types.Int)
+                  (CheckerMonads.listGen
+                     @ GHC.Types.Int
+                     Test.QuickCheck.Arbitrary.$fArbitraryInt)
+                  CheckerMonads.$fArbitraryList_$s$cshrink -}
+83443204ef0d13f857f5ec1189e23abe
+  $fArbitraryList_$s$fArbitraryList1 ::
+    Test.QuickCheck.Arbitrary.Arbitrary
+      (CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int))
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int))
+                  (CheckerMonads.listGen
+                     @ (GHC.Types.Int -> GHC.Types.Int)
+                     CheckerMonads.$fArbitraryList1)
+                  CheckerMonads.$fArbitraryList_$s$cshrink1 -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fArbitraryValidation ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Arbitrary.Arbitrary (CheckerMonads.Validation a b)
+  DFunId
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                      ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b).
+                  @ (CheckerMonads.Validation a b)
+                  (CheckerMonads.validationGen @ a @ b $dArbitrary $dArbitrary1)
+                  (CheckerMonads.$fArbitraryValidation_$cshrink
+                     @ a
+                     @ b
+                     $dArbitrary
+                     $dArbitrary1) -}
+164b59822fe0e0e298d5e78edcfdaac1
+  $fArbitraryValidation1 ::
+    Test.QuickCheck.Arbitrary.Arbitrary [CheckerMonads.Errors]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fArbitraryValidation_$s$fArbitrary[] -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fArbitraryValidation_$cshrink ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    CheckerMonads.Validation a b -> [CheckerMonads.Validation a b]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><L,A><L,A>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   @ b
+                   ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                   ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b)
+                   (ds1 :: CheckerMonads.Validation a b) ->
+                 GHC.Types.[] @ (CheckerMonads.Validation a b)) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fArbitraryValidation_$s$cshrink ::
+    CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int
+    -> [CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds1 :: CheckerMonads.Validation
+                             [CheckerMonads.Errors] GHC.Types.Int) ->
+                 GHC.Types.[]
+                   @ (CheckerMonads.Validation
+                        [CheckerMonads.Errors] GHC.Types.Int)) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fArbitraryValidation_$s$cshrink1 ::
+    CheckerMonads.Validation
+      [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int)
+    -> [CheckerMonads.Validation
+          [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds1 :: CheckerMonads.Validation
+                             [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int)) ->
+                 GHC.Types.[]
+                   @ (CheckerMonads.Validation
+                        [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int))) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fArbitraryValidation_$s$fArbitraryValidation ::
+    Test.QuickCheck.Arbitrary.Arbitrary
+      (CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int)
+                  (CheckerMonads.validationGen
+                     @ [CheckerMonads.Errors]
+                     @ GHC.Types.Int
+                     CheckerMonads.$fArbitraryValidation1
+                     Test.QuickCheck.Arbitrary.$fArbitraryInt)
+                  CheckerMonads.$fArbitraryValidation_$s$cshrink -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fArbitraryValidation_$s$fArbitraryValidation1 ::
+    Test.QuickCheck.Arbitrary.Arbitrary
+      (CheckerMonads.Validation
+         [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int))
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (CheckerMonads.Validation
+                       [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int))
+                  (CheckerMonads.validationGen
+                     @ [CheckerMonads.Errors]
+                     @ (GHC.Types.Int -> GHC.Types.Int)
+                     CheckerMonads.$fArbitraryValidation1
+                     CheckerMonads.$fArbitraryList1)
+                  CheckerMonads.$fArbitraryValidation_$s$cshrink1 -}
+36c0c5fa4c5ee27427e8562e8a5cec97
+  $fArbitraryValidation_$s$fArbitrary[] ::
+    Test.QuickCheck.Arbitrary.Arbitrary [CheckerMonads.Errors]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [CheckerMonads.Errors]
+                  (Test.QuickCheck.Arbitrary.$fArbitrary[]_$carbitrary
+                     @ CheckerMonads.Errors
+                     CheckerMonads.$fArbitraryErrors)
+                  CheckerMonads.$fArbitraryValidation_$s$fArbitrary[]_$cshrink -}
+d0f1375e7bb8cecc7d781dd5e76ec57e
+  $fArbitraryValidation_$s$fArbitrary[]_$cshrink ::
+    [CheckerMonads.Errors] -> [[CheckerMonads.Errors]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs1 :: [CheckerMonads.Errors]) ->
+                 Test.QuickCheck.Arbitrary.shrinkList
+                   @ CheckerMonads.Errors
+                   CheckerMonads.$fArbitraryErrors_$cshrink
+                   xs1) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fArbitraryZipList' ::
+    Test.QuickCheck.Arbitrary.Arbitrary a =>
+    Test.QuickCheck.Arbitrary.Arbitrary (CheckerMonads.ZipList' a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a).
+                  @ (CheckerMonads.ZipList' a)
+                  (CheckerMonads.zipListGen @ a $dArbitrary)
+                  (CheckerMonads.$fArbitraryZipList'_$cshrink @ a $dArbitrary) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fArbitraryZipList'_$cshrink ::
+    Test.QuickCheck.Arbitrary.Arbitrary a =>
+    CheckerMonads.ZipList' a -> [CheckerMonads.ZipList' a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                   (ds1 :: CheckerMonads.ZipList' a) ->
+                 GHC.Types.[] @ (CheckerMonads.ZipList' a)) -}
+c355d3f1b1968482049617b5de42955d
+  $fEqErrors :: GHC.Classes.Eq CheckerMonads.Errors
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ CheckerMonads.Errors
+                  CheckerMonads.$fEqErrors_$c==
+                  CheckerMonads.$fEqErrors_$c/= -}
+c355d3f1b1968482049617b5de42955d
+  $fEqErrors_$c/= ::
+    CheckerMonads.Errors -> CheckerMonads.Errors -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: CheckerMonads.Errors) (b :: CheckerMonads.Errors) ->
+                 case a of wild {
+                   CheckerMonads.DividedByZero
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        CheckerMonads.DividedByZero -> GHC.Types.False }
+                   CheckerMonads.StackOverflow
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        CheckerMonads.StackOverflow -> GHC.Types.False }
+                   CheckerMonads.MooglesChewedWires
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        CheckerMonads.MooglesChewedWires -> GHC.Types.False } }) -}
+c355d3f1b1968482049617b5de42955d
+  $fEqErrors_$c== ::
+    CheckerMonads.Errors -> CheckerMonads.Errors -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: CheckerMonads.Errors) (ds1 :: CheckerMonads.Errors) ->
+                 case ds of wild {
+                   CheckerMonads.DividedByZero
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        CheckerMonads.DividedByZero -> GHC.Types.True }
+                   CheckerMonads.StackOverflow
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        CheckerMonads.StackOverflow -> GHC.Types.True }
+                   CheckerMonads.MooglesChewedWires
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        CheckerMonads.MooglesChewedWires -> GHC.Types.True } }) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fEqList ::
+    GHC.Classes.Eq a => GHC.Classes.Eq (CheckerMonads.List a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dEq :: GHC.Classes.Eq a).
+                  @ (CheckerMonads.List a)
+                  (CheckerMonads.$fEqList_$c== @ a $dEq)
+                  (CheckerMonads.$fEqList_$c/= @ a $dEq) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fEqList_$c/= ::
+    GHC.Classes.Eq a =>
+    CheckerMonads.List a -> CheckerMonads.List a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (a1 :: CheckerMonads.List a)
+                   (b :: CheckerMonads.List a) ->
+                 case CheckerMonads.$fEqList_$c== @ a $dEq a1 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fEqList_$c== ::
+    GHC.Classes.Eq a =>
+    CheckerMonads.List a -> CheckerMonads.List a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U> -}
+83443204ef0d13f857f5ec1189e23abe
+  $fEqPropList ::
+    GHC.Classes.Eq a =>
+    Test.QuickCheck.Checkers.EqProp (CheckerMonads.List a)
+  DFunId
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A)><L,1*U><L,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (1, False, True)
+                CheckerMonads.$fEqPropList_$c=-=
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Classes.Eq a>_R
+                 ->_R Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                               <CheckerMonads.List a>_N)) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fEqPropList_$c=-= ::
+    GHC.Classes.Eq a =>
+    CheckerMonads.List a
+    -> CheckerMonads.List a -> Test.QuickCheck.Property.Property
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A)><L,1*U><L,1*U>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (a1 :: CheckerMonads.List a)
+                   (a' :: CheckerMonads.List a) ->
+                 let {
+                   x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                   = Test.QuickCheck.Property.protectResults
+                       (Test.QuickCheck.Property.MkRose
+                          @ Test.QuickCheck.Property.Result
+                          (case CheckerMonads.$fEqList_$c== @ a $dEq a1 a' of wild {
+                             GHC.Types.False -> Test.QuickCheck.Property.counterexample1
+                             GHC.Types.True -> Test.QuickCheck.Property.succeeded })
+                          (GHC.Types.[]
+                             @ (Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result)))
+                 } in
+                 (\ (ds :: Test.QuickCheck.Random.QCGen) (ds1 :: GHC.Types.Int) ->
+                  x1)
+                   `cast`
+                 (Trans
+                      (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                (Test.QuickCheck.Property.N:Prop[0])))
+                      (Sym (Test.QuickCheck.Property.N:Property[0])))) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fEqPropValidation ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    Test.QuickCheck.Checkers.EqProp (CheckerMonads.Validation a b)
+  DFunId
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U><L,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (2, False, True)
+                CheckerMonads.$fEqPropValidation_$c=-=
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <GHC.Classes.Eq a>_R
+                 ->_R <GHC.Classes.Eq b>_R
+                 ->_R Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                               <CheckerMonads.Validation a b>_N)) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fEqPropValidation_$c=-= ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    CheckerMonads.Validation a b
+    -> CheckerMonads.Validation a b
+    -> Test.QuickCheck.Property.Property
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U><L,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dEq :: GHC.Classes.Eq a)
+                   ($dEq1 :: GHC.Classes.Eq b)
+                   (a1 :: CheckerMonads.Validation a b)
+                   (a' :: CheckerMonads.Validation a b) ->
+                 let {
+                   x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                   = Test.QuickCheck.Property.protectResults
+                       (Test.QuickCheck.Property.MkRose
+                          @ Test.QuickCheck.Property.Result
+                          (case a1 of wild {
+                             CheckerMonads.Failure' a2
+                             -> case a' of wild1 {
+                                  CheckerMonads.Failure' b1
+                                  -> case GHC.Classes.== @ a $dEq a2 b1 of wild2 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample1
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded }
+                                  CheckerMonads.Success' ipv
+                                  -> Test.QuickCheck.Property.counterexample1 }
+                             CheckerMonads.Success' a2
+                             -> case a' of wild1 {
+                                  CheckerMonads.Failure' ipv
+                                  -> Test.QuickCheck.Property.counterexample1
+                                  CheckerMonads.Success' b1
+                                  -> case GHC.Classes.== @ b $dEq1 a2 b1 of wild2 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample1
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded } } })
+                          (GHC.Types.[]
+                             @ (Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result)))
+                 } in
+                 (\ (ds :: Test.QuickCheck.Random.QCGen) (ds1 :: GHC.Types.Int) ->
+                  x1)
+                   `cast`
+                 (Trans
+                      (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                (Test.QuickCheck.Property.N:Prop[0])))
+                      (Sym (Test.QuickCheck.Property.N:Property[0])))) -}
+a15b1eebc90f4a653fb9790c556d79bf
+  $fEqPropZipList ::
+    GHC.Classes.Eq a =>
+    Test.QuickCheck.Checkers.EqProp (Control.Applicative.ZipList a)
+  DFunId
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A)><L,1*U><L,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (1, False, True)
+                CheckerMonads.$fEqPropZipList_$c=-=
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Classes.Eq a>_R
+                 ->_R Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                               <Control.Applicative.ZipList a>_N)) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fEqPropZipList' ::
+    GHC.Classes.Eq a =>
+    Test.QuickCheck.Checkers.EqProp (CheckerMonads.ZipList' a)
+  DFunId
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A)><L,1*U><L,1*U>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (1, False, True)
+                CheckerMonads.$fEqPropZipList'_$c=-=
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Classes.Eq a>_R
+                 ->_R Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                               <CheckerMonads.ZipList' a>_N)) -}
+61fb05801d0636763d4ae0ad79d008e3
+  $fEqPropZipList'1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3000#) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fEqPropZipList'_$c=-= ::
+    GHC.Classes.Eq a =>
+    CheckerMonads.ZipList' a
+    -> CheckerMonads.ZipList' a -> Test.QuickCheck.Property.Property
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A)><L,1*U><L,1*U>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (xs1 :: CheckerMonads.ZipList' a)
+                   (ys :: CheckerMonads.ZipList' a) ->
+                 let {
+                   x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                   = Test.QuickCheck.Property.protectResults
+                       (Test.QuickCheck.Property.MkRose
+                          @ Test.QuickCheck.Property.Result
+                          (case CheckerMonads.$fEqList_$c==
+                                  @ a
+                                  $dEq
+                                  (CheckerMonads.take'
+                                     @ a
+                                     CheckerMonads.$fEqPropZipList'1
+                                     xs1 `cast` (CheckerMonads.N:ZipList'[0] <a>_N))
+                                  (CheckerMonads.take'
+                                     @ a
+                                     CheckerMonads.$fEqPropZipList'1
+                                     ys `cast` (CheckerMonads.N:ZipList'[0] <a>_N)) of wild {
+                             GHC.Types.False -> Test.QuickCheck.Property.counterexample1
+                             GHC.Types.True -> Test.QuickCheck.Property.succeeded })
+                          (GHC.Types.[]
+                             @ (Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result)))
+                 } in
+                 (\ (ds :: Test.QuickCheck.Random.QCGen) (ds1 :: GHC.Types.Int) ->
+                  x1)
+                   `cast`
+                 (Trans
+                      (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                (Test.QuickCheck.Property.N:Prop[0])))
+                      (Sym (Test.QuickCheck.Property.N:Property[0])))) -}
+52aaf8be65797480c4029a1dc3425295
+  $fEqPropZipList_$c=-= ::
+    GHC.Classes.Eq a =>
+    Control.Applicative.ZipList a
+    -> Control.Applicative.ZipList a
+    -> Test.QuickCheck.Property.Property
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A)><L,1*U><L,1*U>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (a1 :: Control.Applicative.ZipList a)
+                   (a' :: Control.Applicative.ZipList a) ->
+                 let {
+                   x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                   = Test.QuickCheck.Property.protectResults
+                       (Test.QuickCheck.Property.MkRose
+                          @ Test.QuickCheck.Property.Result
+                          (case GHC.Classes.$fEq[]_$c==
+                                  @ a
+                                  $dEq
+                                  a1 `cast` (Control.Applicative.N:ZipList[0] <a>_N)
+                                  a' `cast` (Control.Applicative.N:ZipList[0] <a>_N) of wild {
+                             GHC.Types.False -> Test.QuickCheck.Property.counterexample1
+                             GHC.Types.True -> Test.QuickCheck.Property.succeeded })
+                          (GHC.Types.[]
+                             @ (Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result)))
+                 } in
+                 (\ (ds :: Test.QuickCheck.Random.QCGen) (ds1 :: GHC.Types.Int) ->
+                  x1)
+                   `cast`
+                 (Trans
+                      (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                (Test.QuickCheck.Property.N:Prop[0])))
+                      (Sym (Test.QuickCheck.Property.N:Property[0])))) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fEqValidation ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq err) =>
+    GHC.Classes.Eq (CheckerMonads.Validation err a)
+  DFunId
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ err
+                      @ a
+                      ($dEq :: GHC.Classes.Eq a)
+                      ($dEq1 :: GHC.Classes.Eq err).
+                  @ (CheckerMonads.Validation err a)
+                  (CheckerMonads.$fEqValidation_$c== @ err @ a $dEq $dEq1)
+                  (CheckerMonads.$fEqValidation_$c/= @ err @ a $dEq $dEq1) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fEqValidation_$c/= ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq err) =>
+    CheckerMonads.Validation err a
+    -> CheckerMonads.Validation err a -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ err
+                   @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   ($dEq1 :: GHC.Classes.Eq err)
+                   (a1 :: CheckerMonads.Validation err a)
+                   (b :: CheckerMonads.Validation err a) ->
+                 case a1 of wild {
+                   CheckerMonads.Failure' a2
+                   -> case b of wild1 {
+                        CheckerMonads.Failure' b1
+                        -> case GHC.Classes.== @ err $dEq1 a2 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        CheckerMonads.Success' ipv -> GHC.Types.True }
+                   CheckerMonads.Success' a2
+                   -> case b of wild1 {
+                        CheckerMonads.Failure' ipv -> GHC.Types.True
+                        CheckerMonads.Success' b1
+                        -> case GHC.Classes.== @ a $dEq a2 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fEqValidation_$c== ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq err) =>
+    CheckerMonads.Validation err a
+    -> CheckerMonads.Validation err a -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: (\ @ err
+                   @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   ($dEq1 :: GHC.Classes.Eq err)
+                   (ds :: CheckerMonads.Validation err a)
+                   (ds1 :: CheckerMonads.Validation err a) ->
+                 case ds of wild {
+                   CheckerMonads.Failure' a1
+                   -> case ds1 of wild1 {
+                        CheckerMonads.Failure' b1 -> GHC.Classes.== @ err $dEq1 a1 b1
+                        CheckerMonads.Success' ipv -> GHC.Types.False }
+                   CheckerMonads.Success' a1
+                   -> case ds1 of wild1 {
+                        CheckerMonads.Failure' ipv -> GHC.Types.False
+                        CheckerMonads.Success' b1 -> GHC.Classes.== @ a $dEq a1 b1 } }) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fEqZipList' ::
+    GHC.Classes.Eq a => GHC.Classes.Eq (CheckerMonads.ZipList' a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dEq :: GHC.Classes.Eq a).
+                  @ (CheckerMonads.ZipList' a)
+                  (CheckerMonads.$fEqZipList'_$c== @ a $dEq)
+                  (CheckerMonads.$fEqZipList'_$c/= @ a $dEq) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fEqZipList'_$c/= ::
+    GHC.Classes.Eq a =>
+    CheckerMonads.ZipList' a
+    -> CheckerMonads.ZipList' a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fEqList_$c/=
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Classes.Eq a>_R
+                 ->_R Sym (CheckerMonads.N:ZipList'[0]) <a>_N
+                 ->_R Sym (CheckerMonads.N:ZipList'[0]) <a>_N
+                 ->_R <GHC.Types.Bool>_R) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fEqZipList'_$c== ::
+    GHC.Classes.Eq a =>
+    CheckerMonads.ZipList' a
+    -> CheckerMonads.ZipList' a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fEqList_$c==
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Classes.Eq a>_R
+                 ->_R Sym (CheckerMonads.N:ZipList'[0]) <a>_N
+                 ->_R Sym (CheckerMonads.N:ZipList'[0]) <a>_N
+                 ->_R <GHC.Types.Bool>_R) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fFunctorList :: GHC.Base.Functor CheckerMonads.List
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ CheckerMonads.List
+                  CheckerMonads.$fApplicativeList_$cfmap
+                  CheckerMonads.$fFunctorList_$c<$ -}
+83443204ef0d13f857f5ec1189e23abe
+  $fFunctorList_$c<$ ::
+    a -> CheckerMonads.List b -> CheckerMonads.List a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (eta :: a) (eta1 :: CheckerMonads.List b) ->
+                 CheckerMonads.$fApplicativeList_$cfmap
+                   @ b
+                   @ a
+                   (\ (ds :: b) -> eta)
+                   eta1) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fFunctorValidation ::
+    GHC.Base.Functor (CheckerMonads.Validation e)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ e.
+                  @ (CheckerMonads.Validation e)
+                  (CheckerMonads.$fFunctorValidation_$cfmap @ e)
+                  (CheckerMonads.$fFunctorValidation_$c<$ @ e) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fFunctorValidation_$c<$ ::
+    a -> CheckerMonads.Validation e b -> CheckerMonads.Validation e a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ e @ a @ b (eta :: a) (ds :: CheckerMonads.Validation e b) ->
+                 case ds of wild {
+                   CheckerMonads.Failure' e1 -> CheckerMonads.Failure' @ e @ a e1
+                   CheckerMonads.Success' a1
+                   -> CheckerMonads.Success' @ e @ a eta }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fFunctorValidation_$cfmap ::
+    (a -> b)
+    -> CheckerMonads.Validation e a -> CheckerMonads.Validation e b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ e
+                   @ a
+                   @ b
+                   (f :: a -> b)
+                   (ds :: CheckerMonads.Validation e a) ->
+                 case ds of wild {
+                   CheckerMonads.Failure' e1 -> CheckerMonads.Failure' @ e @ b e1
+                   CheckerMonads.Success' a1
+                   -> CheckerMonads.Success' @ e @ b (f a1) }) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fFunctorZipList' :: GHC.Base.Functor CheckerMonads.ZipList'
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ CheckerMonads.ZipList'
+                  CheckerMonads.$fFunctorZipList'_$cfmap
+                  CheckerMonads.$fFunctorZipList'_$c<$ -}
+915eff50066bcbf94d47d12af2494ff5
+  $fFunctorZipList'1 ::
+    a -> CheckerMonads.ZipList' b -> CheckerMonads.List a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (eta :: a) (eta1 :: CheckerMonads.ZipList' b) ->
+                 CheckerMonads.$fApplicativeList_$cfmap
+                   @ b
+                   @ a
+                   (\ (ds :: b) -> eta)
+                   eta1 `cast` (CheckerMonads.N:ZipList'[0] <b>_N)) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fFunctorZipList'2 ::
+    (a -> b) -> CheckerMonads.ZipList' a -> CheckerMonads.List b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a @ b (f :: a -> b) (ds :: CheckerMonads.ZipList' a) ->
+                 CheckerMonads.$fApplicativeList_$cfmap
+                   @ a
+                   @ b
+                   f
+                   ds `cast` (CheckerMonads.N:ZipList'[0] <a>_N)) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fFunctorZipList'_$c<$ ::
+    a -> CheckerMonads.ZipList' b -> CheckerMonads.ZipList' a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fFunctorZipList'1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <a>_R
+                 ->_R <CheckerMonads.ZipList' b>_R
+                 ->_R Sym (CheckerMonads.N:ZipList'[0]) <a>_N) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fFunctorZipList'_$cfmap ::
+    (a -> b) -> CheckerMonads.ZipList' a -> CheckerMonads.ZipList' b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fFunctorZipList'2
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <a -> b>_R
+                 ->_R <CheckerMonads.ZipList' a>_R
+                 ->_R Sym (CheckerMonads.N:ZipList'[0]) <b>_N) -}
+73352783c92b7a77598095680d822548
+  $fMonoidZipList ::
+    GHC.Base.Monoid a =>
+    GHC.Base.Monoid (Control.Applicative.ZipList a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dMonoid :: GHC.Base.Monoid a).
+                  @ (Control.Applicative.ZipList a)
+                  (CheckerMonads.$fMonoidZipList_$cmempty @ a $dMonoid)
+                  (CheckerMonads.$fMonoidZipList_$cmappend @ a $dMonoid)
+                  (CheckerMonads.$fMonoidZipList_$cmconcat @ a $dMonoid) -}
+a4fabc863fe1757566efdd692f4d3301
+  $fMonoidZipList1 ::
+    Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+    -> Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+    -> [Data.Monoid.Sum GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ (eta :: Control.Applicative.ZipList
+                             (Data.Monoid.Sum GHC.Types.Int))
+                   (eta1 :: Control.Applicative.ZipList
+                              (Data.Monoid.Sum GHC.Types.Int)) ->
+                 CheckerMonads.$fMonoidZipList_go1
+                   eta
+                     `cast`
+                   (Control.Applicative.N:ZipList[0] <Data.Monoid.Sum
+                                                        GHC.Types.Int>_N)
+                   eta1
+                     `cast`
+                   (Control.Applicative.N:ZipList[0] <Data.Monoid.Sum
+                                                        GHC.Types.Int>_N)) -}
+b68edac254ee28c8dd17f679db47e645
+  $fMonoidZipList2 ::
+    GHC.Base.Monoid a =>
+    Control.Applicative.ZipList a
+    -> Control.Applicative.ZipList a -> [a]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*U,A)><S,1*U><L,1*U>,
+     Unfolding: (\ @ a
+                   ($dMonoid :: GHC.Base.Monoid a)
+                   (eta :: Control.Applicative.ZipList a)
+                   (eta1 :: Control.Applicative.ZipList a) ->
+                 let {
+                   f :: a -> a -> a = GHC.Base.mappend @ a $dMonoid
+                 } in
+                 letrec {
+                   go1 :: [a] -> [a] -> [a] {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
+                   = \ (ds :: [a]) (eta2 :: [a]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ a
+                       : y ys
+                       -> case eta2 of wild1 {
+                            [] -> GHC.Types.[] @ a
+                            : y1 ys1 -> GHC.Types.: @ a (f y y1) (go1 ys ys1) } }
+                 } in
+                 go1
+                   eta `cast` (Control.Applicative.N:ZipList[0] <a>_N)
+                   eta1 `cast` (Control.Applicative.N:ZipList[0] <a>_N)) -}
+3d74596e72fddbe53a7221433c162fff
+  $fMonoidZipList3 :: GHC.Base.Monoid a => [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dMonoid :: GHC.Base.Monoid a) ->
+                 let {
+                   x :: a = GHC.Base.mempty @ a $dMonoid
+                 } in
+                 letrec { xs1 :: [a] = GHC.Types.: @ a x xs1 } in xs1) -}
+a1391145a764b17d581d2e5fa5102b37
+  $fMonoidZipList_$cmappend ::
+    GHC.Base.Monoid a =>
+    Control.Applicative.ZipList a
+    -> Control.Applicative.ZipList a -> Control.Applicative.ZipList a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*U,A)><S,1*U><L,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fMonoidZipList2
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Base.Monoid a>_R
+                 ->_R <Control.Applicative.ZipList a>_R
+                 ->_R <Control.Applicative.ZipList a>_R
+                 ->_R Sym (Control.Applicative.N:ZipList[0]) <a>_N) -}
+011b5a222f040c041bb7e8fa496af8dd
+  $fMonoidZipList_$cmconcat ::
+    GHC.Base.Monoid a =>
+    [Control.Applicative.ZipList a] -> Control.Applicative.ZipList a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U(1*U,U,A)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dMonoid :: GHC.Base.Monoid a)
+                   (eta :: [Control.Applicative.ZipList a]) ->
+                 let {
+                   x :: a = GHC.Base.mempty @ a $dMonoid
+                 } in
+                 letrec {
+                   xs1 :: [a] = GHC.Types.: @ a x xs1
+                 } in
+                 letrec {
+                   go1 :: [Control.Applicative.ZipList a]
+                          -> Control.Applicative.ZipList a
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [Control.Applicative.ZipList a]) ->
+                     case ds of wild {
+                       [] -> xs1 `cast` (Sym (Control.Applicative.N:ZipList[0]) <a>_N)
+                       : y ys
+                       -> (CheckerMonads.$fMonoidZipList2 @ a $dMonoid y (go1 ys))
+                            `cast`
+                          (Sym (Control.Applicative.N:ZipList[0]) <a>_N) }
+                 } in
+                 go1 eta) -}
+e6eec2a85137f83140a726de16e18f8a
+  $fMonoidZipList_$cmempty ::
+    GHC.Base.Monoid a => Control.Applicative.ZipList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(1*U,A,A)>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fMonoidZipList3
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Base.Monoid a>_R
+                 ->_R Sym (Control.Applicative.N:ZipList[0]) <a>_N) -}
+9844a677723c17ec941b600325fcaed5
+  $fMonoidZipList_$s$cmappend ::
+    Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+    -> Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+    -> Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fMonoidZipList1
+                  `cast`
+                (<Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)>_R
+                 ->_R <Control.Applicative.ZipList
+                         (Data.Monoid.Sum GHC.Types.Int)>_R
+                 ->_R Sym (Control.Applicative.N:ZipList[0]) <Data.Monoid.Sum
+                                                                GHC.Types.Int>_N) -}
+57586a7288980472d907d5184618e9bb
+  $fMonoidZipList_$s$cmconcat ::
+    [Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)]
+    -> Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (eta :: [Control.Applicative.ZipList
+                              (Data.Monoid.Sum GHC.Types.Int)]) ->
+                 CheckerMonads.$fMonoidZipList_go eta) -}
+9307da9f0745a1560064b16af9f1edee
+  $fMonoidZipList_$s$cmempty ::
+    Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+  {- Strictness: m2,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$fMonoidZipList_xs
+                  `cast`
+                (Sym (Control.Applicative.N:ZipList[0]) <Data.Monoid.Sum
+                                                           GHC.Types.Int>_N) -}
+9ac030cb355d6debec6ee5a6fa7dc850
+  $fMonoidZipList_$s$fMonoidZipList ::
+    GHC.Base.Monoid
+      (Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int))
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int))
+                  CheckerMonads.$fMonoidZipList_$s$cmempty
+                  CheckerMonads.$fMonoidZipList_$s$cmappend
+                  CheckerMonads.$fMonoidZipList_$s$cmconcat -}
+f459fee643040633693f18abc017d46a
+  $fMonoidZipList_go ::
+    [Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)]
+    -> Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+e3e12ae682535916f3bf89347fab3957
+  $fMonoidZipList_go1 ::
+    [Data.Monoid.Sum GHC.Types.Int]
+    -> [Data.Monoid.Sum GHC.Types.Int]
+    -> [Data.Monoid.Sum GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+d61437af6ba5d802ba53a50b948cd55e
+  $fMonoidZipList_xs :: [Data.Monoid.Sum GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2 -}
+c355d3f1b1968482049617b5de42955d
+  $fShowErrors :: GHC.Show.Show CheckerMonads.Errors
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ CheckerMonads.Errors
+                  CheckerMonads.$fShowErrors_$cshowsPrec
+                  CheckerMonads.$fShowErrors_$cshow
+                  CheckerMonads.$fShowErrors_$cshowList -}
+37a66c4a7c9b5df194e5c972497307f9
+  $fShowErrors1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "MooglesChewedWires"#) -}
+6c3a68518210d33d1af34d74e66f36eb
+  $fShowErrors2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "StackOverflow"#) -}
+c23f754c29e5c3e5b4d7722d1c9efa3d
+  $fShowErrors3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DividedByZero"#) -}
+c355d3f1b1968482049617b5de42955d
+  $fShowErrors_$cshow :: CheckerMonads.Errors -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: CheckerMonads.Errors) ->
+                 case x of wild {
+                   CheckerMonads.DividedByZero -> CheckerMonads.$fShowErrors3
+                   CheckerMonads.StackOverflow -> CheckerMonads.$fShowErrors2
+                   CheckerMonads.MooglesChewedWires
+                   -> CheckerMonads.$fShowErrors1 }) -}
+c355d3f1b1968482049617b5de42955d
+  $fShowErrors_$cshowList :: [CheckerMonads.Errors] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ CheckerMonads.Errors
+                   CheckerMonads.$w$cshowsPrec) -}
+c355d3f1b1968482049617b5de42955d
+  $fShowErrors_$cshowsPrec ::
+    GHC.Types.Int -> CheckerMonads.Errors -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: CheckerMonads.Errors)
+                   (w2 :: GHC.Base.String) ->
+                 CheckerMonads.$w$cshowsPrec w1 w2) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList ::
+    GHC.Show.Show a => GHC.Show.Show (CheckerMonads.List a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (CheckerMonads.List a)
+                  (CheckerMonads.$fShowList_$cshowsPrec @ a $dShow)
+                  (CheckerMonads.$fShowList_$cshow @ a $dShow)
+                  (CheckerMonads.$fShowList_$cshowList @ a $dShow) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList1 :: CheckerMonads.List GHC.Types.Int -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (CheckerMonads.$fShowList_$s$cshowsPrec
+                   CheckerMonads.$fShowList2) -}
+484a2d34e94a5e2d49641ee637ae22b3
+  $fShowList2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList3 ::
+    CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (CheckerMonads.$fShowList_$s$cshowsPrec1
+                   CheckerMonads.$fShowList2) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$cshow ::
+    GHC.Show.Show a => CheckerMonads.List a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: CheckerMonads.List a) ->
+                 CheckerMonads.$fShowList_$cshowsPrec
+                   @ a
+                   $dShow
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$cshowList ::
+    GHC.Show.Show a => [CheckerMonads.List a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [CheckerMonads.List a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (CheckerMonads.List a)
+                   (CheckerMonads.$fShowList_$cshowsPrec
+                      @ a
+                      $dShow
+                      CheckerMonads.$fShowList2)
+                   eta
+                   eta1) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> CheckerMonads.List a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><L,1*U(U)><S,1*U> -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$s$cshow ::
+    CheckerMonads.List GHC.Types.Int -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: CheckerMonads.List GHC.Types.Int) ->
+                 CheckerMonads.$fShowList_$s$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$s$cshow1 ::
+    CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int)) ->
+                 CheckerMonads.$fShowList_$s$cshowsPrec1
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$s$cshowList ::
+    [CheckerMonads.List GHC.Types.Int] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [CheckerMonads.List GHC.Types.Int])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (CheckerMonads.List GHC.Types.Int)
+                   CheckerMonads.$fShowList1
+                   eta
+                   eta1) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$s$cshowList1 ::
+    [CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int)]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int)])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int))
+                   CheckerMonads.$fShowList3
+                   eta
+                   eta1) -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$s$cshowsPrec ::
+    GHC.Types.Int -> CheckerMonads.List GHC.Types.Int -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$s$cshowsPrec1 ::
+    GHC.Types.Int
+    -> CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$s$fShowList ::
+    GHC.Show.Show (CheckerMonads.List GHC.Types.Int)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (CheckerMonads.List GHC.Types.Int)
+                  CheckerMonads.$fShowList_$s$cshowsPrec
+                  CheckerMonads.$fShowList_$s$cshow
+                  CheckerMonads.$fShowList_$s$cshowList -}
+83443204ef0d13f857f5ec1189e23abe
+  $fShowList_$s$fShowList1 ::
+    GHC.Show.Show (CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int))
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (CheckerMonads.List (GHC.Types.Int -> GHC.Types.Int))
+                  CheckerMonads.$fShowList_$s$cshowsPrec1
+                  CheckerMonads.$fShowList_$s$cshow1
+                  CheckerMonads.$fShowList_$s$cshowList1 -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation ::
+    (GHC.Show.Show a, GHC.Show.Show err) =>
+    GHC.Show.Show (CheckerMonads.Validation err a)
+  DFunId
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ err
+                      @ a
+                      ($dShow :: GHC.Show.Show a)
+                      ($dShow1 :: GHC.Show.Show err).
+                  @ (CheckerMonads.Validation err a)
+                  (CheckerMonads.$fShowValidation_$cshowsPrec
+                     @ err
+                     @ a
+                     $dShow
+                     $dShow1)
+                  (CheckerMonads.$fShowValidation_$cshow @ err @ a $dShow $dShow1)
+                  (CheckerMonads.$fShowValidation_$cshowList
+                     @ err
+                     @ a
+                     $dShow
+                     $dShow1) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation1 ::
+    CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int
+    -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: CheckerMonads.Validation
+                           [CheckerMonads.Errors] GHC.Types.Int)
+                   (w1 :: GHC.Base.String) ->
+                 CheckerMonads.$w$s$cshowsPrec 0# w w1) -}
+c30f152708548694a2fc7e34462367ca
+  $fShowValidation2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Success' "#) -}
+7e17da42758422f6c8433e00dfab022a
+  $fShowValidation3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Failure' "#) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation4 ::
+    CheckerMonads.Validation
+      [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: CheckerMonads.Validation
+                           [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int))
+                   (w1 :: GHC.Base.String) ->
+                 CheckerMonads.$w$s$cshowsPrec1 0# w w1) -}
+e036d8d9fe74e25abf27b556e3e0f3a8
+  $fShowValidation5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$cshow ::
+    (GHC.Show.Show a, GHC.Show.Show err) =>
+    CheckerMonads.Validation err a -> GHC.Base.String
+  {- Arity: 3,
+     Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><L,1*U(1*C1(C1(C1(U))),A,A)><S,1*U>,
+     Unfolding: (\ @ err
+                   @ a
+                   ($dShow :: GHC.Show.Show a)
+                   ($dShow1 :: GHC.Show.Show err)
+                   (x :: CheckerMonads.Validation err a) ->
+                 case x of wild {
+                   CheckerMonads.Failure' b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        CheckerMonads.$fShowValidation3
+                        (GHC.Show.showsPrec
+                           @ err
+                           $dShow1
+                           CheckerMonads.$fShowValidation5
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char))
+                   CheckerMonads.Success' b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        CheckerMonads.$fShowValidation2
+                        (GHC.Show.showsPrec
+                           @ a
+                           $dShow
+                           CheckerMonads.$fShowValidation5
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char)) }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$cshowList ::
+    (GHC.Show.Show a, GHC.Show.Show err) =>
+    [CheckerMonads.Validation err a] -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ err
+                   @ a
+                   ($dShow :: GHC.Show.Show a)
+                   ($dShow1 :: GHC.Show.Show err)
+                   (eta :: [CheckerMonads.Validation err a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (CheckerMonads.Validation err a)
+                   (CheckerMonads.$fShowValidation_$cshowsPrec
+                      @ err
+                      @ a
+                      $dShow
+                      $dShow1
+                      CheckerMonads.$fShowList2)
+                   eta
+                   eta1) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show err) =>
+    GHC.Types.Int -> CheckerMonads.Validation err a -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S(S),1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ err
+                   @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Show.Show err)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: CheckerMonads.Validation err a) ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 CheckerMonads.$w$cshowsPrec1 @ err @ a w w1 ww1 w3 }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$s$cshow ::
+    CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int
+    -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: CheckerMonads.Validation
+                           [CheckerMonads.Errors] GHC.Types.Int) ->
+                 CheckerMonads.$fShowValidation_$s$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$s$cshow1 ::
+    CheckerMonads.Validation
+      [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: CheckerMonads.Validation
+                           [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int)) ->
+                 CheckerMonads.$fShowValidation_$s$cshowsPrec1
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$s$cshowList ::
+    [CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [CheckerMonads.Validation
+                              [CheckerMonads.Errors] GHC.Types.Int])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int)
+                   CheckerMonads.$fShowValidation1
+                   eta
+                   eta1) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$s$cshowList1 ::
+    [CheckerMonads.Validation
+       [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int)]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [CheckerMonads.Validation
+                              [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int)])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (CheckerMonads.Validation
+                        [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int))
+                   CheckerMonads.$fShowValidation4
+                   eta
+                   eta1) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$s$cshowsPrec ::
+    GHC.Types.Int
+    -> CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: CheckerMonads.Validation
+                            [CheckerMonads.Errors] GHC.Types.Int)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 CheckerMonads.$w$s$cshowsPrec ww1 w1 w2 }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$s$cshowsPrec1 ::
+    GHC.Types.Int
+    -> CheckerMonads.Validation
+         [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: CheckerMonads.Validation
+                            [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int))
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 CheckerMonads.$w$s$cshowsPrec1 ww1 w1 w2 }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$s$fShowValidation ::
+    GHC.Show.Show
+      (CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int)
+                  CheckerMonads.$fShowValidation_$s$cshowsPrec
+                  CheckerMonads.$fShowValidation_$s$cshow
+                  CheckerMonads.$fShowValidation_$s$cshowList -}
+354ffad46d0109ad53956cfcc700ad1b
+  $fShowValidation_$s$fShowValidation1 ::
+    GHC.Show.Show
+      (CheckerMonads.Validation
+         [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int))
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (CheckerMonads.Validation
+                       [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int))
+                  CheckerMonads.$fShowValidation_$s$cshowsPrec1
+                  CheckerMonads.$fShowValidation_$s$cshow1
+                  CheckerMonads.$fShowValidation_$s$cshowList1 -}
+915eff50066bcbf94d47d12af2494ff5
+  $fShowZipList' ::
+    GHC.Show.Show a => GHC.Show.Show (CheckerMonads.ZipList' a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a ($dShow :: GHC.Show.Show a).
+                  @ (CheckerMonads.ZipList' a)
+                  (CheckerMonads.$fShowZipList'_$cshowsPrec @ a $dShow)
+                  (CheckerMonads.$fShowZipList'_$cshow @ a $dShow)
+                  (CheckerMonads.$fShowZipList'_$cshowList @ a $dShow) -}
+3a83cad2c7c9cf6582cf0092d30a9993
+  $fShowZipList'1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ZipList' "#) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fShowZipList'_$cshow ::
+    GHC.Show.Show a => CheckerMonads.ZipList' a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (x :: CheckerMonads.ZipList' a) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      CheckerMonads.$fShowZipList'1)
+                   (CheckerMonads.$fShowList_$cshowsPrec
+                      @ a
+                      $dShow
+                      CheckerMonads.$fShowValidation5
+                      x `cast` (CheckerMonads.N:ZipList'[0] <a>_N)
+                      (GHC.Types.[] @ GHC.Types.Char))) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fShowZipList'_$cshowList ::
+    GHC.Show.Show a => [CheckerMonads.ZipList' a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: [CheckerMonads.ZipList' a])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (CheckerMonads.ZipList' a)
+                   (CheckerMonads.$fShowZipList'_$cshowsPrec
+                      @ a
+                      $dShow
+                      CheckerMonads.$fShowList2)
+                   eta
+                   eta1) -}
+915eff50066bcbf94d47d12af2494ff5
+  $fShowZipList'_$cshowsPrec ::
+    GHC.Show.Show a =>
+    GHC.Types.Int -> CheckerMonads.ZipList' a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S(S),1*U(U)><L,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: CheckerMonads.ZipList' a) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 CheckerMonads.$w$cshowsPrec2 @ a w ww1 w2 }) -}
+60c663bee92151357e49ffd3d5092c0f
+  $s$fArbitrarySum ::
+    Test.QuickCheck.Arbitrary.Arbitrary (Data.Monoid.Sum GHC.Types.Int)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Monoid.Sum GHC.Types.Int)
+                  (Test.QuickCheck.Arbitrary.$fArbitrarySum_$carbitrary
+                     @ GHC.Types.Int
+                     Test.QuickCheck.Arbitrary.$fArbitraryInt)
+                  (Test.QuickCheck.Arbitrary.$fArbitrarySum_$cshrink
+                     @ GHC.Types.Int
+                     Test.QuickCheck.Arbitrary.$fArbitraryInt) -}
+e404d4b5abbf016f4c2b5ba583b4bc33
+  $s$fArbitraryZipList ::
+    Test.QuickCheck.Arbitrary.Arbitrary
+      (Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int))
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int))
+                  (Test.QuickCheck.Arbitrary.$fArbitraryZipList_$carbitrary
+                     @ (Data.Monoid.Sum GHC.Types.Int)
+                     CheckerMonads.$s$fArbitraryZipList_$dArbitrary)
+                  (Test.QuickCheck.Arbitrary.$fArbitraryZipList_$cshrink
+                     @ (Data.Monoid.Sum GHC.Types.Int)
+                     CheckerMonads.$s$fArbitraryZipList_$dArbitrary) -}
+597c01d36c2f7ea3da683175b0d472ee
+  $s$fArbitraryZipList_$dArbitrary ::
+    Test.QuickCheck.Arbitrary.Arbitrary (Data.Monoid.Sum GHC.Types.Int)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.$s$fArbitrarySum -}
+3466ca9132800c12af8aee89da259ca8
+  $s$fEqSum :: GHC.Classes.Eq (Data.Monoid.Sum GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Monoid.Sum GHC.Types.Int)
+                  (Data.Monoid.$fEqSum_$c== @ GHC.Types.Int GHC.Classes.$fEqInt)
+                  (Data.Monoid.$fEqSum_$c/= @ GHC.Types.Int GHC.Classes.$fEqInt) -}
+4e8ad810a1ab36ac2832ebbfc3c96e9e
+  $s$fMonoidSum :: GHC.Base.Monoid (Data.Monoid.Sum GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Monoid.Sum GHC.Types.Int)
+                  (Data.Monoid.$fMonoidSum_$cmempty @ GHC.Types.Int GHC.Num.$fNumInt)
+                  (Data.Monoid.$fMonoidSum_$cmappend
+                     @ GHC.Types.Int
+                     GHC.Num.$fNumInt)
+                  (Data.Monoid.$fMonoidSum_$cmconcat
+                     @ GHC.Types.Int
+                     GHC.Num.$fNumInt) -}
+debdc0fa5e71fd31084796dc5a959a24
+  $s$fShowSum :: GHC.Show.Show (Data.Monoid.Sum GHC.Types.Int)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Monoid.Sum GHC.Types.Int)
+                  (Data.Monoid.$fShowSum_$cshowsPrec
+                     @ GHC.Types.Int
+                     GHC.Show.$fShowInt)
+                  (Data.Monoid.$fShowSum_$cshow @ GHC.Types.Int GHC.Show.$fShowInt)
+                  CheckerMonads.$s$fShowSum_$s$fShowSum_$cshowList -}
+369b7820559bdef844feeb22d21d8d94
+  $s$fShowSum_$s$fShowSum_$cshowList ::
+    [Data.Monoid.Sum GHC.Types.Int] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [Data.Monoid.Sum GHC.Types.Int])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Data.Monoid.Sum GHC.Types.Int)
+                   (Data.Monoid.$fShowSum_$cshowsPrec
+                      @ GHC.Types.Int
+                      GHC.Show.$fShowInt
+                      Data.Monoid.$fShowAlt1)
+                   eta
+                   eta1) -}
+bc2778b152a5e48a06a5096d5d8bc7b9
+  $s$fShowZipList ::
+    GHC.Show.Show
+      (Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int))
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int))
+                  (Control.Applicative.$fShowZipList_$cshowsPrec
+                     @ (Data.Monoid.Sum GHC.Types.Int)
+                     CheckerMonads.$s$fShowZipList_$dShow)
+                  (Control.Applicative.$fShowZipList_$cshow
+                     @ (Data.Monoid.Sum GHC.Types.Int)
+                     CheckerMonads.$s$fShowZipList_$dShow)
+                  CheckerMonads.$s$fShowZipList_$s$fShowZipList_$cshowList -}
+906d31395621c60741468b8c6056e60b
+  $s$fShowZipList_$dShow ::
+    GHC.Show.Show (Data.Monoid.Sum GHC.Types.Int)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) CheckerMonads.$s$fShowSum -}
+519dcd03f61a6cd649c35e1227c4008c
+  $s$fShowZipList_$s$fShowZipList_$cshowList ::
+    [Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [Control.Applicative.ZipList
+                              (Data.Monoid.Sum GHC.Types.Int)])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int))
+                   (Control.Applicative.$fShowZipList_$cshowsPrec
+                      @ (Data.Monoid.Sum GHC.Types.Int)
+                      CheckerMonads.$s$fShowZipList_$dShow
+                      Control.Applicative.$fShowZipList1)
+                   eta
+                   eta1) -}
+6d5fd3d53ec6da97f19a181e8612f251
+  $tc'Cons :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7691505718350588131##
+                   16966415124887242108##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tc'Cons1) -}
+6af2f422f2a9d7df6ce7f591fa6e7f6d
+  $tc'Cons1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Cons"#) -}
+b6137ded26873b27994007aaa59286fe
+  $tc'DividedByZero :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14423802521575728805##
+                   2653252407648569462##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tc'DividedByZero1) -}
+79a1d0558333286dde6a0fb51e572c66
+  $tc'DividedByZero1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DividedByZero"#) -}
+554e33be876c8c86fee06a6d6d31a843
+  $tc'Failure' :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12763999321508026459##
+                   12025100833494435278##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tc'Failure'1) -}
+08a432cd627eefcc9ce240f4d751a52c
+  $tc'Failure'1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Failure'"#) -}
+268b905ab95b4934e691fe4649af8f71
+  $tc'MooglesChewedWires :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12013290437294226379##
+                   8170003171994053400##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tc'MooglesChewedWires1) -}
+6af7017da74490a2c7f39af337e63d54
+  $tc'MooglesChewedWires1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'MooglesChewedWires"#) -}
+b2fd1e2df5b1ee77357060a2dcf9cfa6
+  $tc'Nil :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13441969245267833112##
+                   4640341971524126447##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tc'Nil1) -}
+3a051e97ea5c7ba8fc1a2f457f0013e5
+  $tc'Nil1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Nil"#) -}
+756dc77b42a2fc8e667322f1291a3adc
+  $tc'StackOverflow :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11819504889232273856##
+                   10471891797560440766##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tc'StackOverflow1) -}
+1cc1bc53cd19f89e3501c92a44bc5aa3
+  $tc'StackOverflow1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'StackOverflow"#) -}
+68885e06c38d84566d075f4aa5c4f058
+  $tc'Success' :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10263273324247161330##
+                   852319788859257450##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tc'Success'1) -}
+8dee858a6ec2e28a9d6dec73d1e6c85d
+  $tc'Success'1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Success'"#) -}
+bd86aa86f220239ff9e8d2ab22177b9f
+  $tc'ZipList' :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6041784199364981660##
+                   9820225343996615763##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tc'ZipList'1) -}
+da4d22bf685ca8bf5c267939bb789b7e
+  $tc'ZipList'1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ZipList'"#) -}
+9124b9021edb8342ea3bed500ef2763c
+  $tcErrors :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15958082291373709023##
+                   7313385791282608479##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tcErrors1) -}
+086cea6d7d96928bf5495c6ad94a2a43
+  $tcErrors1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Errors"#) -}
+39bc280b89631287fc02747b817f4c35
+  $tcList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10345351830584190898##
+                   1791644613165577372##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tcList1) -}
+35b2c0c4be89cec3fc42973f72d9de33
+  $tcList1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "List"#) -}
+701350118593b7c8da5f22df5f7629ad
+  $tcValidation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12293037579954414314##
+                   15134587709741524247##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tcValidation1) -}
+fb24b9ac9eeef26a7698c47e7abead0d
+  $tcValidation1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Validation"#) -}
+59d0b09069ce8c27421ad64214c30887
+  $tcZipList' :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13156752811902818640##
+                   15029592765980143618##
+                   CheckerMonads.$trModule
+                   CheckerMonads.$tcZipList'1) -}
+d99c6291526195218701d2af7d10205a
+  $tcZipList'1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ZipList'"#) -}
+bc380f7c29180394ca9e91179990929c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   CheckerMonads.$trModule2
+                   CheckerMonads.$trModule1) -}
+79cb2f552e8a75c973aefd38e90feefb
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "CheckerMonads"#) -}
+55264d91cc0f91b53d3f3da601cb5d45
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "checkerMonads-0.1.0.0-1dUTmT0lVnoKvZ36kJZsPa"#) -}
+c355d3f1b1968482049617b5de42955d
+  $w$cshowsPrec ::
+    CheckerMonads.Errors -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: CheckerMonads.Errors)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   CheckerMonads.DividedByZero
+                   -> GHC.Base.++ @ GHC.Types.Char CheckerMonads.$fShowErrors3 w1
+                   CheckerMonads.StackOverflow
+                   -> GHC.Base.++ @ GHC.Types.Char CheckerMonads.$fShowErrors2 w1
+                   CheckerMonads.MooglesChewedWires
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        CheckerMonads.$fShowErrors1
+                        w1 }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $w$cshowsPrec1 ::
+    (GHC.Show.Show a, GHC.Show.Show err) =>
+    GHC.Prim.Int# -> CheckerMonads.Validation err a -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A,A)><L,1*U(1*C1(C1(U)),A,A)><S,U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ err
+                   @ a
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Show.Show err)
+                   (ww :: GHC.Prim.Int#)
+                   (w2 :: CheckerMonads.Validation err a) ->
+                 case w2 of wild {
+                   CheckerMonads.Failure' b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ err w1 CheckerMonads.$fShowValidation5 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++ @ GHC.Types.Char CheckerMonads.$fShowValidation3 (g x)
+                        GHC.Types.True
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                CheckerMonads.$fShowValidation3
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x))) }
+                   CheckerMonads.Success' b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = GHC.Show.showsPrec @ a w CheckerMonads.$fShowValidation5 b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++ @ GHC.Types.Char CheckerMonads.$fShowValidation2 (g x)
+                        GHC.Types.True
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                CheckerMonads.$fShowValidation2
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x))) } }) -}
+915eff50066bcbf94d47d12af2494ff5
+  $w$cshowsPrec2 ::
+    GHC.Show.Show a =>
+    GHC.Prim.Int# -> CheckerMonads.ZipList' a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Show.Show a)
+                   (ww :: GHC.Prim.Int#)
+                   (w1 :: CheckerMonads.ZipList' a) ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                   = CheckerMonads.$fShowList_$cshowsPrec
+                       @ a
+                       w
+                       CheckerMonads.$fShowValidation5
+                       w1 `cast` (CheckerMonads.N:ZipList'[0] <a>_N)
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++ @ GHC.Types.Char CheckerMonads.$fShowZipList'1 (g x)
+                   GHC.Types.True
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           CheckerMonads.$fShowZipList'1
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x))) }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $w$s$cshowsPrec ::
+    GHC.Prim.Int#
+    -> CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: CheckerMonads.Validation
+                           [CheckerMonads.Errors] GHC.Types.Int)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   CheckerMonads.Failure' b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             CheckerMonads.$fShowValidation3
+                             (GHC.Show.showList__
+                                @ CheckerMonads.Errors
+                                CheckerMonads.$w$cshowsPrec
+                                b1
+                                w1)
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                CheckerMonads.$fShowValidation3
+                                (GHC.Show.showList__
+                                   @ CheckerMonads.Errors
+                                   CheckerMonads.$w$cshowsPrec
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w1))) }
+                   CheckerMonads.Success' b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             CheckerMonads.$fShowValidation2
+                             (case b1 of ww2 { GHC.Types.I# ww3 ->
+                              case GHC.Show.$wshowSignedInt 11# ww3 w1 of ww4 { (#,#) ww5 ww6 ->
+                              GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                CheckerMonads.$fShowValidation2
+                                (case b1 of ww2 { GHC.Types.I# ww3 ->
+                                 case GHC.Show.$wshowSignedInt
+                                        11#
+                                        ww3
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.shows4
+                                           w1) of ww4 { (#,#) ww5 ww6 ->
+                                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } })) } }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  $w$s$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> CheckerMonads.Validation
+         [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int)
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: CheckerMonads.Validation
+                           [CheckerMonads.Errors] (GHC.Types.Int -> GHC.Types.Int))
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   CheckerMonads.Failure' b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             CheckerMonads.$fShowValidation3
+                             (GHC.Show.showList__
+                                @ CheckerMonads.Errors
+                                CheckerMonads.$w$cshowsPrec
+                                b1
+                                w1)
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                CheckerMonads.$fShowValidation3
+                                (GHC.Show.showList__
+                                   @ CheckerMonads.Errors
+                                   CheckerMonads.$w$cshowsPrec
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w1))) }
+                   CheckerMonads.Success' b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             CheckerMonads.$fShowValidation2
+                             (GHC.Base.++ @ GHC.Types.Char Text.Show.Functions.$fShow(->)1 w1)
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                CheckerMonads.$fShowValidation2
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   Text.Show.Functions.$fShow(->)1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w1))) } }) -}
+a2e1c73a1ecbf576fd46c84ed0f89e7c
+  $wfunctions ::
+    GHC.Num.Num a => (# a -> a, CheckerMonads.List (a -> a) #)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))>, Inline: [0],
+     Unfolding: (\ @ a (w :: GHC.Num.Num a) ->
+                 (# let {
+                      ds :: a = GHC.Num.fromInteger @ a w CheckerMonads.values2
+                    } in
+                    \ (ds1 :: a) -> GHC.Num.+ @ a w ds1 ds,
+                    CheckerMonads.Cons
+                      @ (a -> a)
+                      (let {
+                         ds :: a = GHC.Num.fromInteger @ a w CheckerMonads.values1
+                       } in
+                       \ (ds1 :: a) -> GHC.Num.* @ a w ds1 ds)
+                      (CheckerMonads.Nil @ (a -> a)) #)) -}
+c92930710c6f8126bcb7938090c7ed3a
+  $wrepeat' :: a -> (# a, CheckerMonads.List a #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>, Inline: [0] -}
+fd4ddf5fb1acc1819e39b4092ba5cba1
+  $wz :: GHC.Num.Num a => (# a -> a, CheckerMonads.List (a -> a) #)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))>, Inline: [0],
+     Unfolding: (\ @ a (w :: GHC.Num.Num a) ->
+                 (# let {
+                      ds :: a = GHC.Num.fromInteger @ a w CheckerMonads.z3
+                    } in
+                    \ (ds1 :: a) -> GHC.Num.+ @ a w ds1 ds,
+                    CheckerMonads.Cons
+                      @ (a -> a)
+                      (let {
+                         ds :: a = GHC.Num.fromInteger @ a w CheckerMonads.values1
+                       } in
+                       \ (ds1 :: a) -> GHC.Num.* @ a w ds1 ds)
+                      (CheckerMonads.Cons
+                         @ (a -> a)
+                         (let {
+                            ds :: a = GHC.Num.fromInteger @ a w CheckerMonads.z2
+                          } in
+                          \ (ds1 :: a) -> GHC.Num.+ @ a w ds1 ds)
+                         (CheckerMonads.Nil @ (a -> a))) #)) -}
+c355d3f1b1968482049617b5de42955d
+  data Errors = DividedByZero | StackOverflow | MooglesChewedWires
+83443204ef0d13f857f5ec1189e23abe
+  data List a = Nil | Cons a (CheckerMonads.List a)
+354ffad46d0109ad53956cfcc700ad1b
+  data Validation err a = Failure' err | Success' a
+915eff50066bcbf94d47d12af2494ff5
+  newtype ZipList' a = ZipList' (CheckerMonads.List a)
+7994aa318e5e0469c1a9dffd58cba0ee
+  append ::
+    CheckerMonads.List a
+    -> CheckerMonads.List a -> CheckerMonads.List a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+491d6140392326f4d946ca38433a56b8
+  concat' ::
+    CheckerMonads.List (CheckerMonads.List a) -> CheckerMonads.List a
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 CheckerMonads.fold
+                   @ (CheckerMonads.List a)
+                   @ (CheckerMonads.List a)
+                   (CheckerMonads.append @ a)
+                   (CheckerMonads.Nil @ a)) -}
+a412c77f6c490635e325e7efaf056d94
+  eitherToValid ::
+    Data.Either.Either e a -> CheckerMonads.Validation e a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ e @ a (ds :: Data.Either.Either e a) ->
+                 case ds of wild {
+                   Data.Either.Left err -> CheckerMonads.Failure' @ e @ a err
+                   Data.Either.Right a1 -> CheckerMonads.Success' @ e @ a a1 }) -}
+c355d3f1b1968482049617b5de42955d
+  errorsGen :: Test.QuickCheck.Gen.Gen CheckerMonads.Errors
+  {- Unfolding: (Test.QuickCheck.Gen.elements
+                   @ CheckerMonads.Errors
+                   CheckerMonads.errorsGen1) -}
+c355d3f1b1968482049617b5de42955d
+  errorsGen1 :: [CheckerMonads.Errors]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ CheckerMonads.Errors
+                   CheckerMonads.DividedByZero
+                   CheckerMonads.errorsGen2) -}
+c355d3f1b1968482049617b5de42955d
+  errorsGen2 :: [CheckerMonads.Errors]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ CheckerMonads.Errors
+                   CheckerMonads.StackOverflow
+                   CheckerMonads.errorsGen3) -}
+c355d3f1b1968482049617b5de42955d
+  errorsGen3 :: [CheckerMonads.Errors]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ CheckerMonads.Errors
+                   CheckerMonads.MooglesChewedWires
+                   (GHC.Types.[] @ CheckerMonads.Errors)) -}
+c4b7c08a8fe4013efd3f49253e8fbbbb
+  flatMap ::
+    (a -> CheckerMonads.List b)
+    -> CheckerMonads.List a -> CheckerMonads.List b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (f :: a -> CheckerMonads.List b)
+                   (as :: CheckerMonads.List a) ->
+                 CheckerMonads.fold
+                   @ (CheckerMonads.List b)
+                   @ (CheckerMonads.List b)
+                   (CheckerMonads.append @ b)
+                   (CheckerMonads.Nil @ b)
+                   (CheckerMonads.$fApplicativeList_$cfmap
+                      @ a
+                      @ (CheckerMonads.List b)
+                      f
+                      as)) -}
+3254393937e4f921ccd8f17e2468197b
+  fold :: (a -> b -> b) -> b -> CheckerMonads.List a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,1*U><S,1*U> -}
+1264e347702d6dad2534a9310c67409f
+  funcsApplied :: GHC.Num.Num a => CheckerMonads.List a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 CheckerMonads.$fApplicativeList_$c<*>
+                   @ a
+                   @ a
+                   (CheckerMonads.functions @ a $dNum)
+                   (CheckerMonads.values @ a $dNum)) -}
+ad27ea1cbe1a054698d3afa02b565d11
+  functions :: GHC.Num.Num a => CheckerMonads.List (a -> a)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: GHC.Num.Num a) ->
+                 case CheckerMonads.$wfunctions @ a w of ww { (#,#) ww1 ww2 ->
+                 CheckerMonads.Cons @ (a -> a) ww1 ww2 }) -}
+83443204ef0d13f857f5ec1189e23abe
+  listGen ::
+    Test.QuickCheck.Arbitrary.Arbitrary a =>
+    Test.QuickCheck.Gen.Gen (CheckerMonads.List a)
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.listGen1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Test.QuickCheck.Arbitrary.Arbitrary a>_R
+                 ->_R Sym (Test.QuickCheck.Gen.N:Gen[0]
+                               <CheckerMonads.List a>_R)) -}
+83443204ef0d13f857f5ec1189e23abe
+  listGen1 ::
+    Test.QuickCheck.Arbitrary.Arbitrary a =>
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int -> CheckerMonads.List a
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U> -}
+67e3386b5b126f939aa10c2cd55702cd
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+53d6f542e7f60c963c7d1f1d5b642eef
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case CheckerMonads.main10
+                        CheckerMonads.main8
+                          `cast`
+                        (Sym (Control.Applicative.N:ZipList[0]) <Data.Monoid.Sum
+                                                                   GHC.Types.Int>_N) of ww { (,) ww1 ww2 ->
+                 case Test.QuickCheck.Checkers.$wcheckBatch
+                        Test.QuickCheck.Checkers.quick'
+                        ww1
+                        ww2
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case CheckerMonads.main6
+                        CheckerMonads.main5 of ww4 { (,) ww5 ww6 ->
+                 case Test.QuickCheck.Checkers.$wcheckBatch
+                        Test.QuickCheck.Checkers.quick'
+                        ww5
+                        ww6
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case CheckerMonads.main3
+                        CheckerMonads.main2 of ww7 { (,) ww8 ww9 ->
+                 Test.QuickCheck.Checkers.$wcheckBatch
+                   Test.QuickCheck.Checkers.quick'
+                   ww8
+                   ww9
+                   ipv2 } } } } }) -}
+2776398546c31f5ef2387576142b19d7
+  main10 ::
+    Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+    -> Test.QuickCheck.Checkers.TestBatch
+  {- Unfolding: (Test.QuickCheck.Classes.monoid
+                   @ (Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int))
+                   CheckerMonads.$fMonoidZipList_$s$fMonoidZipList
+                   CheckerMonads.$s$fShowZipList
+                   CheckerMonads.$s$fArbitraryZipList
+                   CheckerMonads.main11
+                     `cast`
+                   (Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                             <Control.Applicative.ZipList
+                                (Data.Monoid.Sum GHC.Types.Int)>_N))) -}
+1c1e5bbe1d06ab7d9281e1ba59b7b60c
+  main11 ::
+    Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+    -> Control.Applicative.ZipList (Data.Monoid.Sum GHC.Types.Int)
+    -> Test.QuickCheck.Property.Property
+  {- Arity: 2,
+     Unfolding: (\ (a1 :: Control.Applicative.ZipList
+                            (Data.Monoid.Sum GHC.Types.Int))
+                   (a' :: Control.Applicative.ZipList
+                            (Data.Monoid.Sum GHC.Types.Int)) ->
+                 let {
+                   x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                   = Test.QuickCheck.Property.protectResults
+                       (Test.QuickCheck.Property.MkRose
+                          @ Test.QuickCheck.Property.Result
+                          (case GHC.Classes.$fEq[]_$c==
+                                  @ (Data.Monoid.Sum GHC.Types.Int)
+                                  CheckerMonads.$s$fEqSum
+                                  a1
+                                    `cast`
+                                  (Control.Applicative.N:ZipList[0] <Data.Monoid.Sum
+                                                                       GHC.Types.Int>_N)
+                                  a'
+                                    `cast`
+                                  (Control.Applicative.N:ZipList[0] <Data.Monoid.Sum
+                                                                       GHC.Types.Int>_N) of wild {
+                             GHC.Types.False -> Test.QuickCheck.Property.counterexample1
+                             GHC.Types.True -> Test.QuickCheck.Property.succeeded })
+                          (GHC.Types.[]
+                             @ (Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result)))
+                 } in
+                 (\ (ds :: Test.QuickCheck.Random.QCGen) (ds1 :: GHC.Types.Int) ->
+                  x1)
+                   `cast`
+                 (Trans
+                      (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                (Test.QuickCheck.Property.N:Prop[0])))
+                      (Sym (Test.QuickCheck.Property.N:Property[0])))) -}
+762041cbd15cf252b43c4ffcfe5575e9
+  main2 ::
+    CheckerMonads.Validation
+      [CheckerMonads.Errors]
+      (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)
+  {- Strictness: x -}
+7a1ed21aadd546537007fcd0da043166
+  main3 ::
+    CheckerMonads.Validation
+      [CheckerMonads.Errors]
+      (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)
+    -> Test.QuickCheck.Checkers.TestBatch
+  {- Unfolding: (Test.QuickCheck.Classes.applicative
+                   @ (CheckerMonads.Validation [CheckerMonads.Errors])
+                   @ GHC.Types.Int
+                   @ GHC.Types.Int
+                   @ GHC.Types.Int
+                   CheckerMonads.$fApplicativeValidation_$s$fApplicativeValidation
+                   Test.QuickCheck.Arbitrary.$fArbitraryInt
+                   Test.QuickCheck.Arbitrary.$fCoArbitraryChar2
+                     `cast`
+                   (Trans
+                        (forall (b2 :: <*>_N).
+                         <GHC.Types.Int>_R
+                         ->_R <Test.QuickCheck.Gen.Gen b2>_R
+                         ->_R Sym (Test.QuickCheck.Gen.N:Gen[0] <b2>_R))
+                        (Sym (Test.QuickCheck.Arbitrary.N:CoArbitrary[0]
+                                  <GHC.Types.Int>_N)))
+                   Test.QuickCheck.Arbitrary.$fArbitraryInt
+                   CheckerMonads.$fArbitraryValidation_$s$fArbitraryValidation
+                   CheckerMonads.$fArbitraryValidation_$s$fArbitraryValidation1
+                   CheckerMonads.$fShowValidation_$s$fShowValidation1
+                   CheckerMonads.$fArbitraryValidation_$s$fArbitraryValidation1
+                   CheckerMonads.$fShowValidation_$s$fShowValidation1
+                   GHC.Show.$fShowInt
+                   CheckerMonads.$fShowValidation_$s$fShowValidation
+                   CheckerMonads.main4
+                     `cast`
+                   (Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                             <CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int>_N))
+                   CheckerMonads.main4
+                     `cast`
+                   (Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                             <CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int>_N))
+                   CheckerMonads.main4
+                     `cast`
+                   (Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                             <CheckerMonads.Validation
+                                [CheckerMonads.Errors] GHC.Types.Int>_N))) -}
+45f3768bf3b11e868439ba3621dcd1a1
+  main4 ::
+    CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int
+    -> CheckerMonads.Validation [CheckerMonads.Errors] GHC.Types.Int
+    -> Test.QuickCheck.Property.Property
+  {- Arity: 2, Strictness: <L,1*U><L,1*U>,
+     Unfolding: (\ (a1 :: CheckerMonads.Validation
+                            [CheckerMonads.Errors] GHC.Types.Int)
+                   (a' :: CheckerMonads.Validation
+                            [CheckerMonads.Errors] GHC.Types.Int) ->
+                 let {
+                   x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                   = Test.QuickCheck.Property.protectResults
+                       (Test.QuickCheck.Property.MkRose
+                          @ Test.QuickCheck.Property.Result
+                          (case a1 of wild {
+                             CheckerMonads.Failure' a2
+                             -> case a' of wild1 {
+                                  CheckerMonads.Failure' b1
+                                  -> case GHC.Classes.$fEq[]_$c==
+                                            @ CheckerMonads.Errors
+                                            CheckerMonads.$fEqErrors
+                                            a2
+                                            b1 of wild2 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample1
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded }
+                                  CheckerMonads.Success' ipv
+                                  -> Test.QuickCheck.Property.counterexample1 }
+                             CheckerMonads.Success' a2
+                             -> case a' of wild1 {
+                                  CheckerMonads.Failure' ipv
+                                  -> Test.QuickCheck.Property.counterexample1
+                                  CheckerMonads.Success' b1
+                                  -> case a2 of wild2 { GHC.Types.I# x ->
+                                     case b1 of wild3 { GHC.Types.I# y ->
+                                     case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# x y) of wild4 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample1
+                                       GHC.Types.True
+                                       -> Test.QuickCheck.Property.succeeded } } } } })
+                          (GHC.Types.[]
+                             @ (Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result)))
+                 } in
+                 (\ (ds :: Test.QuickCheck.Random.QCGen) (ds1 :: GHC.Types.Int) ->
+                  x1)
+                   `cast`
+                 (Trans
+                      (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                (Test.QuickCheck.Property.N:Prop[0])))
+                      (Sym (Test.QuickCheck.Property.N:Property[0])))) -}
+fcc8ba3ede2487971d93dcbbdcdb68a1
+  main5 ::
+    CheckerMonads.List (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)
+  {- Strictness: x -}
+6cca9fe81d6d62851fdc04d243b1637c
+  main6 ::
+    CheckerMonads.List (GHC.Types.Int, GHC.Types.Int, GHC.Types.Int)
+    -> Test.QuickCheck.Checkers.TestBatch
+  {- Unfolding: (Test.QuickCheck.Classes.applicative
+                   @ CheckerMonads.List
+                   @ GHC.Types.Int
+                   @ GHC.Types.Int
+                   @ GHC.Types.Int
+                   CheckerMonads.$fApplicativeList
+                   Test.QuickCheck.Arbitrary.$fArbitraryInt
+                   Test.QuickCheck.Arbitrary.$fCoArbitraryChar2
+                     `cast`
+                   (Trans
+                        (forall (b2 :: <*>_N).
+                         <GHC.Types.Int>_R
+                         ->_R <Test.QuickCheck.Gen.Gen b2>_R
+                         ->_R Sym (Test.QuickCheck.Gen.N:Gen[0] <b2>_R))
+                        (Sym (Test.QuickCheck.Arbitrary.N:CoArbitrary[0]
+                                  <GHC.Types.Int>_N)))
+                   Test.QuickCheck.Arbitrary.$fArbitraryInt
+                   CheckerMonads.$fArbitraryList_$s$fArbitraryList
+                   CheckerMonads.$fArbitraryList_$s$fArbitraryList1
+                   CheckerMonads.$fShowList_$s$fShowList1
+                   CheckerMonads.$fArbitraryList_$s$fArbitraryList1
+                   CheckerMonads.$fShowList_$s$fShowList1
+                   GHC.Show.$fShowInt
+                   CheckerMonads.$fShowList_$s$fShowList
+                   CheckerMonads.main7
+                     `cast`
+                   (Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                             <CheckerMonads.List GHC.Types.Int>_N))
+                   CheckerMonads.main7
+                     `cast`
+                   (Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                             <CheckerMonads.List GHC.Types.Int>_N))
+                   CheckerMonads.main7
+                     `cast`
+                   (Sym (Test.QuickCheck.Checkers.N:EqProp[0]
+                             <CheckerMonads.List GHC.Types.Int>_N))) -}
+8ea2c7c3d5224cd13bf8d0fbf278d030
+  main7 ::
+    CheckerMonads.List GHC.Types.Int
+    -> CheckerMonads.List GHC.Types.Int
+    -> Test.QuickCheck.Property.Property
+  {- Arity: 2, Strictness: <L,1*U><L,1*U>,
+     Unfolding: (\ (a1 :: CheckerMonads.List GHC.Types.Int)
+                   (a' :: CheckerMonads.List GHC.Types.Int) ->
+                 let {
+                   x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                   = Test.QuickCheck.Property.protectResults
+                       (Test.QuickCheck.Property.MkRose
+                          @ Test.QuickCheck.Property.Result
+                          (case CheckerMonads.$fEqList_$c==
+                                  @ GHC.Types.Int
+                                  GHC.Classes.$fEqInt
+                                  a1
+                                  a' of wild {
+                             GHC.Types.False -> Test.QuickCheck.Property.counterexample1
+                             GHC.Types.True -> Test.QuickCheck.Property.succeeded })
+                          (GHC.Types.[]
+                             @ (Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result)))
+                 } in
+                 (\ (ds :: Test.QuickCheck.Random.QCGen) (ds1 :: GHC.Types.Int) ->
+                  x1)
+                   `cast`
+                 (Trans
+                      (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                (Test.QuickCheck.Property.N:Prop[0])))
+                      (Sym (Test.QuickCheck.Property.N:Property[0])))) -}
+3c801edca0994fe70bbdc2a2ea9a16e4
+  main8 :: [Data.Monoid.Sum GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (Data.Monoid.Sum GHC.Types.Int)
+                   CheckerMonads.main9
+                     `cast`
+                   (Sym (Data.Monoid.N:Sum[0] <GHC.Types.Int>_R))
+                   (GHC.Types.[] @ (Data.Monoid.Sum GHC.Types.Int))) -}
+a25289f7459a9928e8cb07882f5a7043
+  main9 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+35a272a2f294bea395df77872a8a0478
+  repeat' :: a -> CheckerMonads.List a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: a) ->
+                 case CheckerMonads.$wrepeat' @ a w of ww { (#,#) ww1 ww2 ->
+                 CheckerMonads.Cons @ a ww1 ww2 }) -}
+706767eeb50befce09019d34a7179b78
+  take' ::
+    GHC.Types.Int -> CheckerMonads.List a -> CheckerMonads.List a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U> -}
+6a9c011e7667a169dcdc8eb985935c58
+  validToEither ::
+    CheckerMonads.Validation e a -> Data.Either.Either e a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ e @ a (ds :: CheckerMonads.Validation e a) ->
+                 case ds of wild {
+                   CheckerMonads.Failure' err -> Data.Either.Left @ e @ a err
+                   CheckerMonads.Success' a1 -> Data.Either.Right @ e @ a a1 }) -}
+354ffad46d0109ad53956cfcc700ad1b
+  validationGen ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Gen.Gen (CheckerMonads.Validation a b)
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.validationGen1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Test.QuickCheck.Arbitrary.Arbitrary a>_R
+                 ->_R <Test.QuickCheck.Arbitrary.Arbitrary b>_R
+                 ->_R Sym (Test.QuickCheck.Gen.N:Gen[0]
+                               <CheckerMonads.Validation a b>_R)) -}
+354ffad46d0109ad53956cfcc700ad1b
+  validationGen1 ::
+    (Test.QuickCheck.Arbitrary.Arbitrary a,
+     Test.QuickCheck.Arbitrary.Arbitrary b) =>
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int -> CheckerMonads.Validation a b
+  {- Arity: 4,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><L,1*U(1*C1(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                   ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary b)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 let {
+                   ds1 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case eta
+                            `cast`
+                          (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0]))) } }
+                 } in
+                 let {
+                   ds2 :: (Test.QuickCheck.Random.QCGen, Test.QuickCheck.Random.QCGen)
+                   = case ds1 of wild { (,) r1 r2 ->
+                     case r2
+                            `cast`
+                          (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     case System.Random.TF.Gen.$wtfGenSplit
+                            ww1
+                            ww2
+                            ww3
+                            ww4 of ww7 { (#,#) ww8 ww9 ->
+                     (ww8 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0])),
+                      ww9 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0]))) } } }
+                 } in
+                 (Test.QuickCheck.Gen.elements
+                    @ (CheckerMonads.Validation a b)
+                    (GHC.Types.:
+                       @ (CheckerMonads.Validation a b)
+                       (CheckerMonads.Failure'
+                          @ a
+                          @ b
+                          ((Test.QuickCheck.Arbitrary.arbitrary @ a $dArbitrary)
+                             `cast`
+                           (Test.QuickCheck.Gen.N:Gen[0] <a>_R)
+                             (case ds1 of wild { (,) r1 r2 -> r1 })
+                             eta1))
+                       (GHC.Types.:
+                          @ (CheckerMonads.Validation a b)
+                          (CheckerMonads.Success'
+                             @ a
+                             @ b
+                             ((Test.QuickCheck.Arbitrary.arbitrary @ b $dArbitrary1)
+                                `cast`
+                              (Test.QuickCheck.Gen.N:Gen[0] <b>_R)
+                                (case ds2 of wild { (,) r1 r2 -> r1 })
+                                eta1))
+                          (GHC.Types.[] @ (CheckerMonads.Validation a b)))))
+                   `cast`
+                 (Test.QuickCheck.Gen.N:Gen[0] <CheckerMonads.Validation a b>_R)
+                   (case ds2 of wild { (,) r1 r2 -> r2 })
+                   eta1) -}
+a49eef9315eae5a9b33a7b872a505bf5
+  values :: GHC.Num.Num a => CheckerMonads.List a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,A,A,A,A,A,C(U))>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 CheckerMonads.Cons
+                   @ a
+                   (GHC.Num.fromInteger @ a $dNum CheckerMonads.values2)
+                   (CheckerMonads.Cons
+                      @ a
+                      (GHC.Num.fromInteger @ a $dNum CheckerMonads.values1)
+                      (CheckerMonads.Nil @ a))) -}
+aa447a2235d28ddd51c89a8fc55d8aeb
+  values1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+94a4defe71ea1bbd76eff6bc285f0dce
+  values2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+053b9aa4a423101801ca1f1d888dba49
+  z :: GHC.Num.Num a => CheckerMonads.ZipList' (a -> a)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))>m2,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.z1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R
+                 ->_R Sym (CheckerMonads.N:ZipList'[0]) <a -> a>_N) -}
+5fee239da5fd1e02a192409ced4982c6
+  z' :: GHC.Num.Num a => CheckerMonads.ZipList' a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,A,A,A,A,A,C(U))>m2,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.z'1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R ->_R Sym (CheckerMonads.N:ZipList'[0]) <a>_N) -}
+0818eeefa9c75525f4e3f6581b17321a
+  z'' :: GHC.Num.Num a => CheckerMonads.ZipList' a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,A,A,A,1*C1(U))>m2,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.z''1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Num.Num a>_R ->_R Sym (CheckerMonads.N:ZipList'[0]) <a>_N) -}
+bff497a5f445a7778be2f1ddf96d4d18
+  z''1 :: GHC.Num.Num a => CheckerMonads.List a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,A,A,A,1*C1(U))>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 CheckerMonads.repeat'
+                   @ a
+                   (GHC.Num.fromInteger @ a $dNum CheckerMonads.values2)) -}
+a6ec036002a14f0c5063be003512d07d
+  z'1 :: GHC.Num.Num a => CheckerMonads.List a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,A,A,A,A,A,C(U))>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: GHC.Num.Num a) ->
+                 CheckerMonads.Cons
+                   @ a
+                   (GHC.Num.fromInteger @ a w CheckerMonads.values2)
+                   (CheckerMonads.Cons
+                      @ a
+                      (GHC.Num.fromInteger @ a w CheckerMonads.values1)
+                      (CheckerMonads.Cons
+                         @ a
+                         (GHC.Num.fromInteger @ a w CheckerMonads.z'2)
+                         (CheckerMonads.Nil @ a)))) -}
+54c8c4bb5c1cb4ce253a1f44589ad0f3
+  z'2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+58311a96f96e2efab41790b20d98b788
+  z1 :: GHC.Num.Num a => CheckerMonads.List (a -> a)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: GHC.Num.Num a) ->
+                 case CheckerMonads.$wz @ a w of ww { (#,#) ww1 ww2 ->
+                 CheckerMonads.Cons @ (a -> a) ww1 ww2 }) -}
+cc5dbe029d6bd71d3933ff64b8b2ddab
+  z2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (8) -}
+6f2a79c34a22722fe00d73ef14b70e70
+  z3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (9) -}
+93bbb2c7c1db4110b23dd76a5f492502
+  zAp :: GHC.Num.Num a => CheckerMonads.ZipList' a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))>,
+     Unfolding: (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 case CheckerMonads.$wz @ a $dNum of ww { (#,#) ww1 ww2 ->
+                 (CheckerMonads.zipWith'
+                    @ (a -> a)
+                    @ a
+                    @ a
+                    (GHC.Base.$ @ 'GHC.Types.PtrRepLifted @ a @ a)
+                    (CheckerMonads.Cons @ (a -> a) ww1 ww2)
+                    (CheckerMonads.Cons
+                       @ a
+                       (GHC.Num.fromInteger @ a $dNum CheckerMonads.values2)
+                       (CheckerMonads.Cons
+                          @ a
+                          (GHC.Num.fromInteger @ a $dNum CheckerMonads.values1)
+                          (CheckerMonads.Cons
+                             @ a
+                             (GHC.Num.fromInteger @ a $dNum CheckerMonads.z'2)
+                             (CheckerMonads.Nil @ a)))))
+                   `cast`
+                 (Sym (CheckerMonads.N:ZipList'[0]) <a>_N) }) -}
+84d8ee7dd4423d38d76564bc075b5bd8
+  zAp' :: GHC.Num.Num a => CheckerMonads.ZipList' a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,C(C1(U)),A,A,A,C(U))>,
+     Unfolding: (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 case CheckerMonads.$wz @ a $dNum of ww { (#,#) ww1 ww2 ->
+                 case CheckerMonads.$wrepeat'
+                        @ a
+                        (GHC.Num.fromInteger
+                           @ a
+                           $dNum
+                           CheckerMonads.values2) of ww3 { (#,#) ww4 ww5 ->
+                 (CheckerMonads.zipWith'
+                    @ (a -> a)
+                    @ a
+                    @ a
+                    (GHC.Base.$ @ 'GHC.Types.PtrRepLifted @ a @ a)
+                    (CheckerMonads.Cons @ (a -> a) ww1 ww2)
+                    (CheckerMonads.Cons @ a ww4 ww5))
+                   `cast`
+                 (Sym (CheckerMonads.N:ZipList'[0]) <a>_N) } }) -}
+915eff50066bcbf94d47d12af2494ff5
+  zipListGen ::
+    Test.QuickCheck.Arbitrary.Arbitrary a =>
+    Test.QuickCheck.Gen.Gen (CheckerMonads.ZipList' a)
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                CheckerMonads.zipListGen1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Test.QuickCheck.Arbitrary.Arbitrary a>_R
+                 ->_R Sym (Test.QuickCheck.Gen.N:Gen[0]
+                               (CheckerMonads.N:ZipList'[0] <a>_N))) -}
+6a7b988bc11e11b793cead326396e280
+  zipListGen1 ::
+    Test.QuickCheck.Arbitrary.Arbitrary a =>
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int -> CheckerMonads.List a
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A)><L,1*U(U,U,U,1*U,A,A)><L,U>,
+     Unfolding: (\ @ a
+                   ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary a)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 CheckerMonads.listGen1
+                   @ a
+                   $dArbitrary
+                   (case eta
+                           `cast`
+                         (Test.QuickCheck.Random.N:QCGen[0]) of ww { System.Random.TF.Gen.TFGen ww1 ww2 ww3 ww4 ww5 ww6 ->
+                    case System.Random.TF.Gen.$wtfGenSplit
+                           ww1
+                           ww2
+                           ww3
+                           ww4 of ww7 { (#,#) ww8 ww9 ->
+                    ww8 `cast` (Sym (Test.QuickCheck.Random.N:QCGen[0])) } })
+                   eta1) -}
+56333a1c4330ebcca449716dca6ceef9
+  zipWith' ::
+    (a -> b -> c)
+    -> CheckerMonads.List a
+    -> CheckerMonads.List b
+    -> CheckerMonads.List c
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><S,1*U><L,1*U> -}
+instance GHC.Base.Applicative [CheckerMonads.List]
+  = CheckerMonads.$fApplicativeList
+instance GHC.Base.Applicative [CheckerMonads.Validation]
+  = CheckerMonads.$fApplicativeValidation
+instance GHC.Base.Applicative [CheckerMonads.ZipList']
+  = CheckerMonads.$fApplicativeZipList'
+instance Test.QuickCheck.Arbitrary.Arbitrary [CheckerMonads.Errors]
+  = CheckerMonads.$fArbitraryErrors
+instance Test.QuickCheck.Arbitrary.Arbitrary [CheckerMonads.List]
+  = CheckerMonads.$fArbitraryList
+instance Test.QuickCheck.Arbitrary.Arbitrary [CheckerMonads.Validation]
+  = CheckerMonads.$fArbitraryValidation
+instance Test.QuickCheck.Arbitrary.Arbitrary [CheckerMonads.ZipList']
+  = CheckerMonads.$fArbitraryZipList'
+instance GHC.Classes.Eq [CheckerMonads.Errors]
+  = CheckerMonads.$fEqErrors
+instance GHC.Classes.Eq [CheckerMonads.List]
+  = CheckerMonads.$fEqList
+instance Test.QuickCheck.Checkers.EqProp [CheckerMonads.List]
+  = CheckerMonads.$fEqPropList
+instance Test.QuickCheck.Checkers.EqProp [CheckerMonads.Validation]
+  = CheckerMonads.$fEqPropValidation
+instance Test.QuickCheck.Checkers.EqProp [Control.Applicative.ZipList]
+  = CheckerMonads.$fEqPropZipList
+instance Test.QuickCheck.Checkers.EqProp [CheckerMonads.ZipList']
+  = CheckerMonads.$fEqPropZipList'
+instance GHC.Classes.Eq [CheckerMonads.Validation]
+  = CheckerMonads.$fEqValidation
+instance GHC.Classes.Eq [CheckerMonads.ZipList']
+  = CheckerMonads.$fEqZipList'
+instance GHC.Base.Functor [CheckerMonads.List]
+  = CheckerMonads.$fFunctorList
+instance GHC.Base.Functor [CheckerMonads.Validation]
+  = CheckerMonads.$fFunctorValidation
+instance GHC.Base.Functor [CheckerMonads.ZipList']
+  = CheckerMonads.$fFunctorZipList'
+instance GHC.Base.Monoid [Control.Applicative.ZipList]
+  = CheckerMonads.$fMonoidZipList
+instance GHC.Show.Show [CheckerMonads.Errors]
+  = CheckerMonads.$fShowErrors
+instance GHC.Show.Show [CheckerMonads.List]
+  = CheckerMonads.$fShowList
+instance GHC.Show.Show [CheckerMonads.Validation]
+  = CheckerMonads.$fShowValidation
+instance GHC.Show.Show [CheckerMonads.ZipList']
+  = CheckerMonads.$fShowZipList'
+"SPEC $c*> @ [Errors]" [ALWAYS] forall ($dMonoid :: GHC.Base.Monoid
+                                                      [CheckerMonads.Errors])
+  CheckerMonads.$fApplicativeValidation_$c*> @ [CheckerMonads.Errors]
+                                             $dMonoid
+  = CheckerMonads.$fApplicativeValidation_$s$c*>
+"SPEC $c<* @ [Errors]" [ALWAYS] forall ($dMonoid :: GHC.Base.Monoid
+                                                      [CheckerMonads.Errors])
+  CheckerMonads.$fApplicativeValidation_$c<* @ [CheckerMonads.Errors]
+                                             $dMonoid
+  = CheckerMonads.$fApplicativeValidation_$s$c<*
+"SPEC $c<*> @ [Errors]" [ALWAYS] forall ($dMonoid :: GHC.Base.Monoid
+                                                       [CheckerMonads.Errors])
+  CheckerMonads.$fApplicativeValidation_$c<*> @ [CheckerMonads.Errors]
+                                              $dMonoid
+  = CheckerMonads.$fApplicativeValidation1
+"SPEC $cmappend @ (Sum Int)" [ALWAYS] forall ($dMonoid :: GHC.Base.Monoid
+                                                            (Data.Monoid.Sum GHC.Types.Int))
+  CheckerMonads.$fMonoidZipList_$cmappend @ (Data.Monoid.Sum
+                                               GHC.Types.Int)
+                                          $dMonoid
+  = CheckerMonads.$fMonoidZipList_$s$cmappend
+"SPEC $cmconcat @ (Sum Int)" [ALWAYS] forall ($dMonoid :: GHC.Base.Monoid
+                                                            (Data.Monoid.Sum GHC.Types.Int))
+  CheckerMonads.$fMonoidZipList_$cmconcat @ (Data.Monoid.Sum
+                                               GHC.Types.Int)
+                                          $dMonoid
+  = CheckerMonads.$fMonoidZipList_$s$cmconcat
+"SPEC $cmempty @ (Sum Int)" [ALWAYS] forall ($dMonoid :: GHC.Base.Monoid
+                                                           (Data.Monoid.Sum GHC.Types.Int))
+  CheckerMonads.$fMonoidZipList_$cmempty @ (Data.Monoid.Sum
+                                              GHC.Types.Int)
+                                         $dMonoid
+  = CheckerMonads.$fMonoidZipList_$s$cmempty
+"SPEC $cp1Applicative @ [Errors]" [ALWAYS] forall ($dMonoid :: GHC.Base.Monoid
+                                                                 [CheckerMonads.Errors])
+  CheckerMonads.$fApplicativeValidation_$cp1Applicative @ [CheckerMonads.Errors]
+                                                        $dMonoid
+  = CheckerMonads.$fApplicativeValidation_$s$cp1Applicative
+"SPEC $cpure @ [Errors]" [ALWAYS] forall ($dMonoid :: GHC.Base.Monoid
+                                                        [CheckerMonads.Errors])
+  CheckerMonads.$fApplicativeValidation_$cpure @ [CheckerMonads.Errors]
+                                               $dMonoid
+  = CheckerMonads.$fApplicativeValidation_$s$cpure
+"SPEC $cshow @ (Int -> Int)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                          (GHC.Types.Int -> GHC.Types.Int))
+  CheckerMonads.$fShowList_$cshow @ (GHC.Types.Int -> GHC.Types.Int)
+                                  $dShow
+  = CheckerMonads.$fShowList_$s$cshow1
+"SPEC $cshow @ Int" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                 GHC.Types.Int)
+  CheckerMonads.$fShowList_$cshow @ GHC.Types.Int $dShow
+  = CheckerMonads.$fShowList_$s$cshow
+"SPEC $cshow @ [Errors] @ (Int -> Int)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                     [CheckerMonads.Errors])
+                                                        ($dShow1 :: GHC.Show.Show
+                                                                      (GHC.Types.Int
+                                                                       -> GHC.Types.Int))
+  CheckerMonads.$fShowValidation_$cshow @ [CheckerMonads.Errors]
+                                        @ (GHC.Types.Int -> GHC.Types.Int)
+                                        $dShow1
+                                        $dShow
+  = CheckerMonads.$fShowValidation_$s$cshow1
+"SPEC $cshow @ [Errors] @ Int" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                            [CheckerMonads.Errors])
+                                               ($dShow1 :: GHC.Show.Show GHC.Types.Int)
+  CheckerMonads.$fShowValidation_$cshow @ [CheckerMonads.Errors]
+                                        @ GHC.Types.Int
+                                        $dShow1
+                                        $dShow
+  = CheckerMonads.$fShowValidation_$s$cshow
+"SPEC $cshowList @ (Int -> Int)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                              (GHC.Types.Int -> GHC.Types.Int))
+  CheckerMonads.$fShowList_$cshowList @ (GHC.Types.Int
+                                         -> GHC.Types.Int)
+                                      $dShow
+  = CheckerMonads.$fShowList_$s$cshowList1
+"SPEC $cshowList @ Int" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                     GHC.Types.Int)
+  CheckerMonads.$fShowList_$cshowList @ GHC.Types.Int $dShow
+  = CheckerMonads.$fShowList_$s$cshowList
+"SPEC $cshowList @ [Errors] @ (Int -> Int)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                         [CheckerMonads.Errors])
+                                                            ($dShow1 :: GHC.Show.Show
+                                                                          (GHC.Types.Int
+                                                                           -> GHC.Types.Int))
+  CheckerMonads.$fShowValidation_$cshowList @ [CheckerMonads.Errors]
+                                            @ (GHC.Types.Int -> GHC.Types.Int)
+                                            $dShow1
+                                            $dShow
+  = CheckerMonads.$fShowValidation_$s$cshowList1
+"SPEC $cshowList @ [Errors] @ Int" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                [CheckerMonads.Errors])
+                                                   ($dShow1 :: GHC.Show.Show GHC.Types.Int)
+  CheckerMonads.$fShowValidation_$cshowList @ [CheckerMonads.Errors]
+                                            @ GHC.Types.Int
+                                            $dShow1
+                                            $dShow
+  = CheckerMonads.$fShowValidation_$s$cshowList
+"SPEC $cshowsPrec @ (Int -> Int)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                               (GHC.Types.Int -> GHC.Types.Int))
+  CheckerMonads.$fShowList_$cshowsPrec @ (GHC.Types.Int
+                                          -> GHC.Types.Int)
+                                       $dShow
+  = CheckerMonads.$fShowList_$s$cshowsPrec1
+"SPEC $cshowsPrec @ Int" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                      GHC.Types.Int)
+  CheckerMonads.$fShowList_$cshowsPrec @ GHC.Types.Int $dShow
+  = CheckerMonads.$fShowList_$s$cshowsPrec
+"SPEC $cshowsPrec @ [Errors] @ (Int -> Int)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                          [CheckerMonads.Errors])
+                                                             ($dShow1 :: GHC.Show.Show
+                                                                           (GHC.Types.Int
+                                                                            -> GHC.Types.Int))
+  CheckerMonads.$fShowValidation_$cshowsPrec @ [CheckerMonads.Errors]
+                                             @ (GHC.Types.Int -> GHC.Types.Int)
+                                             $dShow1
+                                             $dShow
+  = CheckerMonads.$fShowValidation_$s$cshowsPrec1
+"SPEC $cshowsPrec @ [Errors] @ Int" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                 [CheckerMonads.Errors])
+                                                    ($dShow1 :: GHC.Show.Show GHC.Types.Int)
+  CheckerMonads.$fShowValidation_$cshowsPrec @ [CheckerMonads.Errors]
+                                             @ GHC.Types.Int
+                                             $dShow1
+                                             $dShow
+  = CheckerMonads.$fShowValidation_$s$cshowsPrec
+"SPEC $cshrink @ (Int -> Int)" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                 (GHC.Types.Int -> GHC.Types.Int))
+  CheckerMonads.$fArbitraryList_$cshrink @ (GHC.Types.Int
+                                            -> GHC.Types.Int)
+                                         $dArbitrary
+  = CheckerMonads.$fArbitraryList_$s$cshrink1
+"SPEC $cshrink @ Int" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                        GHC.Types.Int)
+  CheckerMonads.$fArbitraryList_$cshrink @ GHC.Types.Int $dArbitrary
+  = CheckerMonads.$fArbitraryList_$s$cshrink
+"SPEC $cshrink @ [Errors] @ (Int -> Int)" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                            (GHC.Types.Int
+                                                                             -> GHC.Types.Int))
+                                                          ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                             [CheckerMonads.Errors])
+  CheckerMonads.$fArbitraryValidation_$cshrink @ [CheckerMonads.Errors]
+                                               @ (GHC.Types.Int -> GHC.Types.Int)
+                                               $dArbitrary1
+                                               $dArbitrary
+  = CheckerMonads.$fArbitraryValidation_$s$cshrink1
+"SPEC $cshrink @ [Errors] @ Int" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                   GHC.Types.Int)
+                                                 ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                    [CheckerMonads.Errors])
+  CheckerMonads.$fArbitraryValidation_$cshrink @ [CheckerMonads.Errors]
+                                               @ GHC.Types.Int
+                                               $dArbitrary1
+                                               $dArbitrary
+  = CheckerMonads.$fArbitraryValidation_$s$cshrink
+"SPEC $fApplicativeValidation @ [Errors]" [ALWAYS] forall ($dMonoid :: GHC.Base.Monoid
+                                                                         [CheckerMonads.Errors])
+  CheckerMonads.$fApplicativeValidation @ [CheckerMonads.Errors]
+                                        $dMonoid
+  = CheckerMonads.$fApplicativeValidation_$s$fApplicativeValidation
+"SPEC $fArbitraryList @ (Int -> Int)" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                        (GHC.Types.Int
+                                                                         -> GHC.Types.Int))
+  CheckerMonads.$fArbitraryList @ (GHC.Types.Int -> GHC.Types.Int)
+                                $dArbitrary
+  = CheckerMonads.$fArbitraryList_$s$fArbitraryList1
+"SPEC $fArbitraryList @ Int" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                               GHC.Types.Int)
+  CheckerMonads.$fArbitraryList @ GHC.Types.Int $dArbitrary
+  = CheckerMonads.$fArbitraryList_$s$fArbitraryList
+"SPEC $fArbitraryValidation @ [Errors] @ (Int -> Int)" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                                         (GHC.Types.Int
+                                                                                          -> GHC.Types.Int))
+                                                                       ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                                          [CheckerMonads.Errors])
+  CheckerMonads.$fArbitraryValidation @ [CheckerMonads.Errors]
+                                      @ (GHC.Types.Int -> GHC.Types.Int)
+                                      $dArbitrary1
+                                      $dArbitrary
+  = CheckerMonads.$fArbitraryValidation_$s$fArbitraryValidation1
+"SPEC $fArbitraryValidation @ [Errors] @ Int" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                                GHC.Types.Int)
+                                                              ($dArbitrary1 :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                                 [CheckerMonads.Errors])
+  CheckerMonads.$fArbitraryValidation @ [CheckerMonads.Errors]
+                                      @ GHC.Types.Int
+                                      $dArbitrary1
+                                      $dArbitrary
+  = CheckerMonads.$fArbitraryValidation_$s$fArbitraryValidation
+"SPEC $fMonoidZipList @ (Sum Int)" [ALWAYS] forall ($dMonoid :: GHC.Base.Monoid
+                                                                  (Data.Monoid.Sum GHC.Types.Int))
+  CheckerMonads.$fMonoidZipList @ (Data.Monoid.Sum GHC.Types.Int)
+                                $dMonoid
+  = CheckerMonads.$fMonoidZipList_$s$fMonoidZipList
+"SPEC $fShowList @ (Int -> Int)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                              (GHC.Types.Int -> GHC.Types.Int))
+  CheckerMonads.$fShowList @ (GHC.Types.Int -> GHC.Types.Int) $dShow
+  = CheckerMonads.$fShowList_$s$fShowList1
+"SPEC $fShowList @ Int" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                     GHC.Types.Int)
+  CheckerMonads.$fShowList @ GHC.Types.Int $dShow
+  = CheckerMonads.$fShowList_$s$fShowList
+"SPEC $fShowValidation @ [Errors] @ (Int -> Int)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                               [CheckerMonads.Errors])
+                                                                  ($dShow1 :: GHC.Show.Show
+                                                                                (GHC.Types.Int
+                                                                                 -> GHC.Types.Int))
+  CheckerMonads.$fShowValidation @ [CheckerMonads.Errors]
+                                 @ (GHC.Types.Int -> GHC.Types.Int)
+                                 $dShow1
+                                 $dShow
+  = CheckerMonads.$fShowValidation_$s$fShowValidation1
+"SPEC $fShowValidation @ [Errors] @ Int" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                      [CheckerMonads.Errors])
+                                                         ($dShow1 :: GHC.Show.Show GHC.Types.Int)
+  CheckerMonads.$fShowValidation @ [CheckerMonads.Errors]
+                                 @ GHC.Types.Int
+                                 $dShow1
+                                 $dShow
+  = CheckerMonads.$fShowValidation_$s$fShowValidation
+"SPEC/CheckerMonads $fArbitrary(->) @ Int @ Int" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                                   GHC.Types.Int)
+                                                                 ($dCoArbitrary :: Test.QuickCheck.Arbitrary.CoArbitrary
+                                                                                     GHC.Types.Int)
+  Test.QuickCheck.Arbitrary.$fArbitrary(->) @ GHC.Types.Int
+                                            @ GHC.Types.Int
+                                            $dCoArbitrary
+                                            $dArbitrary
+  = CheckerMonads.$fArbitraryList_$s$fArbitrary(->)
+"SPEC/CheckerMonads $fArbitrary(->)_$cshrink @ Int @ Int" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                                            GHC.Types.Int)
+                                                                          ($dCoArbitrary :: Test.QuickCheck.Arbitrary.CoArbitrary
+                                                                                              GHC.Types.Int)
+  Test.QuickCheck.Arbitrary.$fArbitrary(->)_$cshrink @ GHC.Types.Int
+                                                     @ GHC.Types.Int
+                                                     $dCoArbitrary
+                                                     $dArbitrary
+  = CheckerMonads.$fArbitraryList_$s$fArbitrary(->)_$cshrink
+"SPEC/CheckerMonads $fArbitrarySum @ Int" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                            GHC.Types.Int)
+  Test.QuickCheck.Arbitrary.$fArbitrarySum @ GHC.Types.Int
+                                           $dArbitrary
+  = CheckerMonads.$s$fArbitrarySum
+"SPEC/CheckerMonads $fArbitraryZipList @ (Sum Int)" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                                      (Data.Monoid.Sum
+                                                                                         GHC.Types.Int))
+  Test.QuickCheck.Arbitrary.$fArbitraryZipList @ (Data.Monoid.Sum
+                                                    GHC.Types.Int)
+                                               $dArbitrary
+  = CheckerMonads.$s$fArbitraryZipList
+"SPEC/CheckerMonads $fArbitrary[] @ Errors" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                              CheckerMonads.Errors)
+  Test.QuickCheck.Arbitrary.$fArbitrary[] @ CheckerMonads.Errors
+                                          $dArbitrary
+  = CheckerMonads.$fArbitraryValidation_$s$fArbitrary[]
+"SPEC/CheckerMonads $fArbitrary[]_$cshrink @ Errors" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                                       CheckerMonads.Errors)
+  Test.QuickCheck.Arbitrary.$fArbitrary[]_$cshrink @ CheckerMonads.Errors
+                                                   $dArbitrary
+  = CheckerMonads.$fArbitraryValidation_$s$fArbitrary[]_$cshrink
+"SPEC/CheckerMonads $fEqSum @ Int" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                              GHC.Types.Int)
+  Data.Monoid.$fEqSum @ GHC.Types.Int $dEq = CheckerMonads.$s$fEqSum
+"SPEC/CheckerMonads $fMonoidSum @ Int" [ALWAYS] forall ($dNum :: GHC.Num.Num
+                                                                   GHC.Types.Int)
+  Data.Monoid.$fMonoidSum @ GHC.Types.Int $dNum
+  = CheckerMonads.$s$fMonoidSum
+"SPEC/CheckerMonads $fShowSum @ Int" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                  GHC.Types.Int)
+  Data.Monoid.$fShowSum @ GHC.Types.Int $dShow
+  = CheckerMonads.$s$fShowSum
+"SPEC/CheckerMonads $fShowSum_$cshowList @ Int" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                             GHC.Types.Int)
+  Data.Monoid.$fShowSum_$cshowList @ GHC.Types.Int $dShow
+  = CheckerMonads.$s$fShowSum_$s$fShowSum_$cshowList
+"SPEC/CheckerMonads $fShowZipList @ (Sum Int)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                            (Data.Monoid.Sum
+                                                                               GHC.Types.Int))
+  Control.Applicative.$fShowZipList @ (Data.Monoid.Sum GHC.Types.Int)
+                                    $dShow
+  = CheckerMonads.$s$fShowZipList
+"SPEC/CheckerMonads $fShowZipList_$cshowList @ (Sum Int)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                       (Data.Monoid.Sum
+                                                                                          GHC.Types.Int))
+  Control.Applicative.$fShowZipList_$cshowList @ (Data.Monoid.Sum
+                                                    GHC.Types.Int)
+                                               $dShow
+  = CheckerMonads.$s$fShowZipList_$s$fShowZipList_$cshowList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

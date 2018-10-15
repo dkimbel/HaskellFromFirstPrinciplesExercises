@@ -1,0 +1,1295 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-23 02:20:02.927589 UTC
+
+interface altParsing-0.1.0.0-BcQDx2E5fBgFnrZUFQOUfa:AltParsing 8002
+  interface hash: f7e355e3e444e929d28c82f1cf81cf2d
+  ABI hash: 875ab11d0c57883c7c199bd2ef039798
+  export-list hash: ee74e4af1ab08d068f3d465170a20376
+  orphan hash: d162411f3f2aaae3fea6d27a1e7a90a4
+  flag hash: 4f8cee337f717799b182576d5fd6650c
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  AltParsing.a
+  AltParsing.b
+  AltParsing.c
+  AltParsing.eitherOr
+  AltParsing.main
+  AltParsing.parseNos
+  AltParsing.Alternative'{AltParsing.<||> AltParsing.empty' AltParsing.many' AltParsing.some'}
+  AltParsing.NumberOrString
+module dependencies:
+package dependencies: StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
+                      adjunctions-4.3@adjunctions-4.3-6nMo9ca9E95L1lsN6Br4XL
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-3RTqikoQf47ajVD9m8zgB
+                      ansi-wl-pprint-0.6.7.3@ansi-wl-pprint-0.6.7.3-A79v826bgPr574HtaZPPqC
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-8bUdsjh6UCE83aHCxOEHna
+                      base-4.9.1.0
+                      base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p
+                      blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      charset-0.3.7.1@charset-0.3.7.1-8XzlqAFUmfXDSOZRmiDkgy
+                      comonad-5.0.1@comonad-5.0.1-2dOTQljdUSmGwatNHkYwW3
+                      containers-0.5.7.1@containers-0.5.7.1
+                      contravariant-1.4@contravariant-1.4-29zF0Im431177ovfbHYCGv
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      distributive-0.5.2@distributive-0.5.2-KlkgfUmuqy3Z181VSjKfJ
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      fingertree-0.1.1.0@fingertree-0.1.1.0-Aiaf912zjZGHvH3XyjxrYA
+                      free-4.12.4@free-4.12.4-JUYfwQOGje1F6ljlwhsQfP
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      kan-extensions-5.0.2@kan-extensions-5.0.2-5SVDrYVManyKLFvHkx6yaS
+                      lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      parsers-0.12.5@parsers-0.12.5-GnYuXhr66xHG7QyPR4udRA
+                      prelude-extras-0.4.0.3@prelude-extras-0.4.0.3-BhL9U5k7NtGJn1itwIHt2Y
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      profunctors-5.2@profunctors-5.2-7ONvCmXw8M9Co9mYrudYx
+                      raw-strings-qq-1.1@raw-strings-qq-1.1-HjO0jIPgyz3nrMVQqTSCs
+                      reducers-3.12.1@reducers-3.12.1-9f8Ic9ruWZ1FsGrCfB0ZLr
+                      reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4
+                      scientific-0.3.5.1@scientific-0.3.5.1-JHsAAp34Yyd8e5v3sK3O5Q
+                      semigroupoids-5.2@semigroupoids-5.2-8RI6HtO1LKLE496qmzB9Po
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-abstraction-0.2.3.0@th-abstraction-0.2.3.0-IC8R8TEnxiaENlxvcI4gyL
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-IuFogs8HAVUJBWVNMhtssu
+                      trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         reducers-3.12.1@reducers-3.12.1-9f8Ic9ruWZ1FsGrCfB0ZLr:Data.Semigroup.Instances
+         reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4:Data.Reflection
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta.Instances
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: adjunctions-4.3@adjunctions-4.3-6nMo9ca9E95L1lsN6Br4XL:Data.Functor.Rep
+                         attoparsec-0.13.1.0@attoparsec-0.13.1.0-8bUdsjh6UCE83aHCxOEHna:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Biff
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Clown
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Fix
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Flip
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Join
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Joker
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Product
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Sum
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Tannen
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Wrapped
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         kan-extensions-5.0.2@kan-extensions-5.0.2-5SVDrYVManyKLFvHkx6yaS:Data.Functor.Day
+                         kan-extensions-5.0.2@kan-extensions-5.0.2-5SVDrYVManyKLFvHkx6yaS:Data.Functor.Yoneda
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.At
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.Internal.Indexed
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.Reified
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.Tuple
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.Wrapped
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.Zoom
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         profunctors-5.2@profunctors-5.2-7ONvCmXw8M9Co9mYrudYx:Data.Profunctor.Rep
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-abstraction-0.2.3.0@th-abstraction-0.2.3.0-IC8R8TEnxiaENlxvcI4gyL:Language.Haskell.TH.Datatype
+                         trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta.Delta
+                         trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta.Rendering
+                         trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta.Rope
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  parsers-0.12.5@parsers-0.12.5-GnYuXhr66xHG7QyPR4udRA:Text.Parser.Char 02119161c21303a8e6e8e1424fbf0522
+import  -/  parsers-0.12.5@parsers-0.12.5-GnYuXhr66xHG7QyPR4udRA:Text.Parser.Token 07cf1926abb76d9f4937ccbca172834f
+import  -/  raw-strings-qq-1.1@raw-strings-qq-1.1-HjO0jIPgyz3nrMVQqTSCs:Text.RawString.QQ 049903e110b50d2e2afc78f5648fcd4b
+import  -/  trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta 0a6f21b55919d63da58a1e1018300625
+import  -/  trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta.Parser 5b90489d47f3ee6b8d3fe0ceabdcd207
+a7c5c833c8ea4e2ae475808f3d95841a
+  $dmmany' :: AltParsing.Alternative' f => forall a. f a -> f [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLC(C(S))LL),U(U,A,C(C1(U)),A,A)><L,U>,
+     Unfolding: InlineRule (0, True, False)
+                (\ @ (f :: * -> *)
+                   ($dAlternative' :: AltParsing.Alternative' f)
+                   @ a1
+                   (eta :: f a1) ->
+                 let {
+                   $dApplicative :: GHC.Base.Applicative f
+                   = AltParsing.$p1Alternative' @ f $dAlternative'
+                 } in
+                 letrec {
+                   many_v :: f [a1]
+                   = AltParsing.<||>
+                       @ f
+                       $dAlternative'
+                       @ [a1]
+                       (GHC.Base.<*>
+                          @ f
+                          $dApplicative
+                          @ [a1]
+                          @ [a1]
+                          (GHC.Base.fmap
+                             @ f
+                             (GHC.Base.$p1Applicative @ f $dApplicative)
+                             @ a1
+                             @ ([a1] -> [a1])
+                             (GHC.Types.: @ a1)
+                             eta)
+                          many_v)
+                       (GHC.Base.pure @ f $dApplicative @ [a1] (GHC.Types.[] @ a1))
+                 } in
+                 many_v) -}
+69cf825230e24aa511dfec06e9d72426
+  $dmsome' :: AltParsing.Alternative' f => forall a. f a -> f [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLLLL),U(U,A,C(C1(U)),A,A)><L,U>,
+     Unfolding: InlineRule (0, True, False)
+                (\ @ (f :: * -> *)
+                   ($dAlternative' :: AltParsing.Alternative' f)
+                   @ a1
+                   (eta :: f a1) ->
+                 let {
+                   $dApplicative :: GHC.Base.Applicative f
+                   = AltParsing.$p1Alternative' @ f $dAlternative'
+                 } in
+                 letrec {
+                   some_v :: f [a1]
+                   = GHC.Base.<*>
+                       @ f
+                       $dApplicative
+                       @ [a1]
+                       @ [a1]
+                       (GHC.Base.fmap
+                          @ f
+                          (GHC.Base.$p1Applicative @ f $dApplicative)
+                          @ a1
+                          @ ([a1] -> [a1])
+                          (GHC.Types.: @ a1)
+                          eta)
+                       (AltParsing.<||>
+                          @ f
+                          $dAlternative'
+                          @ [a1]
+                          some_v
+                          (GHC.Base.pure @ f $dApplicative @ [a1] (GHC.Types.[] @ a1)))
+                 } in
+                 some_v) -}
+a5c9338747b7b9b6ed4abb6bd20cf99c
+  $s$fShowEither ::
+    GHC.Show.Show
+      (Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char])
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char])
+                  (Data.Either.$fShowEither_$cshowsPrec
+                     @ GHC.Integer.Type.Integer
+                     @ [GHC.Types.Char]
+                     GHC.Show.$fShow[]_$s$fShow[]1
+                     GHC.Show.$fShowInteger)
+                  (Data.Either.$fShowEither_$cshow
+                     @ GHC.Integer.Type.Integer
+                     @ [GHC.Types.Char]
+                     GHC.Show.$fShow[]_$s$fShow[]1
+                     GHC.Show.$fShowInteger)
+                  AltParsing.$s$fShowEither_$s$fShowEither_$cshowList -}
+de93b70ec92dc60c5ab25b00ff00f714
+  $s$fShowEither_$s$fShowEither_$cshowList ::
+    [Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char]]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [Data.Either.Either
+                              GHC.Integer.Type.Integer [GHC.Types.Char]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char])
+                   (Data.Either.$fShowEither_$cshowsPrec
+                      @ GHC.Integer.Type.Integer
+                      @ [GHC.Types.Char]
+                      GHC.Show.$fShow[]_$s$fShow[]1
+                      GHC.Show.$fShowInteger
+                      Data.Either.$fShowEither1)
+                   eta
+                   eta1) -}
+5392fc4bad7334c642700a6ff372886d
+  $s$fShowResult4 ::
+    [Data.Either.Either GHC.Integer.Type.Integer GHC.Base.String]
+    -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [Data.Either.Either
+                            GHC.Integer.Type.Integer GHC.Base.String]) ->
+                 GHC.Show.showList__
+                   @ (Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char])
+                   AltParsing.$s$fShowResult5
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e7d08754fd0a905cc42ae945ab1484d2
+  $s$fShowResult5 ::
+    Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char]
+    -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ (w3 :: Data.Either.Either
+                            GHC.Integer.Type.Integer [GHC.Types.Char]) ->
+                 Data.Either.$w$cshowsPrec
+                   @ GHC.Integer.Type.Integer
+                   @ [GHC.Types.Char]
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   GHC.Show.$fShowInteger
+                   0#
+                   w3) -}
+fa56b6b5c9ec6e7f8219077c075d411d
+  $s$fShowResult_$s$fShow[] ::
+    GHC.Show.Show
+      [Data.Either.Either GHC.Integer.Type.Integer GHC.Base.String]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [Data.Either.Either GHC.Integer.Type.Integer GHC.Base.String]
+                  AltParsing.$s$fShowResult_$s$fShow[]_$cshowsPrec
+                  AltParsing.$s$fShowResult4
+                  AltParsing.$s$fShowResult_$s$fShow[]_$cshowList -}
+ef6a0fb6e929416ae7ab589f0600e4d4
+  $s$fShowResult_$s$fShow[]_$cshowList ::
+    [[Data.Either.Either GHC.Integer.Type.Integer GHC.Base.String]]
+    -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[Data.Either.Either
+                               GHC.Integer.Type.Integer GHC.Base.String]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [Data.Either.Either GHC.Integer.Type.Integer GHC.Base.String]
+                   AltParsing.$s$fShowEither_$s$fShowEither_$cshowList
+                   eta
+                   eta1) -}
+9de533e3db62ce5d91e6b70ba5512367
+  $s$fShowResult_$s$fShow[]_$cshowsPrec ::
+    GHC.Types.Int
+    -> [Data.Either.Either GHC.Integer.Type.Integer GHC.Base.String]
+    -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds1 :: GHC.Types.Int)
+                   (eta :: [Data.Either.Either
+                              GHC.Integer.Type.Integer [GHC.Types.Char]])
+                   (eta1 :: GHC.Base.String) ->
+                 AltParsing.$s$fShowEither_$s$fShowEither_$cshowList eta eta1) -}
+bf3ad0adcb5831e78b2c9482f84f7304
+  $tc'C:Alternative' :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3227232304165023998##
+                   2779254853297231656##
+                   AltParsing.$trModule
+                   AltParsing.$tc'C:Alternative'1) -}
+06c3ae7311ed25481eaaf898ff754148
+  $tc'C:Alternative'1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Alternative'"#) -}
+758527b90e79d81450fe3cab7bea92a8
+  $tcAlternative' :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1275142653869808415##
+                   14902626791174571028##
+                   AltParsing.$trModule
+                   AltParsing.$tcAlternative'1) -}
+15e670637af8e708dc37e3556dfc22dc
+  $tcAlternative'1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Alternative'"#) -}
+0f402a71d5e44f23bd5d1f67d8dc93be
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   AltParsing.$trModule2
+                   AltParsing.$trModule1) -}
+6d95623e1b1c9a17697cfd0fa847bc88
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AltParsing"#) -}
+daf3619063d9ed575c891da349bb9896
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "altParsing-0.1.0.0-BcQDx2E5fBgFnrZUFQOUfa"#) -}
+95a6980f9c999ad5219f0bfed887c30d
+  $wds ::
+    ((GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> ((GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 7,
+     Strictness: <L,1*C1(C1(U))><L,C(C1(C(U)))><S,U><L,U><L,U><L,U><S,U>,
+     Inline: [0] -}
+671e74c7cc6d50eeda2d8cb71ef25bd4
+  $wds1 ::
+    ((GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> ((GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 7,
+     Strictness: <L,1*C1(C1(U))><L,C(C1(C(U)))><S,U><L,U><L,U><L,U><S,U>,
+     Inline: [0] -}
+0662896f98bb3af633532533a52762a2
+  $wparseNos ::
+    (Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (GHC.Types.Char
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 7,
+     Strictness: <L,1*C1(U)><L,C(C1(C(U)))><S,U><L,U><L,U><L,U><S,U>,
+     Inline: [0] -}
+ed93c3452f939b6a34bba89614481e7b
+  class GHC.Base.Applicative f => Alternative' (f :: * -> *) where
+    empty' :: f a
+    (<||>) :: f a -> f a -> f a
+    some' :: f a -> f [a]
+    many' :: f a -> f [a]
+    {-# MINIMAL empty', (<||>) #-}
+f7e9803e51909366486e4542f0952ce8
+  type NumberOrString =
+    Data.Either.Either GHC.Integer.Type.Integer GHC.Base.String
+6a79b3e2191773ea410e0f2a5c52b0f5
+  a :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "blah"#) -}
+94a0531c2982bf89783c6c58ced41a6e
+  b :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "123"#) -}
+3fcca4a54f5cccc9ed96d46e8ea16c01
+  c :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "123blah789"#) -}
+777472d4b36c381e8b308d2863fa9dce
+  eitherOr :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \123\n\
+                   \abc\n\
+                   \456\n\
+                   \def\n"#) -}
+99d3e3c6fa586638ba4da25069f24d4e
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                AltParsing.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+3f89876e49343ef4a411fafc00cb1ce1
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        AltParsing.main26
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        AltParsing.main20
+                        GHC.Types.True
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        AltParsing.main18
+                        GHC.Types.True
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        AltParsing.main16
+                        GHC.Types.True
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        AltParsing.main13
+                        GHC.Types.True
+                        ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   AltParsing.main2
+                   GHC.Types.True
+                   ipv8 } } } } }) -}
+93516c72227876ee2f843f89cde80e8a
+  main10 ::
+    (GHC.Integer.Type.Integer
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (GHC.Integer.Type.Integer
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 2, Strictness: <L,C(C1(U))><L,C(U)>,
+     Unfolding: (\ @ r
+                   (eo :: GHC.Integer.Type.Integer
+                          -> Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (ee :: Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r) ->
+                 AltParsing.main_ds
+                   `cast`
+                 (Text.Trifecta.Parser.N:Parser[0] <GHC.Integer.Type.Integer>_R)
+                   @ r
+                   (\ (a1 :: GHC.Integer.Type.Integer)
+                      (e :: Text.Trifecta.Result.Err) ->
+                    eo
+                      a1
+                      (case e of wild4 { Text.Trifecta.Result.Err ds1 ds2 ds3 ds4 ->
+                       case ds1 of wild {
+                         GHC.Base.Nothing -> wild4
+                         GHC.Base.Just ipv
+                         -> Text.Trifecta.Result.Err wild ds2 AltParsing.main11 ds4 } }))
+                   (\ (e :: Text.Trifecta.Result.Err) ->
+                    ee
+                      (case e of wild { Text.Trifecta.Result.Err ds1 ds2 ds3 ds4 ->
+                       Text.Trifecta.Result.Err ds1 ds2 AltParsing.main11 ds4 }))) -}
+aaf19bfa9f5dfcf1505e7ade4a80ccdf
+  main11 :: Data.Set.Base.Set GHC.Base.String
+  {- Unfolding: (case Text.Parser.Token.integer1 of dt { DEFAULT ->
+                 Data.Set.Base.Bin
+                   @ GHC.Base.String
+                   1#
+                   dt
+                   (Data.Set.Base.Tip @ GHC.Base.String)
+                   (Data.Set.Base.Tip @ GHC.Base.String) }) -}
+a72b1d29e1aee77bdfd16c5bcf4b179a
+  main12 ::
+    ((GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> ((GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 6,
+     Strictness: <L,1*C1(C1(U))><L,A><L,C(C1(C(U)))><L,A><S,U><S(LLLS),1*U(U,U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ r
+                   (w :: (GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+                         -> Text.Trifecta.Result.Err
+                         -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (w1 :: Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (w2 :: (GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+                          -> Data.Set.Base.Set GHC.Base.String
+                          -> Text.Trifecta.Delta.Delta
+                          -> Data.ByteString.Internal.ByteString
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (w3 :: Text.Trifecta.Result.ErrInfo
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (w4 :: Text.Trifecta.Delta.Delta)
+                   (w5 :: Data.ByteString.Internal.ByteString) ->
+                 case w5 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 AltParsing.$wds @ r w w2 w4 ww1 ww2 ww3 ww4 }) -}
+26c5d18b25c2f9ac276914be01c3fa97
+  main13 :: GHC.Base.String
+  {- Unfolding: (Text.Trifecta.Result.$fShowResult_$cshow
+                   @ [AltParsing.NumberOrString]
+                   AltParsing.$s$fShowResult_$s$fShow[]
+                   AltParsing.main14) -}
+2f238d455fc8fc53b619b2b801c2afd1
+  main14 :: Text.Trifecta.Result.Result [AltParsing.NumberOrString]
+  {- Unfolding: (Text.Trifecta.Parser.parseString
+                   @ [AltParsing.NumberOrString]
+                   AltParsing.main15
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <[AltParsing.NumberOrString]>_R))
+                   Text.Trifecta.Delta.$fMonoidDelta_$cmempty
+                   AltParsing.c) -}
+7d7d3ee16b0b05ae9ed6275b26350846
+  main15 ::
+    ([AltParsing.NumberOrString]
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> ([AltParsing.NumberOrString]
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 6,
+     Unfolding: (\ @ r
+                   (eta3 :: [AltParsing.NumberOrString]
+                            -> Text.Trifecta.Result.Err
+                            -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (eta4 :: Text.Trifecta.Result.Err
+                            -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)[OneShot]
+                   (eta5 :: [AltParsing.NumberOrString]
+                            -> Data.Set.Base.Set GHC.Base.String
+                            -> Text.Trifecta.Delta.Delta
+                            -> Data.ByteString.Internal.ByteString
+                            -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)[OneShot]
+                   (eta :: Text.Trifecta.Result.ErrInfo
+                           -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)[OneShot]
+                   (eta1 :: Text.Trifecta.Delta.Delta)[OneShot]
+                   (eta2 :: Data.ByteString.Internal.ByteString)[OneShot] ->
+                 Text.Trifecta.Parser.$wmanyAccum
+                   @ AltParsing.NumberOrString
+                   (GHC.Types.: @ AltParsing.NumberOrString)
+                   AltParsing.main5
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char]>_R))
+                   @ r
+                   (\ (x :: [AltParsing.NumberOrString])[OneShot] ->
+                    eta3 (GHC.List.reverse @ AltParsing.NumberOrString x))
+                   (\ (x :: [AltParsing.NumberOrString]) ->
+                    eta5 (GHC.List.reverse @ AltParsing.NumberOrString x))
+                   eta
+                   eta1
+                   eta2) -}
+929d239ac472e99e4980eafc72d8c0aa
+  main16 :: GHC.Base.String
+  {- Unfolding: (Text.Trifecta.Result.$fShowResult_$cshow
+                   @ (Data.Either.Either GHC.Integer.Type.Integer GHC.Base.String)
+                   AltParsing.$s$fShowEither
+                   AltParsing.main17) -}
+9e33e5f9e39ae49d5976c7858ec8066c
+  main17 :: Text.Trifecta.Result.Result AltParsing.NumberOrString
+  {- Unfolding: (Text.Trifecta.Parser.parseString
+                   @ AltParsing.NumberOrString
+                   AltParsing.main5
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char]>_R))
+                   Text.Trifecta.Delta.$fMonoidDelta_$cmempty
+                   AltParsing.b) -}
+15a52b0efc584e5d9ed655eedb284f79
+  main18 :: GHC.Base.String
+  {- Unfolding: (Text.Trifecta.Result.$fShowResult_$cshow
+                   @ (Data.Either.Either GHC.Integer.Type.Integer GHC.Base.String)
+                   AltParsing.$s$fShowEither
+                   AltParsing.main19) -}
+2b0feca10cafc585054abd02db3753a7
+  main19 :: Text.Trifecta.Result.Result AltParsing.NumberOrString
+  {- Unfolding: (Text.Trifecta.Parser.parseString
+                   @ AltParsing.NumberOrString
+                   AltParsing.main5
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char]>_R))
+                   Text.Trifecta.Delta.$fMonoidDelta_$cmempty
+                   AltParsing.a) -}
+f5526536abac4170cb81ce39633f5215
+  main2 :: GHC.Base.String
+  {- Unfolding: (Text.Trifecta.Result.$fShowResult_$cshow
+                   @ [AltParsing.NumberOrString]
+                   AltParsing.$s$fShowResult_$s$fShow[]
+                   AltParsing.main3) -}
+e0591252b5762b03f6afc4764c501f00
+  main20 :: GHC.Base.String
+  {- Unfolding: (Text.Trifecta.Result.$fShowResult_$cshow
+                   @ GHC.Integer.Type.Integer
+                   GHC.Show.$fShowInteger
+                   AltParsing.main21) -}
+4bd62e26aad469af654470172125916f
+  main21 :: Text.Trifecta.Result.Result GHC.Integer.Type.Integer
+  {- Unfolding: (Text.Trifecta.Parser.parseString
+                   @ GHC.Integer.Type.Integer
+                   AltParsing.main22
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <GHC.Integer.Type.Integer>_R))
+                   Text.Trifecta.Delta.$fMonoidDelta_$cmempty
+                   AltParsing.b) -}
+e23104b070a30fa742bfdf3542ae4816
+  main22 ::
+    (GHC.Integer.Type.Integer
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (GHC.Integer.Type.Integer
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 6,
+     Unfolding: (\ @ r
+                   (eo :: GHC.Integer.Type.Integer
+                          -> Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (ee :: Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)[OneShot]
+                   (eta :: GHC.Integer.Type.Integer
+                           -> Data.Set.Base.Set GHC.Base.String
+                           -> Text.Trifecta.Delta.Delta
+                           -> Data.ByteString.Internal.ByteString
+                           -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)[OneShot]
+                   (eta1 :: Text.Trifecta.Result.ErrInfo
+                            -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)[OneShot]
+                   (eta2 :: Text.Trifecta.Delta.Delta)[OneShot]
+                   (eta3 :: Data.ByteString.Internal.ByteString)[OneShot] ->
+                 Text.Trifecta.Parser.$fAlternativeParser2
+                   @ ()
+                   @ GHC.Integer.Type.Integer
+                   AltParsing.main23
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <() -> GHC.Integer.Type.Integer>_R))
+                   Text.Trifecta.Parser.$fTokenParsingParser2
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0] <()>_R))
+                   @ r
+                   (\ (a1 :: GHC.Integer.Type.Integer)
+                      (e :: Text.Trifecta.Result.Err)[OneShot] ->
+                    eo
+                      a1
+                      (case e of wild4 { Text.Trifecta.Result.Err ds1 ds2 ds3 ds4 ->
+                       case ds1 of wild {
+                         GHC.Base.Nothing -> wild4
+                         GHC.Base.Just ipv
+                         -> Text.Trifecta.Result.Err wild ds2 AltParsing.main7 ds4 } }))
+                   (\ (e :: Text.Trifecta.Result.Err) ->
+                    ee
+                      (case e of wild { Text.Trifecta.Result.Err ds1 ds2 ds3 ds4 ->
+                       Text.Trifecta.Result.Err ds1 ds2 AltParsing.main7 ds4 }))
+                   eta
+                   eta1
+                   eta2
+                   eta3) -}
+aac58535fd9afaf504f02d1ea72ad298
+  main23 ::
+    ((() -> GHC.Integer.Type.Integer)
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> ((() -> GHC.Integer.Type.Integer)
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1
+  {- Arity: 6,
+     Unfolding: (\ @ r1
+                   (eo :: (() -> GHC.Integer.Type.Integer)
+                          -> Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (ee :: Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (co :: (() -> GHC.Integer.Type.Integer)
+                          -> Data.Set.Base.Set GHC.Base.String
+                          -> Text.Trifecta.Delta.Delta
+                          -> Data.ByteString.Internal.ByteString
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (eta :: Text.Trifecta.Result.ErrInfo
+                           -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (eta1 :: Text.Trifecta.Delta.Delta)[OneShot]
+                   (eta2 :: Data.ByteString.Internal.ByteString)[OneShot] ->
+                 Text.Trifecta.Parser.$fAlternativeParser2
+                   @ ()
+                   @ GHC.Integer.Type.Integer
+                   AltParsing.main24
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <() -> GHC.Integer.Type.Integer>_R))
+                   Text.Trifecta.Parser.$fTokenParsingParser2
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0] <()>_R))
+                   @ r1
+                   (\ (x :: GHC.Integer.Type.Integer) -> eo (\ (ds1 :: ()) -> x))
+                   ee
+                   (\ (x :: GHC.Integer.Type.Integer) -> co (\ (ds1 :: ()) -> x))
+                   eta
+                   eta1
+                   eta2) -}
+027c5459231b4b516407390cbf43c7a3
+  main24 ::
+    ((() -> GHC.Integer.Type.Integer)
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> ((() -> GHC.Integer.Type.Integer)
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1
+  {- Arity: 6,
+     Unfolding: (\ @ r1
+                   (eo :: (() -> GHC.Integer.Type.Integer)
+                          -> Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (ee :: Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (co :: (() -> GHC.Integer.Type.Integer)
+                          -> Data.Set.Base.Set GHC.Base.String
+                          -> Text.Trifecta.Delta.Delta
+                          -> Data.ByteString.Internal.ByteString
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (eta :: Text.Trifecta.Result.ErrInfo
+                           -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (eta1 :: Text.Trifecta.Delta.Delta)[OneShot]
+                   (eta2 :: Data.ByteString.Internal.ByteString)[OneShot] ->
+                 Text.Trifecta.Parser.$fAlternativeParser2
+                   @ GHC.Integer.Type.Integer
+                   @ GHC.Integer.Type.Integer
+                   AltParsing.main25
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer>_R))
+                   AltParsing.main10
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <GHC.Integer.Type.Integer>_R))
+                   @ r1
+                   (\ (x :: GHC.Integer.Type.Integer) -> eo (\ (ds1 :: ()) -> x))
+                   ee
+                   (\ (x :: GHC.Integer.Type.Integer) -> co (\ (ds1 :: ()) -> x))
+                   eta
+                   eta1
+                   eta2) -}
+1faa690f13b8fd61c98700c3003a41f8
+  main25 ::
+    ((GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> ((GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 6,
+     Strictness: <L,1*C1(C1(U))><L,A><L,C(C1(C(U)))><L,A><S,U><S(LLLS),1*U(U,U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ r
+                   (w :: (GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+                         -> Text.Trifecta.Result.Err
+                         -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (w1 :: Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)[OneShot]
+                   (w2 :: (GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer)
+                          -> Data.Set.Base.Set GHC.Base.String
+                          -> Text.Trifecta.Delta.Delta
+                          -> Data.ByteString.Internal.ByteString
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)[OneShot]
+                   (w3 :: Text.Trifecta.Result.ErrInfo
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)[OneShot]
+                   (w4 :: Text.Trifecta.Delta.Delta)[OneShot]
+                   (w5 :: Data.ByteString.Internal.ByteString)[OneShot] ->
+                 case w5 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 AltParsing.$wds1 @ r w w2 w4 ww1 ww2 ww3 ww4 }) -}
+45f0941aebb5795a01ab2f6385c9a7d6
+  main26 :: GHC.Base.String
+  {- Unfolding: (Text.Trifecta.Result.$fShowResult_$cshow
+                   @ [GHC.Types.Char]
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   AltParsing.main27) -}
+bea99cac8f7bf8786390f65fc4223356
+  main27 :: Text.Trifecta.Result.Result [GHC.Types.Char]
+  {- Unfolding: (Text.Trifecta.Parser.parseString
+                   @ [GHC.Types.Char]
+                   AltParsing.main28
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0] <[GHC.Types.Char]>_R))
+                   Text.Trifecta.Delta.$fMonoidDelta_$cmempty
+                   AltParsing.a) -}
+0034ef6fe2b85afb2ca810d39cb7e102
+  main28 ::
+    ([GHC.Types.Char]
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> ([GHC.Types.Char]
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 6,
+     Unfolding: (Text.Trifecta.Parser.$fAlternativeParser1
+                   @ GHC.Types.Char
+                   AltParsing.main29
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0] <GHC.Types.Char>_R))) -}
+37da43c8841a1c274b8633b575148c4d
+  main29 ::
+    (GHC.Types.Char
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (GHC.Types.Char
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 6 -}
+cbe87ad3f36bf810c2f107a8f1015425
+  main3 :: Text.Trifecta.Result.Result [AltParsing.NumberOrString]
+  {- Unfolding: (Text.Trifecta.Parser.parseString
+                   @ [AltParsing.NumberOrString]
+                   AltParsing.main4
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <[AltParsing.NumberOrString]>_R))
+                   Text.Trifecta.Delta.$fMonoidDelta_$cmempty
+                   AltParsing.c) -}
+8d7e9d5634737566ed9fde23ac6822f7
+  main4 ::
+    ([AltParsing.NumberOrString]
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> ([AltParsing.NumberOrString]
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 6,
+     Unfolding: (Text.Trifecta.Parser.$fAlternativeParser1
+                   @ AltParsing.NumberOrString
+                   AltParsing.main5
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <Data.Either.Either
+                                GHC.Integer.Type.Integer [GHC.Types.Char]>_R))) -}
+b5d5afd36c804e1e7f98363f8b859765
+  main5 ::
+    (Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char]
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char]
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 6,
+     Strictness: <L,C(C1(U))><L,C(U)><L,C(C1(C1(C1(U))))><L,U><L,U><L,U>,
+     Unfolding: (\ @ r
+                   (eo :: Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char]
+                          -> Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (ee :: Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (co :: Data.Either.Either GHC.Integer.Type.Integer [GHC.Types.Char]
+                          -> Data.Set.Base.Set GHC.Base.String
+                          -> Text.Trifecta.Delta.Delta
+                          -> Data.ByteString.Internal.ByteString
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (ce :: Text.Trifecta.Result.ErrInfo
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (d :: Text.Trifecta.Delta.Delta)
+                   (bs :: Data.ByteString.Internal.ByteString) ->
+                 let {
+                   lvl32 :: [GHC.Types.Char]
+                            -> Data.Set.Base.Set GHC.Base.String
+                            -> Text.Trifecta.Delta.Delta
+                            -> Data.ByteString.Internal.ByteString
+                            -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+                     {- Arity: 1 -}
+                   = \ (x :: [GHC.Types.Char]) ->
+                     co
+                       (Data.Either.Right @ GHC.Integer.Type.Integer @ [GHC.Types.Char] x)
+                 } in
+                 Text.Trifecta.Parser.$fAlternativeParser2
+                   @ ()
+                   @ GHC.Integer.Type.Integer
+                   AltParsing.main8
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <() -> GHC.Integer.Type.Integer>_R))
+                   Text.Trifecta.Parser.$fTokenParsingParser2
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0] <()>_R))
+                   @ r
+                   (\ (a1 :: GHC.Integer.Type.Integer)
+                      (e :: Text.Trifecta.Result.Err)[OneShot] ->
+                    eo
+                      (Data.Either.Left @ GHC.Integer.Type.Integer @ [GHC.Types.Char] a1)
+                      (case e of wild4 { Text.Trifecta.Result.Err ds1 ds2 ds3 ds4 ->
+                       case ds1 of wild {
+                         GHC.Base.Nothing -> wild4
+                         GHC.Base.Just ipv
+                         -> Text.Trifecta.Result.Err wild ds2 AltParsing.main7 ds4 } }))
+                   (\ (e :: Text.Trifecta.Result.Err) ->
+                    let {
+                      e1 :: Text.Trifecta.Result.Err
+                      = case e of wild { Text.Trifecta.Result.Err ds1 ds2 ds3 ds4 ->
+                        Text.Trifecta.Result.Err ds1 ds2 AltParsing.main7 ds4 }
+                    } in
+                    Text.Trifecta.Parser.$fAlternativeParser1
+                      @ GHC.Types.Char
+                      AltParsing.main6
+                        `cast`
+                      (Sym (Text.Trifecta.Parser.N:Parser[0] <GHC.Types.Char>_R))
+                      @ r
+                      (\ (x :: [GHC.Types.Char])
+                         (eta :: Text.Trifecta.Result.Err)[OneShot] ->
+                       eo
+                         (Data.Either.Right @ GHC.Integer.Type.Integer @ [GHC.Types.Char] x)
+                         (Text.Trifecta.Result.$fMonoidErr_$c<> e1 eta))
+                      (\ (e' :: Text.Trifecta.Result.Err) ->
+                       ee (Text.Trifecta.Result.$fMonoidErr_$c<> e1 e'))
+                      lvl32
+                      ce
+                      d
+                      bs)
+                   (\ (x :: GHC.Integer.Type.Integer) ->
+                    co
+                      (Data.Either.Left @ GHC.Integer.Type.Integer @ [GHC.Types.Char] x))
+                   ce
+                   d
+                   bs) -}
+6532de5fe36abb5fc1611184c5173457
+  main6 ::
+    (GHC.Types.Char
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (GHC.Types.Char
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r
+  {- Arity: 6,
+     Strictness: <L,A><L,1*C1(U)><L,C(C1(C(U)))><L,A><S,U><S(LLLS),1*U(U,U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ r
+                   (w :: GHC.Types.Char
+                         -> Text.Trifecta.Result.Err
+                         -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (w1 :: Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (w2 :: GHC.Types.Char
+                          -> Data.Set.Base.Set GHC.Base.String
+                          -> Text.Trifecta.Delta.Delta
+                          -> Data.ByteString.Internal.ByteString
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (w3 :: Text.Trifecta.Result.ErrInfo
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r)
+                   (w4 :: Text.Trifecta.Delta.Delta)
+                   (w5 :: Data.ByteString.Internal.ByteString) ->
+                 case w5 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 AltParsing.$wparseNos @ r w1 w2 w4 ww1 ww2 ww3 ww4 }) -}
+5b4e70c18c0ff20eb2238a81251d25f4
+  main7 :: Data.Set.Base.Set GHC.Base.String
+  {- Unfolding: (case AltParsing.main_nm2 of dt { DEFAULT ->
+                 Data.Set.Base.Bin
+                   @ GHC.Base.String
+                   1#
+                   dt
+                   (Data.Set.Base.Tip @ GHC.Base.String)
+                   (Data.Set.Base.Tip @ GHC.Base.String) }) -}
+02aa31e9394ed70b8af9f80461444b0a
+  main8 ::
+    ((() -> GHC.Integer.Type.Integer)
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> ((() -> GHC.Integer.Type.Integer)
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1
+  {- Arity: 6,
+     Unfolding: (\ @ r1
+                   (eo :: (() -> GHC.Integer.Type.Integer)
+                          -> Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (ee :: Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (co :: (() -> GHC.Integer.Type.Integer)
+                          -> Data.Set.Base.Set GHC.Base.String
+                          -> Text.Trifecta.Delta.Delta
+                          -> Data.ByteString.Internal.ByteString
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (eta :: Text.Trifecta.Result.ErrInfo
+                           -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (eta1 :: Text.Trifecta.Delta.Delta)[OneShot]
+                   (eta2 :: Data.ByteString.Internal.ByteString)[OneShot] ->
+                 Text.Trifecta.Parser.$fAlternativeParser2
+                   @ ()
+                   @ GHC.Integer.Type.Integer
+                   AltParsing.main9
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <() -> GHC.Integer.Type.Integer>_R))
+                   Text.Trifecta.Parser.$fTokenParsingParser2
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0] <()>_R))
+                   @ r1
+                   (\ (x :: GHC.Integer.Type.Integer) -> eo (\ (ds1 :: ()) -> x))
+                   ee
+                   (\ (x :: GHC.Integer.Type.Integer) -> co (\ (ds1 :: ()) -> x))
+                   eta
+                   eta1
+                   eta2) -}
+8ba019873a6644ba4839a648fbeaf4a2
+  main9 ::
+    ((() -> GHC.Integer.Type.Integer)
+     -> Text.Trifecta.Result.Err
+     -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> (Text.Trifecta.Result.Err
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> ((() -> GHC.Integer.Type.Integer)
+        -> Data.Set.Base.Set GHC.Base.String
+        -> Text.Trifecta.Delta.Delta
+        -> Data.ByteString.Internal.ByteString
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> (Text.Trifecta.Result.ErrInfo
+        -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)
+    -> Text.Trifecta.Delta.Delta
+    -> Data.ByteString.Internal.ByteString
+    -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1
+  {- Arity: 6,
+     Unfolding: (\ @ r1
+                   (eo :: (() -> GHC.Integer.Type.Integer)
+                          -> Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (ee :: Text.Trifecta.Result.Err
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (co :: (() -> GHC.Integer.Type.Integer)
+                          -> Data.Set.Base.Set GHC.Base.String
+                          -> Text.Trifecta.Delta.Delta
+                          -> Data.ByteString.Internal.ByteString
+                          -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (eta :: Text.Trifecta.Result.ErrInfo
+                           -> Text.Trifecta.Util.It.It Text.Trifecta.Rope.Rope r1)[OneShot]
+                   (eta1 :: Text.Trifecta.Delta.Delta)[OneShot]
+                   (eta2 :: Data.ByteString.Internal.ByteString)[OneShot] ->
+                 Text.Trifecta.Parser.$fAlternativeParser2
+                   @ GHC.Integer.Type.Integer
+                   @ GHC.Integer.Type.Integer
+                   AltParsing.main12
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer>_R))
+                   AltParsing.main10
+                     `cast`
+                   (Sym (Text.Trifecta.Parser.N:Parser[0]
+                             <GHC.Integer.Type.Integer>_R))
+                   @ r1
+                   (\ (x :: GHC.Integer.Type.Integer) -> eo (\ (ds1 :: ()) -> x))
+                   ee
+                   (\ (x :: GHC.Integer.Type.Integer) -> co (\ (ds1 :: ()) -> x))
+                   eta
+                   eta1
+                   eta2) -}
+18dc4e40dea99fe50d1b3848d2580bba
+  main_ds :: Text.Trifecta.Parser.Parser GHC.Integer.Type.Integer
+  {- Unfolding: (Text.Parser.Token.nat
+                   @ Text.Trifecta.Parser.Parser
+                   Text.Trifecta.Parser.$fTokenParsingParser) -}
+137b3261802addaa41ef1b9bb2fc901f
+  main_nm2 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "integer"#) -}
+22af0909efef2aef3d4ae710869b983a
+  parseNos :: Text.Trifecta.Parser.Parser AltParsing.NumberOrString
+  {- Arity: 6,
+     Strictness: <L,C(C1(U))><L,C(U)><L,C(C1(C1(C1(U))))><L,U><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                AltParsing.main5
+                  `cast`
+                (Sym (Text.Trifecta.Parser.N:Parser[0]
+                          <Data.Either.Either
+                             GHC.Integer.Type.Integer [GHC.Types.Char]>_R)) -}
+"SPEC/AltParsing $fShowEither @ Integer @ [Char]" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
+                                                                                GHC.Integer.Type.Integer)
+                                                                  ($dShow :: GHC.Show.Show
+                                                                               [GHC.Types.Char])
+  Data.Either.$fShowEither @ GHC.Integer.Type.Integer
+                           @ [GHC.Types.Char]
+                           $dShow
+                           $dShow1
+  = AltParsing.$s$fShowEither
+"SPEC/AltParsing $fShowEither_$cshowList @ Integer @ [Char]" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
+                                                                                           GHC.Integer.Type.Integer)
+                                                                             ($dShow :: GHC.Show.Show
+                                                                                          [GHC.Types.Char])
+  Data.Either.$fShowEither_$cshowList @ GHC.Integer.Type.Integer
+                                      @ [GHC.Types.Char]
+                                      $dShow
+                                      $dShow1
+  = AltParsing.$s$fShowEither_$s$fShowEither_$cshowList
+"SPEC/AltParsing $fShow[] @ (Either Integer String)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                  (Data.Either.Either
+                                                                                     GHC.Integer.Type.Integer
+                                                                                     GHC.Base.String))
+  GHC.Show.$fShow[] @ (Data.Either.Either
+                         GHC.Integer.Type.Integer GHC.Base.String)
+                    $dShow
+  = AltParsing.$s$fShowResult_$s$fShow[]
+"SPEC/AltParsing $fShow[]_$cshowList @ (Either Integer String)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                             (Data.Either.Either
+                                                                                                GHC.Integer.Type.Integer
+                                                                                                GHC.Base.String))
+  GHC.Show.$fShow[]_$cshowList @ (Data.Either.Either
+                                    GHC.Integer.Type.Integer GHC.Base.String)
+                               $dShow
+  = AltParsing.$s$fShowResult_$s$fShow[]_$cshowList
+"SPEC/AltParsing $fShow[]_$cshowsPrec @ (Either Integer String)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                              (Data.Either.Either
+                                                                                                 GHC.Integer.Type.Integer
+                                                                                                 GHC.Base.String))
+  GHC.Show.$fShow[]_$cshowsPrec @ (Data.Either.Either
+                                     GHC.Integer.Type.Integer GHC.Base.String)
+                                $dShow
+  = AltParsing.$s$fShowResult_$s$fShow[]_$cshowsPrec
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

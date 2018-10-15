@@ -1,0 +1,334 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-31 18:35:52.649138 UTC
+
+interface functorTests-0.1.0.0-15Gfc3yyyH5D1GpM9RPLBJ:FunctorTests 8002
+  interface hash: ac7fc4e4b70ce961341adc1dfa698565
+  ABI hash: 51654a3bcadb39ae6761cc775e4a7990
+  export-list hash: 6d84c15212f5143f9e873f547ed38586
+  orphan hash: 12ffb0dca41532260bc4ec9d005733c5
+  flag hash: 782f9db4b3f8456fe948e66af9f97fd4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  FunctorTests.functorCompose
+  FunctorTests.functorCompose'
+  FunctorTests.functorIdentity
+  FunctorTests.li
+  FunctorTests.main
+module dependencies:
+package dependencies: QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1 pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      template-haskell-2.11.1.0
+                      tf-random-0.5@tf-random-0.5-CJZw1ZWS5MOJlR60HqKEZL
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck 7a1791e2e66f06ce3b95a443f0d4b1ed
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Function a9b0a65ca626a98faada27417d39799c
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Test af729ecd962d539009b6dff25903d6d1
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+46e3559665d4ecd118e253f63cc5269f
+  $s$fArbitrary[]_$s$fArbitrary[]_$cshrink ::
+    [GHC.Types.Int] -> [[GHC.Types.Int]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Types.Int]) ->
+                 Test.QuickCheck.Arbitrary.shrinkList
+                   @ GHC.Types.Int
+                   Test.QuickCheck.Arbitrary.$fArbitraryInt_$cshrink
+                   xs) -}
+5a3daccf56ad8e2ca26c96f3552b2d4a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   FunctorTests.$trModule2
+                   FunctorTests.$trModule1) -}
+41cb22f190dcb9566a7b27d909ff75b5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "FunctorTests"#) -}
+fbd85ce66744af9732ee624e11a14403
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "functorTests-0.1.0.0-15Gfc3yyyH5D1GpM9RPLBJ"#) -}
+d48e94236e012b8162e7ac7e8a7302c2
+  $wfunctorCompose' ::
+    (GHC.Classes.Eq (f c), GHC.Base.Functor f) =>
+    f a -> (a -> b) -> (b -> c) -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(C(C1(U)),A)><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ (f :: * -> *)
+                   @ c
+                   @ a
+                   @ b
+                   (w :: GHC.Classes.Eq (f c))
+                   (w1 :: GHC.Base.Functor f)
+                   (w2 :: f a)
+                   (ww :: a -> b)
+                   (ww1 :: b -> c) ->
+                 GHC.Classes.==
+                   @ (f c)
+                   w
+                   (GHC.Base.fmap @ f w1 @ a @ c (\ (x :: a) -> ww1 (ww x)) w2)
+                   (GHC.Base.fmap
+                      @ f
+                      w1
+                      @ b
+                      @ c
+                      ww1
+                      (GHC.Base.fmap @ f w1 @ a @ b ww w2))) -}
+bc19056bfbf52ec56cde89a2a0858e0f
+  functorCompose ::
+    (GHC.Classes.Eq (f c), GHC.Base.Functor f) =>
+    (a -> b) -> (b -> c) -> f a -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(C(C1(U)),A)><L,U><L,U><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   @ c
+                   @ a
+                   @ b
+                   ($dEq :: GHC.Classes.Eq (f c))
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (g :: a -> b)
+                   (h :: b -> c)
+                   (f1 :: f a) ->
+                 GHC.Classes.==
+                   @ (f c)
+                   $dEq
+                   (GHC.Base.fmap @ f $dFunctor @ a @ c (\ (x :: a) -> h (g x)) f1)
+                   (GHC.Base.fmap
+                      @ f
+                      $dFunctor
+                      @ b
+                      @ c
+                      h
+                      (GHC.Base.fmap @ f $dFunctor @ a @ b g f1))) -}
+45be81da6e0471ca61527c76b84219b8
+  functorCompose' ::
+    (GHC.Classes.Eq (f c), GHC.Base.Functor f) =>
+    f a
+    -> Test.QuickCheck.Function.Fun a b
+    -> Test.QuickCheck.Function.Fun b c
+    -> GHC.Types.Bool
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U(C(C1(U)),A)><L,U><S,1*U(A,U)><S,1*U(A,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ (f :: * -> *)
+                   @ c
+                   @ a
+                   @ b
+                   (w :: GHC.Classes.Eq (f c))
+                   (w1 :: GHC.Base.Functor f)
+                   (w2 :: f a)
+                   (w3 :: Test.QuickCheck.Function.Fun a b)
+                   (w4 :: Test.QuickCheck.Function.Fun b c) ->
+                 case w3 of ww { Test.QuickCheck.Function.Fun ww1 ww2 ->
+                 case w4 of ww3 { Test.QuickCheck.Function.Fun ww4 ww5 ->
+                 FunctorTests.$wfunctorCompose'
+                   @ f
+                   @ c
+                   @ a
+                   @ b
+                   w
+                   w1
+                   w2
+                   ww2
+                   ww5 } }) -}
+8566250bb57f4f3302d3829b3f46c71c
+  functorIdentity ::
+    (GHC.Base.Functor f, GHC.Classes.Eq (f a)) => f a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C1(U)),A)><S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   @ a
+                   ($dFunctor :: GHC.Base.Functor f)
+                   ($dEq :: GHC.Classes.Eq (f a))
+                   (f1 :: f a) ->
+                 GHC.Classes.==
+                   @ (f a)
+                   $dEq
+                   (GHC.Base.fmap @ f $dFunctor @ a @ a (GHC.Base.id @ a) f1)
+                   f1) -}
+e5d60b3a802d034879cbdea8be966b28
+  functorIdentity_$sfunctorIdentity ::
+    [GHC.Types.Int] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (f :: [GHC.Types.Int]) ->
+                 GHC.Classes.$fEq[]_$s$c==
+                   (GHC.Base.build
+                      @ GHC.Types.Int
+                      (\ @ b1
+                         (c :: GHC.Types.Int -> b1 -> b1)[OneShot]
+                         (n :: b1)[OneShot] ->
+                       GHC.Base.foldr
+                         @ GHC.Types.Int
+                         @ b1
+                         (GHC.Base.mapFB
+                            @ GHC.Types.Int
+                            @ b1
+                            @ GHC.Types.Int
+                            c
+                            (GHC.Base.id @ GHC.Types.Int))
+                         n
+                         f))
+                   f) -}
+97549650b199b138239d4ef1ee6c3a8f
+  li :: [GHC.Types.Int] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (f :: [GHC.Types.Int]) ->
+                 GHC.Classes.$fEq[]_$s$c==
+                   (GHC.Base.map @ GHC.Types.Int @ GHC.Types.Int FunctorTests.li1 f)
+                   (GHC.Base.map
+                      @ GHC.Types.Int
+                      @ GHC.Types.Int
+                      FunctorTests.li1
+                      f)) -}
+26cd238142fe6bcaca0f4f87943eadb7
+  li1 :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (x :: GHC.Types.Int) ->
+                 case x of wild { GHC.Types.I# x1 ->
+                 GHC.Types.I# (GHC.Prim.*# (GHC.Prim.+# x1 1#) 2#) }) -}
+afd4fd3ce2dafb659237f53a03ff0637
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FunctorTests.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+edd18b5f31a8c12f75db6937798419c3
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.QuickCheck.Test.$wquickCheckWithResult
+                        @ ([GHC.Types.Int] -> GHC.Types.Bool)
+                        FunctorTests.main2
+                          `cast`
+                        (Trans
+                             (<[GHC.Types.Int] -> GHC.Types.Bool>_R
+                              ->_R Trans
+                                       (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                                 (Test.QuickCheck.Property.N:Prop[0])))
+                                       (Sym (Test.QuickCheck.Property.N:Property[0])))
+                             (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                       <[GHC.Types.Int] -> GHC.Types.Bool>_N)))
+                        (GHC.Base.Nothing @ (Test.QuickCheck.Random.QCGen, GHC.Types.Int))
+                        Test.QuickCheck.Test.stdArgs2
+                        Test.QuickCheck.Test.stdArgs1
+                        Test.QuickCheck.Test.stdArgs2
+                        GHC.Types.True
+                        FunctorTests.functorIdentity_$sfunctorIdentity
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Test.QuickCheck.Test.$wquickCheckWithResult
+                        @ ([GHC.Types.Int] -> GHC.Types.Bool)
+                        FunctorTests.main2
+                          `cast`
+                        (Trans
+                             (<[GHC.Types.Int] -> GHC.Types.Bool>_R
+                              ->_R Trans
+                                       (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                                 (Test.QuickCheck.Property.N:Prop[0])))
+                                       (Sym (Test.QuickCheck.Property.N:Property[0])))
+                             (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                       <[GHC.Types.Int] -> GHC.Types.Bool>_N)))
+                        (GHC.Base.Nothing @ (Test.QuickCheck.Random.QCGen, GHC.Types.Int))
+                        Test.QuickCheck.Test.stdArgs2
+                        Test.QuickCheck.Test.stdArgs1
+                        Test.QuickCheck.Test.stdArgs2
+                        GHC.Types.True
+                        FunctorTests.li
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, GHC.Tuple.() #) } }) -}
+033709abfe7ff5d479e8d676976080b0
+  main2 ::
+    ([GHC.Types.Int] -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3, Strictness: <L,C(U)><L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (f :: [GHC.Types.Int] -> GHC.Types.Bool)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Int]
+                   @ GHC.Types.Bool
+                   GHC.Show.$fShow[]_$s$fShow[]
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                   FunctorTests.main3
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Int]>_R))
+                   FunctorTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   f
+                   eta
+                   eta1) -}
+d10e1c013bafc3861428ce3aeb2cc118
+  main3 ::
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> [GHC.Types.Int]
+  {- Arity: 2,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int)[OneShot] ->
+                 case eta1 of ww { GHC.Types.I# ww1 ->
+                 Test.QuickCheck.Gen.$wlistOf
+                   @ GHC.Types.Int
+                   Test.QuickCheck.Arbitrary.$fArbitraryInt3
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <GHC.Types.Int>_R))
+                   eta
+                   ww1 }) -}
+"SPEC functorIdentity @ [] @ Int" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                             [GHC.Types.Int])
+                                                  ($dFunctor :: GHC.Base.Functor [])
+  FunctorTests.functorIdentity @ [] @ GHC.Types.Int $dFunctor $dEq
+  = FunctorTests.functorIdentity_$sfunctorIdentity
+"SPEC/FunctorTests $fArbitrary[]_$cshrink @ Int" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                                   GHC.Types.Int)
+  Test.QuickCheck.Arbitrary.$fArbitrary[]_$cshrink @ GHC.Types.Int
+                                                   $dArbitrary
+  = FunctorTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

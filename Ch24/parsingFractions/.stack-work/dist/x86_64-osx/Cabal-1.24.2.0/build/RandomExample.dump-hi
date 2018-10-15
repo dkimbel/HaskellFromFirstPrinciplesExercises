@@ -1,0 +1,506 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-18 02:43:29.949897 UTC
+
+interface randomExample-0.1.0.0-Do9ciAlGBXzBfEFswMhgXD:RandomExample 8002
+  interface hash: 1b31c9185198843d329c855e6ed96399
+  ABI hash: 64c14395e52a097efb59f0efc51243ff
+  export-list hash: d57833bef2fc933378b6b1c55cf16ade
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6fc74547fbd72660fbdc96d0ba10d9b2
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  RandomExample.intToDie
+  RandomExample.rollDieThreeTimes
+  RandomExample.Die{RandomExample.DieFive RandomExample.DieFour RandomExample.DieOne RandomExample.DieSix RandomExample.DieThree RandomExample.DieTwo}
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog*
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random cc3ef358c669b194cf9fe94db6f2430f
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.State 8d226555bc2686d0ea757e495e63698c
+98a76af8857310ecf997e77ae9633ad4
+  $fEqDie :: GHC.Classes.Eq RandomExample.Die
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ RandomExample.Die
+                  RandomExample.$fEqDie_$c==
+                  RandomExample.$fEqDie_$c/= -}
+98a76af8857310ecf997e77ae9633ad4
+  $fEqDie_$c/= ::
+    RandomExample.Die -> RandomExample.Die -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: RandomExample.Die) (b :: RandomExample.Die) ->
+                 case a of wild {
+                   RandomExample.DieOne
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True RandomExample.DieOne -> GHC.Types.False }
+                   RandomExample.DieTwo
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True RandomExample.DieTwo -> GHC.Types.False }
+                   RandomExample.DieThree
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        RandomExample.DieThree -> GHC.Types.False }
+                   RandomExample.DieFour
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        RandomExample.DieFour -> GHC.Types.False }
+                   RandomExample.DieFive
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        RandomExample.DieFive -> GHC.Types.False }
+                   RandomExample.DieSix
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        RandomExample.DieSix -> GHC.Types.False } }) -}
+98a76af8857310ecf997e77ae9633ad4
+  $fEqDie_$c== ::
+    RandomExample.Die -> RandomExample.Die -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: RandomExample.Die)
+                   (ds1 :: RandomExample.Die) ->
+                 case ds of wild {
+                   RandomExample.DieOne
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False RandomExample.DieOne -> GHC.Types.True }
+                   RandomExample.DieTwo
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False RandomExample.DieTwo -> GHC.Types.True }
+                   RandomExample.DieThree
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        RandomExample.DieThree -> GHC.Types.True }
+                   RandomExample.DieFour
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        RandomExample.DieFour -> GHC.Types.True }
+                   RandomExample.DieFive
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        RandomExample.DieFive -> GHC.Types.True }
+                   RandomExample.DieSix
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        RandomExample.DieSix -> GHC.Types.True } }) -}
+98a76af8857310ecf997e77ae9633ad4
+  $fShowDie :: GHC.Show.Show RandomExample.Die
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ RandomExample.Die
+                  RandomExample.$fShowDie_$cshowsPrec
+                  RandomExample.$fShowDie_$cshow
+                  RandomExample.$fShowDie_$cshowList -}
+48b18bbfe2bf7820e1d08e08adcb5781
+  $fShowDie1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DieSix"#) -}
+da1cbfdc14006a2e5cecba1c813feee2
+  $fShowDie2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DieFive"#) -}
+bc7c1cc2bca1f7ac397ecb6c38a204ee
+  $fShowDie3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DieFour"#) -}
+2c30b8de98f1f29be73d3485ebe2a3e1
+  $fShowDie4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DieThree"#) -}
+b41265416a53f4132e6c2369c53a358f
+  $fShowDie5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DieTwo"#) -}
+77242e52ae7050bd6654cfb865c9bb73
+  $fShowDie6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DieOne"#) -}
+98a76af8857310ecf997e77ae9633ad4
+  $fShowDie_$cshow :: RandomExample.Die -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: RandomExample.Die) ->
+                 RandomExample.$fShowDie_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+98a76af8857310ecf997e77ae9633ad4
+  $fShowDie_$cshowList :: [RandomExample.Die] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ RandomExample.Die
+                   RandomExample.$w$cshowsPrec) -}
+98a76af8857310ecf997e77ae9633ad4
+  $fShowDie_$cshowsPrec ::
+    GHC.Types.Int -> RandomExample.Die -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: RandomExample.Die)
+                   (w2 :: GHC.Base.String) ->
+                 RandomExample.$w$cshowsPrec w1 w2) -}
+41afac01e23bb56128d7a34b4a843594
+  $tc'DieFive :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3900366731295996976##
+                   286781479049917551##
+                   RandomExample.$trModule
+                   RandomExample.$tc'DieFive1) -}
+800c44daa3be799434a041648a504f73
+  $tc'DieFive1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DieFive"#) -}
+c80d940b541ed22fca5c16347c4ea63c
+  $tc'DieFour :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8776680742521983125##
+                   6237032145258967339##
+                   RandomExample.$trModule
+                   RandomExample.$tc'DieFour1) -}
+544df1cde5754964a0f634e69ea30ce3
+  $tc'DieFour1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DieFour"#) -}
+d26e3c88137df046ad7de278c96d214c
+  $tc'DieOne :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8947048261699082703##
+                   12740689105540478923##
+                   RandomExample.$trModule
+                   RandomExample.$tc'DieOne1) -}
+3cfc87c90abf14aafb6fdb26fd6b5427
+  $tc'DieOne1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DieOne"#) -}
+db059c24756a3e7b1c07aefdac77933c
+  $tc'DieSix :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11825379972727708906##
+                   3280700689633262387##
+                   RandomExample.$trModule
+                   RandomExample.$tc'DieSix1) -}
+76f41289a694bb3cc6f6f10a46f9f5ae
+  $tc'DieSix1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DieSix"#) -}
+3771d48589f0e3b35128dd0cb8712d54
+  $tc'DieThree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13916628628113463243##
+                   6211267417666991120##
+                   RandomExample.$trModule
+                   RandomExample.$tc'DieThree1) -}
+45da486df0b8b170909504ef1fd3915e
+  $tc'DieThree1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DieThree"#) -}
+77d935f6b0dc19341312af97de04fd89
+  $tc'DieTwo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18358990849196403028##
+                   6798579387373398319##
+                   RandomExample.$trModule
+                   RandomExample.$tc'DieTwo1) -}
+e65ef42aaae3d6514456845be46cc52e
+  $tc'DieTwo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'DieTwo"#) -}
+8d2ff1edf279cdeddd508348b071c55d
+  $tcDie :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4699447788303921234##
+                   3195972132531732437##
+                   RandomExample.$trModule
+                   RandomExample.$tcDie1) -}
+5524c24134c328244b4c76e2376148cc
+  $tcDie1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Die"#) -}
+4cbf74ba779946fc0c6ff3f6101aba19
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   RandomExample.$trModule2
+                   RandomExample.$trModule1) -}
+2788cad48e9803a8a3e40b433d0b722d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "RandomExample"#) -}
+9fd1d74c70e8370c4a8fdf994547af15
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "randomExample-0.1.0.0-Do9ciAlGBXzBfEFswMhgXD"#) -}
+98a76af8857310ecf997e77ae9633ad4
+  $w$cshowsPrec ::
+    RandomExample.Die -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: RandomExample.Die) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   RandomExample.DieOne
+                   -> GHC.Base.++ @ GHC.Types.Char RandomExample.$fShowDie6 w1
+                   RandomExample.DieTwo
+                   -> GHC.Base.++ @ GHC.Types.Char RandomExample.$fShowDie5 w1
+                   RandomExample.DieThree
+                   -> GHC.Base.++ @ GHC.Types.Char RandomExample.$fShowDie4 w1
+                   RandomExample.DieFour
+                   -> GHC.Base.++ @ GHC.Types.Char RandomExample.$fShowDie3 w1
+                   RandomExample.DieFive
+                   -> GHC.Base.++ @ GHC.Types.Char RandomExample.$fShowDie2 w1
+                   RandomExample.DieSix
+                   -> GHC.Base.++ @ GHC.Types.Char RandomExample.$fShowDie1 w1 }) -}
+e743bb40758869386013bf47a715121c
+  $wintToDie :: GHC.Prim.Int# -> RandomExample.Die
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case ww of ds {
+                   DEFAULT -> RandomExample.intToDie1 ds
+                   1# -> RandomExample.DieOne
+                   2# -> RandomExample.DieTwo
+                   3# -> RandomExample.DieThree
+                   4# -> RandomExample.DieFour
+                   5# -> RandomExample.DieFive
+                   6# -> RandomExample.DieSix }) -}
+98a76af8857310ecf997e77ae9633ad4
+  data Die = DieOne | DieTwo | DieThree | DieFour | DieFive | DieSix
+eae4b4f013f80053c3b3422c265397cb
+  intToDie :: GHC.Types.Int -> RandomExample.Die
+  {- Arity: 1, Strictness: <S(S),1*U(1*U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 RandomExample.$wintToDie ww1 }) -}
+2f555bed182a048b151c71053eb7d191
+  intToDie1 :: GHC.Prim.Int# -> RandomExample.Die
+  {- Arity: 1, Strictness: <L,U>x -}
+5f787293cecd2e4b75b68808eba6c54c
+  rollDieThreeTimes ::
+    (RandomExample.Die, RandomExample.Die, RandomExample.Die)
+  {- Strictness: m,
+     Unfolding: ((RandomExample.rollDieThreeTimes18,
+                  RandomExample.rollDieThreeTimes17,
+                  RandomExample.rollDieThreeTimes1)) -}
+91ce6bf60283a56b84eb8e41b54275fa
+  rollDieThreeTimes1 :: RandomExample.Die
+  {- Unfolding: (case System.Random.$wrandomIvalInteger
+                        @ System.Random.StdGen
+                        @ GHC.Types.Int
+                        System.Random.$fRandomGenStdGen
+                        GHC.Num.$fNumInt
+                        RandomExample.rollDieThreeTimes_w2
+                        RandomExample.rollDieThreeTimes_w1
+                        RandomExample.rollDieThreeTimes12 of ww2 { (#,#) ww3 ww4 ->
+                 case ww3 of wild { GHC.Types.I# ds ->
+                 case ds of ds1 {
+                   DEFAULT
+                   -> GHC.Err.error
+                        @ 'GHC.Types.PtrRepLifted
+                        @ RandomExample.Die
+                        RandomExample.rollDieThreeTimes3
+                          `cast`
+                        (Sym (GHC.Classes.N:IP[0]
+                                  <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                        (RandomExample.rollDieThreeTimes2
+                           @ [GHC.Types.Char]
+                           (GHC.Types.: @ GHC.Types.Char)
+                           (case GHC.Show.$wshowSignedInt
+                                   0#
+                                   ds1
+                                   (GHC.Types.[] @ GHC.Types.Char) of ww1 { (#,#) ww5 ww6 ->
+                            GHC.Types.: @ GHC.Types.Char ww5 ww6 }))
+                   1# -> RandomExample.DieOne
+                   2# -> RandomExample.DieTwo
+                   3# -> RandomExample.DieThree
+                   4# -> RandomExample.DieFour
+                   5# -> RandomExample.DieFive
+                   6# -> RandomExample.DieSix } } }) -}
+1d579f098a2449681a91616dce582935
+  rollDieThreeTimes10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "randomExample-0.1.0.0-Do9ciAlGBXzBfEFswMhgXD"#) -}
+17d16f9dcdabd1cf93500ceffac5ce42
+  rollDieThreeTimes11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "error"#) -}
+1089201dd5790ae6f16c6af6dd0089ca
+  rollDieThreeTimes12 :: System.Random.StdGen
+  {- Unfolding: (case RandomExample.rollDieThreeTimes13 of wild { (,) d2 s2 ->
+                 s2 }) -}
+7884ddeb9205899480fed9c7545f7fbf
+  rollDieThreeTimes13 :: (GHC.Types.Int, System.Random.StdGen)
+  {- Unfolding: (case System.Random.$wrandomIvalInteger
+                        @ System.Random.StdGen
+                        @ GHC.Types.Int
+                        System.Random.$fRandomGenStdGen
+                        GHC.Num.$fNumInt
+                        RandomExample.rollDieThreeTimes_w2
+                        RandomExample.rollDieThreeTimes_w1
+                        RandomExample.rollDieThreeTimes14 of ww2 { (#,#) ww3 ww4 ->
+                 (ww3, ww4) }) -}
+69d9d4f8df0c0d9f56bc48be22f256e6
+  rollDieThreeTimes14 :: System.Random.StdGen
+  {- Unfolding: (case RandomExample.rollDieThreeTimes15 of wild { (,) d1 s1 ->
+                 s1 }) -}
+2ce6615bd2abaaebb7f1b567a189f990
+  rollDieThreeTimes15 :: (GHC.Types.Int, System.Random.StdGen)
+  {- Unfolding: (case System.Random.$wrandomIvalInteger
+                        @ System.Random.StdGen
+                        @ GHC.Types.Int
+                        System.Random.$fRandomGenStdGen
+                        GHC.Num.$fNumInt
+                        RandomExample.rollDieThreeTimes_w2
+                        RandomExample.rollDieThreeTimes_w1
+                        RandomExample.rollDieThreeTimes16 of ww2 { (#,#) ww3 ww4 ->
+                 (ww3, ww4) }) -}
+2c3779870841bf3fcb59b3625f5df2e2
+  rollDieThreeTimes16 :: System.Random.StdGen
+  {- Unfolding: (case GHC.Int.$w$cdivMod1
+                        0#
+                        2147483562# of ww4 { (#,#) ww5 ww6 ->
+                 case ww6 of wild { GHC.Int.I32# x# ->
+                 case ww5 of ww2 { GHC.Int.I32# ww3 ->
+                 case GHC.Classes.modInt# ww3 2147483398# of wild1 { DEFAULT ->
+                 System.Random.StdGen
+                   (GHC.Prim.narrow32Int# (GHC.Prim.+# x# 1#))
+                   (GHC.Prim.narrow32Int#
+                      (GHC.Prim.+# (GHC.Prim.narrow32Int# wild1) 1#)) } } } }) -}
+b0ee085844b24f13feee2eab4bc33bd1
+  rollDieThreeTimes17 :: RandomExample.Die
+  {- Unfolding: (case RandomExample.rollDieThreeTimes13 of wild { (,) d2 s2 ->
+                 case d2 of wild1 { GHC.Types.I# ds ->
+                 case ds of ds1 {
+                   DEFAULT
+                   -> GHC.Err.error
+                        @ 'GHC.Types.PtrRepLifted
+                        @ RandomExample.Die
+                        RandomExample.rollDieThreeTimes3
+                          `cast`
+                        (Sym (GHC.Classes.N:IP[0]
+                                  <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                        (RandomExample.rollDieThreeTimes2
+                           @ [GHC.Types.Char]
+                           (GHC.Types.: @ GHC.Types.Char)
+                           (case GHC.Show.$wshowSignedInt
+                                   0#
+                                   ds1
+                                   (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                            GHC.Types.: @ GHC.Types.Char ww5 ww6 }))
+                   1# -> RandomExample.DieOne
+                   2# -> RandomExample.DieTwo
+                   3# -> RandomExample.DieThree
+                   4# -> RandomExample.DieFour
+                   5# -> RandomExample.DieFive
+                   6# -> RandomExample.DieSix } } }) -}
+a6022889714957df662d0407cb938c92
+  rollDieThreeTimes18 :: RandomExample.Die
+  {- Unfolding: (case RandomExample.rollDieThreeTimes15 of wild { (,) d1 s1 ->
+                 case d1 of wild1 { GHC.Types.I# ds ->
+                 case ds of ds1 {
+                   DEFAULT
+                   -> GHC.Err.error
+                        @ 'GHC.Types.PtrRepLifted
+                        @ RandomExample.Die
+                        RandomExample.rollDieThreeTimes3
+                          `cast`
+                        (Sym (GHC.Classes.N:IP[0]
+                                  <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                        (RandomExample.rollDieThreeTimes2
+                           @ [GHC.Types.Char]
+                           (GHC.Types.: @ GHC.Types.Char)
+                           (case GHC.Show.$wshowSignedInt
+                                   0#
+                                   ds1
+                                   (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                            GHC.Types.: @ GHC.Types.Char ww5 ww6 }))
+                   1# -> RandomExample.DieOne
+                   2# -> RandomExample.DieTwo
+                   3# -> RandomExample.DieThree
+                   4# -> RandomExample.DieFour
+                   5# -> RandomExample.DieFive
+                   6# -> RandomExample.DieSix } } }) -}
+3464bd70c86428a12645efca508f3799
+  rollDieThreeTimes2 :: (GHC.Types.Char -> b -> b) -> b -> b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(C1(U))><L,U>,
+     Unfolding: (\ @ b
+                   (c :: GHC.Types.Char -> b -> b)[OneShot]
+                   (n :: b)[OneShot] ->
+                 GHC.CString.unpackFoldrCString#
+                   @ b
+                   "intToDie got non 1-6 integer: "#
+                   c
+                   n) -}
+ffe871a483ae9f0c9c7983144701aefe
+  rollDieThreeTimes3 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   RandomExample.rollDieThreeTimes11
+                   RandomExample.rollDieThreeTimes4
+                   GHC.Stack.Types.EmptyCallStack) -}
+aa10420752967e330e9b886b4b137955
+  rollDieThreeTimes4 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   RandomExample.rollDieThreeTimes10
+                   RandomExample.rollDieThreeTimes9
+                   RandomExample.rollDieThreeTimes8
+                   RandomExample.rollDieThreeTimes7
+                   RandomExample.rollDieThreeTimes6
+                   RandomExample.rollDieThreeTimes7
+                   RandomExample.rollDieThreeTimes5) -}
+6b63d485a2ff031edfb849dd42c1dbce
+  rollDieThreeTimes5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 60#) -}
+89af644fa9c666f33dfb4c845ca037fb
+  rollDieThreeTimes6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 10#) -}
+ad2961299a5ce9d44545e232480159a2
+  rollDieThreeTimes7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 30#) -}
+1213bb69eab669c8f33acf7504140fd9
+  rollDieThreeTimes8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "RandomExample.hs"#) -}
+a05c3822881aa94bad97bfdcb1c573b8
+  rollDieThreeTimes9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "RandomExample"#) -}
+1c4438e4da2d51013d57f7c2aec04da3
+  rollDieThreeTimes_w1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (6) -}
+7f707ae5cfb7d7df3643e22933d4872f
+  rollDieThreeTimes_w2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+instance [safe] GHC.Classes.Eq [RandomExample.Die]
+  = RandomExample.$fEqDie
+instance [safe] GHC.Show.Show [RandomExample.Die]
+  = RandomExample.$fShowDie
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

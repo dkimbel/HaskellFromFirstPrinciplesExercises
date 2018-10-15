@@ -1,0 +1,1723 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-27 02:00:26.225677 UTC
+
+interface marshall-0.1.0.0-FB3YpekJN4GKN0Kfg9yf7I:Marshall 8002
+  interface hash: 79b9a2e1946a9ad7a46a4a20617140e5
+  ABI hash: 2ecad2ca09b578ea2e18c8092cad728c
+  export-list hash: 21fe185d55b5d4d6535dd3e617fac779
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4f8cee337f717799b182576d5fd6650c
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Marshall.main
+  Marshall.sectionJson
+  Marshall.Annotation
+  Marshall.Color{Marshall.Blue Marshall.Red Marshall.Yellow}
+  Marshall.Host{Marshall.Host}
+  Marshall.NumberOrString{Marshall.Numba Marshall.Stringy}
+  Marshall.TestData{Marshall.TestData section what}
+module dependencies:
+package dependencies: aeson-1.1.2.0@aeson-1.1.2.0-H8KqCgI8gcq2RuIUkNEZvK
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-8bUdsjh6UCE83aHCxOEHna
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-KeJp8zYMpcS9WibvTcxU22
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      raw-strings-qq-1.1@raw-strings-qq-1.1-HjO0jIPgyz3nrMVQqTSCs
+                      scientific-0.3.5.1@scientific-0.3.5.1-JHsAAp34Yyd8e5v3sK3O5Q
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-8bUdsjh6UCE83aHCxOEHna:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-8bUdsjh6UCE83aHCxOEHna:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-8bUdsjh6UCE83aHCxOEHna:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-HQOuja9trySCcuflACyDTJ:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-H8KqCgI8gcq2RuIUkNEZvK:Data.Aeson 4f386056f86e3dc3f792b60de56cdd22
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-H8KqCgI8gcq2RuIUkNEZvK:Data.Aeson.Types.FromJSON 41a668ab28085e51767cd1257b9f9cc1
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-H8KqCgI8gcq2RuIUkNEZvK:Data.Aeson.Types.Internal 64c1e82245313b387b353dcb534bd01a
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Lazy 2ede44f11439db2ef9a1556c24c824b6
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Lazy.Internal 6973f3fb6c1d29434d6f14b94e505111
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  raw-strings-qq-1.1@raw-strings-qq-1.1-HjO0jIPgyz3nrMVQqTSCs:Text.RawString.QQ 049903e110b50d2e2afc78f5648fcd4b
+import  -/  scientific-0.3.5.1@scientific-0.3.5.1-JHsAAp34Yyd8e5v3sK3O5Q:Data.Scientific 22f1ee9cc81ef0661dfc9fcf5b088362
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text f7d3d648ffeef1043fe2e522e7e66c1b
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 9bfcbbbe07ecef48f631025a838df7da
+4b375943295f6593110b97f8a627f769
+  $fEqColor :: GHC.Classes.Eq Marshall.Color
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.Color Marshall.$fEqColor_$c== Marshall.$fEqColor_$c/= -}
+4b375943295f6593110b97f8a627f769
+  $fEqColor_$c/= ::
+    Marshall.Color -> Marshall.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Marshall.Color) (b :: Marshall.Color) ->
+                 case Marshall.$fEqColor_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+4b375943295f6593110b97f8a627f769
+  $fEqColor_$c== ::
+    Marshall.Color -> Marshall.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Marshall.Color) (ds1 :: Marshall.Color) ->
+                 case ds of wild {
+                   Marshall.Red a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Marshall.Red b1 -> GHC.Base.eqString a1 b1 }
+                   Marshall.Blue a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Marshall.Blue b1 -> GHC.Base.eqString a1 b1 }
+                   Marshall.Yellow a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Marshall.Yellow b1 -> GHC.Base.eqString a1 b1 } }) -}
+70e43f3028050ffb986c52400d39f5c6
+  $fEqHost :: GHC.Classes.Eq Marshall.Host
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.Host Marshall.$fEqHost_$c== Marshall.$fEqHost_$c/= -}
+70e43f3028050ffb986c52400d39f5c6
+  $fEqHost_$c/= :: Marshall.Host -> Marshall.Host -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Classes.$fEq[]_$s$c/=1
+                  `cast`
+                (Sym (Marshall.N:Host[0])
+                 ->_R Sym (Marshall.N:Host[0])
+                 ->_R <GHC.Types.Bool>_R) -}
+70e43f3028050ffb986c52400d39f5c6
+  $fEqHost_$c== :: Marshall.Host -> Marshall.Host -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Base.eqString
+                  `cast`
+                (Sym (Marshall.N:Host[0])
+                 ->_R Sym (Marshall.N:Host[0])
+                 ->_R <GHC.Types.Bool>_R) -}
+6e5ca06dbd1ce7fee98c632ad48d3a63
+  $fEqNumberOrString :: GHC.Classes.Eq Marshall.NumberOrString
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.NumberOrString
+                  Marshall.$fEqNumberOrString_$c==
+                  Marshall.$fEqNumberOrString_$c/= -}
+6e5ca06dbd1ce7fee98c632ad48d3a63
+  $fEqNumberOrString_$c/= ::
+    Marshall.NumberOrString
+    -> Marshall.NumberOrString -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Marshall.NumberOrString)
+                   (b :: Marshall.NumberOrString) ->
+                 case a of wild {
+                   Marshall.Numba a1
+                   -> case b of wild1 {
+                        Marshall.Numba b1
+                        -> case GHC.Integer.Type.eqInteger# a1 b1 of wild2 { DEFAULT ->
+                           case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } }
+                        Marshall.Stringy ipv -> GHC.Types.True }
+                   Marshall.Stringy a1
+                   -> case b of wild1 {
+                        Marshall.Numba ipv -> GHC.Types.True
+                        Marshall.Stringy b1
+                        -> case a1 of wild2 { Data.Text.Internal.Text dt dt1 dt2 ->
+                           case b1 of wild3 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# dt2 dt5) of wild4 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True
+                             -> case {__pkg_ccall text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00 _hs_text_memcmp GHC.Prim.ByteArray#
+                                                                                                                   -> GHC.Prim.Word#
+                                                                                                                   -> GHC.Prim.ByteArray#
+                                                                                                                   -> GHC.Prim.Word#
+                                                                                                                   -> GHC.Prim.Word#
+                                                                                                                   -> GHC.Prim.State#
+                                                                                                                        GHC.Prim.RealWorld
+                                                                                                                   -> (# GHC.Prim.State#
+                                                                                                                           GHC.Prim.RealWorld,
+                                                                                                                         GHC.Prim.Int# #)}
+                                       dt
+                                       (GHC.Prim.int2Word# dt1)
+                                       dt3
+                                       (GHC.Prim.int2Word# dt4)
+                                       (GHC.Prim.int2Word# dt2)
+                                       GHC.Prim.realWorld# of wild5 { (#,#) ds11 ds12 ->
+                                case GHC.Prim.narrow32Int# ds12 of wild6 {
+                                  DEFAULT -> GHC.Types.True 0# -> GHC.Types.False } } } } } } }) -}
+6e5ca06dbd1ce7fee98c632ad48d3a63
+  $fEqNumberOrString_$c== ::
+    Marshall.NumberOrString
+    -> Marshall.NumberOrString -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Marshall.NumberOrString)
+                   (ds1 :: Marshall.NumberOrString) ->
+                 case ds of wild {
+                   Marshall.Numba a1
+                   -> case ds1 of wild1 {
+                        Marshall.Numba b1 -> GHC.Integer.Type.eqInteger a1 b1
+                        Marshall.Stringy ipv -> GHC.Types.False }
+                   Marshall.Stringy a1
+                   -> case ds1 of wild1 {
+                        Marshall.Numba ipv -> GHC.Types.False
+                        Marshall.Stringy b1 -> Data.Text.$fEqText_$c== a1 b1 } }) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fEqTestData :: GHC.Classes.Eq Marshall.TestData
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.TestData
+                  Marshall.$fEqTestData_$c==
+                  Marshall.$fEqTestData_$c/= -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fEqTestData_$c/= ::
+    Marshall.TestData -> Marshall.TestData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Marshall.TestData) (w1 :: Marshall.TestData) ->
+                 case w of ww { Marshall.TestData ww1 ww2 ->
+                 case w1 of ww3 { Marshall.TestData ww4 ww5 ->
+                 Marshall.$w$c/= ww1 ww2 ww4 ww5 } }) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fEqTestData_$c== ::
+    Marshall.TestData -> Marshall.TestData -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U)><S(SL),1*U(1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Marshall.TestData) (w1 :: Marshall.TestData) ->
+                 case w of ww { Marshall.TestData ww1 ww2 ->
+                 case w1 of ww3 { Marshall.TestData ww4 ww5 ->
+                 Marshall.$w$c== ww1 ww2 ww4 ww5 } }) -}
+4b375943295f6593110b97f8a627f769
+  $fFromJSONColor ::
+    Data.Aeson.Types.FromJSON.FromJSON Marshall.Color
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.Color
+                  Marshall.$fFromJSONColor_$cparseJSON
+                  Marshall.$fFromJSONColor_$cparseJSONList -}
+4b375943295f6593110b97f8a627f769
+  $fFromJSONColor1 ::
+    [Data.Aeson.Types.Internal.Parser Marshall.Color]
+    -> forall (f :: * -> *) r.
+       Data.Aeson.Types.Internal.JSONPath
+       -> Data.Aeson.Types.Internal.Failure f r
+       -> Data.Aeson.Types.Internal.Success [Marshall.Color] f r
+       -> f r
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,1*U><L,U><L,U><L,C(U)> -}
+09140c1b7235710fce08b2e200c0ab4a
+  $fFromJSONColor2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "[a]"#) -}
+4b375943295f6593110b97f8a627f769
+  $fFromJSONColor_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser Marshall.Color
+  {- Arity: 1, Strictness: <S,1*U> -}
+4b375943295f6593110b97f8a627f769
+  $fFromJSONColor_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [Marshall.Color]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Data.Aeson.Types.FromJSON.typeMismatch
+                        @ [Marshall.Color]
+                        Marshall.$fFromJSONColor2
+                        wild
+                   Data.Aeson.Types.Internal.Array a1
+                   -> case a1 of wild1 { Data.Vector.Vector dt dt1 dt2 ->
+                      (Marshall.$fFromJSONColor1
+                         (letrec {
+                            $wgo :: GHC.Prim.Int# -> [Data.Aeson.Types.Internal.Value]
+                              {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                            = \ (ww :: GHC.Prim.Int#) ->
+                              case GHC.Prim.tagToEnum#
+                                     @ GHC.Types.Bool
+                                     (GHC.Prim.>=# ww dt1) of wild2 {
+                                GHC.Types.False
+                                -> case GHC.Prim.indexArray#
+                                          @ Data.Aeson.Types.Internal.Value
+                                          dt2
+                                          (GHC.Prim.+# dt ww) of ds1 { Unit# ipv ->
+                                   GHC.Types.:
+                                     @ Data.Aeson.Types.Internal.Value
+                                     ipv
+                                     ($wgo (GHC.Prim.+# ww 1#)) }
+                                GHC.Types.True -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
+                          } in
+                          Marshall.$fFromJSONColor_go 0# ($wgo 0#)))
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <[Marshall.Color]>_R)) } }) -}
+4b375943295f6593110b97f8a627f769
+  $fFromJSONColor_go ::
+    GHC.Prim.Int#
+    -> [Data.Aeson.Types.Internal.Value]
+    -> [Data.Aeson.Types.Internal.Parser Marshall.Color]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+70e43f3028050ffb986c52400d39f5c6
+  $fFromJSONHost :: Data.Aeson.Types.FromJSON.FromJSON Marshall.Host
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.Host
+                  Marshall.$fFromJSONHost_$cparseJSON
+                  Marshall.$fFromJSONHost_$cparseJSONList -}
+70e43f3028050ffb986c52400d39f5c6
+  $fFromJSONHost1 ::
+    [Data.Aeson.Types.Internal.Parser Marshall.Host]
+    -> forall (f :: * -> *) r.
+       Data.Aeson.Types.Internal.JSONPath
+       -> Data.Aeson.Types.Internal.Failure f r
+       -> Data.Aeson.Types.Internal.Success [Marshall.Host] f r
+       -> f r
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,1*U><L,U><L,U><L,C(U)> -}
+eeeeade19b01fa4a85130db364449428
+  $fFromJSONHost2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "host"#) -}
+83ef724494f1c6792b2a8a104c3e67b9
+  $fFromJSONHost3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "String"#) -}
+145666acde533c7608190a22f5a69b46
+  $fFromJSONHost4 ::
+    Data.Aeson.Types.Internal.JSONPath
+    -> Data.Aeson.Types.Internal.Failure f r
+    -> Data.Aeson.Types.Internal.Success GHC.Base.String f r
+    -> f r
+  {- Arity: 3,
+     Unfolding: (\ @ (f :: * -> *)
+                   @ r
+                   (path :: Data.Aeson.Types.Internal.JSONPath)
+                   (kf :: Data.Aeson.Types.Internal.Failure f r)
+                   (_ks :: Data.Aeson.Types.Internal.Success GHC.Base.String f r) ->
+                 kf
+                   (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                   Marshall.$fFromJSONHost_msg3) -}
+d38275b1765934e34afb27df18454b93
+  $fFromJSONHost5 :: [GHC.Types.Char]
+  {- Unfolding: (case Data.Text.Show.$w$cshow
+                        Marshall.$fFromJSONHost2 of ww { (#,#) ww1 ww2 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww1 ww2)
+                   Marshall.$fFromJSONHost6 }) -}
+d5e31a6a983ff07bca64af7331161f0a
+  $fFromJSONHost6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# " not present"#) -}
+70e43f3028050ffb986c52400d39f5c6
+  $fFromJSONHost7 ::
+    Data.Aeson.Types.Internal.JSONPath
+    -> Data.Aeson.Types.Internal.Failure f r
+    -> Data.Aeson.Types.Internal.Success Marshall.Host f r
+    -> f r
+  {- Arity: 3, Strictness: <L,1*U><C(C(S)),1*C1(C1(U))><L,A>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   @ r
+                   (path :: Data.Aeson.Types.Internal.JSONPath)
+                   (kf :: Data.Aeson.Types.Internal.Failure f r)
+                   (_ks :: Data.Aeson.Types.Internal.Success Marshall.Host f r) ->
+                 kf
+                   (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                   Marshall.$fFromJSONHost8) -}
+f16fbcefd323e857da18e048f8cbabbc
+  $fFromJSONHost8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Expected an object for Host"#) -}
+70e43f3028050ffb986c52400d39f5c6
+  $fFromJSONHost_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser Marshall.Host
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Marshall.$fFromJSONHost7
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.Host>_R))
+                   Data.Aeson.Types.Internal.Object v
+                   -> let {
+                        m :: Data.Aeson.Types.Internal.Parser GHC.Base.String
+                        = case Marshall.$fFromJSONHost2 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          case Data.Aeson.Types.FromJSON.$w$slookup
+                                 @ Data.Aeson.Types.Internal.Value
+                                 ww1
+                                 ww2
+                                 ww3
+                                 v of wild1 {
+                            GHC.Base.Nothing
+                            -> Marshall.$fFromJSONHost4
+                                 `cast`
+                               (Sym (Data.Aeson.Types.Internal.N:Parser[0] <GHC.Base.String>_R))
+                            GHC.Base.Just v1
+                            -> let {
+                                 p :: Data.Aeson.Types.Internal.Parser GHC.Base.String
+                                 = case v1 of wild2 {
+                                     DEFAULT
+                                     -> Data.Aeson.Types.FromJSON.typeMismatch
+                                          @ GHC.Base.String
+                                          Marshall.$fFromJSONHost3
+                                          wild2
+                                     Data.Aeson.Types.Internal.String txt
+                                     -> case txt of wild3 { Data.Text.Internal.Text dt dt1 dt2 ->
+                                        let {
+                                          a1 :: GHC.Base.String
+                                          = let {
+                                              end :: GHC.Prim.Int# = GHC.Prim.+# dt1 dt2
+                                            } in
+                                            letrec {
+                                              $wunfold :: GHC.Prim.Int# -> [GHC.Types.Char]
+                                                {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                                              = \ (ww4 :: GHC.Prim.Int#) ->
+                                                case GHC.Prim.tagToEnum#
+                                                       @ GHC.Types.Bool
+                                                       (GHC.Prim.>=# ww4 end) of wild4 {
+                                                  GHC.Types.False
+                                                  -> case GHC.Prim.indexWord16Array#
+                                                            dt
+                                                            ww4 of r# { DEFAULT ->
+                                                     case GHC.Prim.tagToEnum#
+                                                            @ GHC.Types.Bool
+                                                            (GHC.Prim.geWord# r# 55296##) of wild5 {
+                                                       GHC.Types.False
+                                                       -> GHC.Types.:
+                                                            @ GHC.Types.Char
+                                                            (GHC.Types.C#
+                                                               (GHC.Prim.chr#
+                                                                  (GHC.Prim.word2Int# r#)))
+                                                            ($wunfold (GHC.Prim.+# ww4 1#))
+                                                       GHC.Types.True
+                                                       -> case GHC.Prim.tagToEnum#
+                                                                 @ GHC.Types.Bool
+                                                                 (GHC.Prim.leWord#
+                                                                    r#
+                                                                    56319##) of wild6 {
+                                                            GHC.Types.False
+                                                            -> GHC.Types.:
+                                                                 @ GHC.Types.Char
+                                                                 (GHC.Types.C#
+                                                                    (GHC.Prim.chr#
+                                                                       (GHC.Prim.word2Int# r#)))
+                                                                 ($wunfold (GHC.Prim.+# ww4 1#))
+                                                            GHC.Types.True
+                                                            -> case GHC.Prim.indexWord16Array#
+                                                                      dt
+                                                                      (GHC.Prim.+#
+                                                                         ww4
+                                                                         1#) of r#1 { DEFAULT ->
+                                                               GHC.Types.:
+                                                                 @ GHC.Types.Char
+                                                                 (GHC.Types.C#
+                                                                    (GHC.Prim.chr#
+                                                                       (GHC.Prim.+#
+                                                                          (GHC.Prim.+#
+                                                                             (GHC.Prim.uncheckedIShiftL#
+                                                                                (GHC.Prim.-#
+                                                                                   (GHC.Prim.word2Int#
+                                                                                      r#)
+                                                                                   55296#)
+                                                                                10#)
+                                                                             (GHC.Prim.-#
+                                                                                (GHC.Prim.word2Int#
+                                                                                   r#1)
+                                                                                56320#))
+                                                                          65536#)))
+                                                                 ($wunfold
+                                                                    (GHC.Prim.+# ww4 2#)) } } } }
+                                                  GHC.Types.True -> GHC.Types.[] @ GHC.Types.Char }
+                                            } in
+                                            $wunfold dt1
+                                        } in
+                                        (\ @ (f :: * -> *)
+                                           @ r
+                                           (_path :: Data.Aeson.Types.Internal.JSONPath)
+                                           (_kf :: Data.Aeson.Types.Internal.Failure f r)
+                                           (ks :: Data.Aeson.Types.Internal.Success
+                                                    GHC.Base.String f r) ->
+                                         ks a1)
+                                          `cast`
+                                        (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                                  <GHC.Base.String>_R)) } }
+                               } in
+                               (\ @ (f :: * -> *)
+                                  @ r
+                                  (path :: Data.Aeson.Types.Internal.JSONPath)
+                                  (kf :: Data.Aeson.Types.Internal.Failure f r)
+                                  (ks :: Data.Aeson.Types.Internal.Success GHC.Base.String f r) ->
+                                p `cast`
+                                (Data.Aeson.Types.Internal.N:Parser[0] <GHC.Base.String>_R)
+                                  @ f
+                                  @ r
+                                  (GHC.Types.:
+                                     @ Data.Aeson.Types.Internal.JSONPathElement
+                                     Marshall.$fFromJSONHost_pathElem
+                                     path)
+                                  kf
+                                  ks)
+                                 `cast`
+                               (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                         <GHC.Base.String>_R)) } }
+                      } in
+                      (\ @ (f6 :: * -> *)
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f6 r)
+                         (ks :: Data.Aeson.Types.Internal.Success Marshall.Host f6 r) ->
+                       m `cast`
+                       (Data.Aeson.Types.Internal.N:Parser[0] <GHC.Base.String>_R)
+                         @ f6
+                         @ r
+                         path
+                         kf
+                         (\ (a1 :: GHC.Base.String) ->
+                          ks a1 `cast` (Sym (Marshall.N:Host[0]))))
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <Marshall.Host>_R)) }) -}
+70e43f3028050ffb986c52400d39f5c6
+  $fFromJSONHost_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [Marshall.Host]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Data.Aeson.Types.FromJSON.typeMismatch
+                        @ [Marshall.Host]
+                        Marshall.$fFromJSONColor2
+                        wild
+                   Data.Aeson.Types.Internal.Array a1
+                   -> case a1 of wild1 { Data.Vector.Vector dt dt1 dt2 ->
+                      (Marshall.$fFromJSONHost1
+                         (letrec {
+                            $wgo :: GHC.Prim.Int# -> [Data.Aeson.Types.Internal.Value]
+                              {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                            = \ (ww :: GHC.Prim.Int#) ->
+                              case GHC.Prim.tagToEnum#
+                                     @ GHC.Types.Bool
+                                     (GHC.Prim.>=# ww dt1) of wild2 {
+                                GHC.Types.False
+                                -> case GHC.Prim.indexArray#
+                                          @ Data.Aeson.Types.Internal.Value
+                                          dt2
+                                          (GHC.Prim.+# dt ww) of ds1 { Unit# ipv ->
+                                   GHC.Types.:
+                                     @ Data.Aeson.Types.Internal.Value
+                                     ipv
+                                     ($wgo (GHC.Prim.+# ww 1#)) }
+                                GHC.Types.True -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
+                          } in
+                          Marshall.$fFromJSONHost_go 0# ($wgo 0#)))
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <[Marshall.Host]>_R)) } }) -}
+70e43f3028050ffb986c52400d39f5c6
+  $fFromJSONHost_go ::
+    GHC.Prim.Int#
+    -> [Data.Aeson.Types.Internal.Value]
+    -> [Data.Aeson.Types.Internal.Parser Marshall.Host]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+e17660f94fa24881ad80014046a3527e
+  $fFromJSONHost_msg3 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "key "#
+                   Marshall.$fFromJSONHost5) -}
+a67de2ee64e46067b0a2435a57b29761
+  $fFromJSONHost_pathElem ::
+    Data.Aeson.Types.Internal.JSONPathElement
+  {- Unfolding: (Data.Aeson.Types.Internal.Key
+                   Marshall.$fFromJSONHost2) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fFromJSONTestData ::
+    Data.Aeson.Types.FromJSON.FromJSON Marshall.TestData
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.TestData
+                  Marshall.$fFromJSONTestData_$cparseJSON
+                  Marshall.$fFromJSONTestData_$cparseJSONList -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fFromJSONTestData1 ::
+    [Data.Aeson.Types.Internal.Parser Marshall.TestData]
+    -> forall (f :: * -> *) r.
+       Data.Aeson.Types.Internal.JSONPath
+       -> Data.Aeson.Types.Internal.Failure f r
+       -> Data.Aeson.Types.Internal.Success [Marshall.TestData] f r
+       -> f r
+  {- Arity: 4, HasNoCafRefs, Strictness: <S,1*U><L,U><L,U><L,C(U)> -}
+b03516281a2f94c034a2c338ba7ce602
+  $fFromJSONTestData2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "whatisit"#) -}
+3ce1b3f9eed93813c9a1b27d59a47312
+  $fFromJSONTestData3 ::
+    Data.Aeson.Types.Internal.JSONPath
+    -> Data.Aeson.Types.Internal.Failure f r
+    -> Data.Aeson.Types.Internal.Success Marshall.Color f r
+    -> f r
+  {- Arity: 3,
+     Unfolding: (\ @ (f :: * -> *)
+                   @ r
+                   (path :: Data.Aeson.Types.Internal.JSONPath)
+                   (kf :: Data.Aeson.Types.Internal.Failure f r)
+                   (_ks :: Data.Aeson.Types.Internal.Success Marshall.Color f r) ->
+                 kf
+                   (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                   Marshall.$fFromJSONTestData_msg3) -}
+438ad1ee673a220eec2fb06a3fd4a3f1
+  $fFromJSONTestData4 :: [GHC.Types.Char]
+  {- Unfolding: (case Data.Text.Show.$w$cshow
+                        Marshall.$fFromJSONTestData2 of ww { (#,#) ww1 ww2 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww1 ww2)
+                   Marshall.$fFromJSONHost6 }) -}
+77d2df5fd254b6149763986f9c9f7dbf
+  $fFromJSONTestData5 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "section"#) -}
+27d5830d1f46a5daec77629d59a7552d
+  $fFromJSONTestData6 ::
+    Data.Aeson.Types.Internal.JSONPath
+    -> Data.Aeson.Types.Internal.Failure f r
+    -> Data.Aeson.Types.Internal.Success Marshall.Host f r
+    -> f r
+  {- Arity: 3,
+     Unfolding: (\ @ (f :: * -> *)
+                   @ r
+                   (path :: Data.Aeson.Types.Internal.JSONPath)
+                   (kf :: Data.Aeson.Types.Internal.Failure f r)
+                   (_ks :: Data.Aeson.Types.Internal.Success Marshall.Host f r) ->
+                 kf
+                   (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                   Marshall.$fFromJSONTestData_msg1) -}
+9cb72443600348c623e6ae24556b894b
+  $fFromJSONTestData7 :: [GHC.Types.Char]
+  {- Unfolding: (case Data.Text.Show.$w$cshow
+                        Marshall.$fFromJSONTestData5 of ww { (#,#) ww1 ww2 ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (GHC.Types.: @ GHC.Types.Char ww1 ww2)
+                   Marshall.$fFromJSONHost6 }) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fFromJSONTestData8 ::
+    Data.Aeson.Types.Internal.JSONPath
+    -> Data.Aeson.Types.Internal.Failure f r
+    -> Data.Aeson.Types.Internal.Success Marshall.TestData f r
+    -> f r
+  {- Arity: 3, Strictness: <L,1*U><C(C(S)),1*C1(C1(U))><L,A>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   @ r
+                   (path :: Data.Aeson.Types.Internal.JSONPath)
+                   (kf :: Data.Aeson.Types.Internal.Failure f r)
+                   (_ks :: Data.Aeson.Types.Internal.Success Marshall.TestData f r) ->
+                 kf
+                   (GHC.List.reverse @ Data.Aeson.Types.Internal.JSONPathElement path)
+                   Marshall.$fFromJSONTestData9) -}
+aef3804abc40ff8dde94b705417d6cbf
+  $fFromJSONTestData9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Expected an object for TestData"#) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fFromJSONTestData_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser Marshall.TestData
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Marshall.$fFromJSONTestData8
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.TestData>_R))
+                   Data.Aeson.Types.Internal.Object v
+                   -> let {
+                        m :: Data.Aeson.Types.Internal.Parser Marshall.Host
+                        = case Marshall.$fFromJSONTestData5 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          case Data.Aeson.Types.FromJSON.$w$slookup
+                                 @ Data.Aeson.Types.Internal.Value
+                                 ww1
+                                 ww2
+                                 ww3
+                                 v of wild1 {
+                            GHC.Base.Nothing
+                            -> Marshall.$fFromJSONTestData6
+                                 `cast`
+                               (Sym (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.Host>_R))
+                            GHC.Base.Just v1
+                            -> let {
+                                 p :: Data.Aeson.Types.Internal.Parser Marshall.Host
+                                 = Marshall.$fFromJSONHost_$cparseJSON v1
+                               } in
+                               (\ @ (f :: * -> *)
+                                  @ r
+                                  (path :: Data.Aeson.Types.Internal.JSONPath)
+                                  (kf :: Data.Aeson.Types.Internal.Failure f r)
+                                  (ks :: Data.Aeson.Types.Internal.Success Marshall.Host f r) ->
+                                p `cast` (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.Host>_R)
+                                  @ f
+                                  @ r
+                                  (GHC.Types.:
+                                     @ Data.Aeson.Types.Internal.JSONPathElement
+                                     Marshall.$fFromJSONTestData_pathElem1
+                                     path)
+                                  kf
+                                  ks)
+                                 `cast`
+                               (Sym (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.Host>_R)) } }
+                      } in
+                      let {
+                        e :: Data.Aeson.Types.Internal.Parser Marshall.Color
+                        = case Marshall.$fFromJSONTestData2 of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                          case Data.Aeson.Types.FromJSON.$w$slookup
+                                 @ Data.Aeson.Types.Internal.Value
+                                 ww1
+                                 ww2
+                                 ww3
+                                 v of wild1 {
+                            GHC.Base.Nothing
+                            -> Marshall.$fFromJSONTestData3
+                                 `cast`
+                               (Sym (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.Color>_R))
+                            GHC.Base.Just v1
+                            -> let {
+                                 p :: Data.Aeson.Types.Internal.Parser Marshall.Color
+                                 = Marshall.$fFromJSONColor_$cparseJSON v1
+                               } in
+                               (\ @ (f :: * -> *)
+                                  @ r
+                                  (path :: Data.Aeson.Types.Internal.JSONPath)
+                                  (kf :: Data.Aeson.Types.Internal.Failure f r)
+                                  (ks :: Data.Aeson.Types.Internal.Success Marshall.Color f r) ->
+                                p `cast` (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.Color>_R)
+                                  @ f
+                                  @ r
+                                  (GHC.Types.:
+                                     @ Data.Aeson.Types.Internal.JSONPathElement
+                                     Marshall.$fFromJSONTestData_pathElem
+                                     path)
+                                  kf
+                                  ks)
+                                 `cast`
+                               (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                         <Marshall.Color>_R)) } }
+                      } in
+                      (\ @ (f :: * -> *)
+                         @ r
+                         (path :: Data.Aeson.Types.Internal.JSONPath)
+                         (kf :: Data.Aeson.Types.Internal.Failure f r)
+                         (ks :: Data.Aeson.Types.Internal.Success Marshall.TestData f r) ->
+                       m `cast` (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.Host>_R)
+                         @ f
+                         @ r
+                         path
+                         kf
+                         (\ (a1 :: Marshall.Host) ->
+                          e `cast` (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.Color>_R)
+                            @ f
+                            @ r
+                            path
+                            kf
+                            (\ (a2 :: Marshall.Color) -> ks (Marshall.TestData a1 a2))))
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <Marshall.TestData>_R)) }) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fFromJSONTestData_$cparseJSONList ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser [Marshall.TestData]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.Value) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Data.Aeson.Types.FromJSON.typeMismatch
+                        @ [Marshall.TestData]
+                        Marshall.$fFromJSONColor2
+                        wild
+                   Data.Aeson.Types.Internal.Array a1
+                   -> case a1 of wild1 { Data.Vector.Vector dt dt1 dt2 ->
+                      (Marshall.$fFromJSONTestData1
+                         (letrec {
+                            $wgo :: GHC.Prim.Int# -> [Data.Aeson.Types.Internal.Value]
+                              {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                            = \ (ww :: GHC.Prim.Int#) ->
+                              case GHC.Prim.tagToEnum#
+                                     @ GHC.Types.Bool
+                                     (GHC.Prim.>=# ww dt1) of wild2 {
+                                GHC.Types.False
+                                -> case GHC.Prim.indexArray#
+                                          @ Data.Aeson.Types.Internal.Value
+                                          dt2
+                                          (GHC.Prim.+# dt ww) of ds1 { Unit# ipv ->
+                                   GHC.Types.:
+                                     @ Data.Aeson.Types.Internal.Value
+                                     ipv
+                                     ($wgo (GHC.Prim.+# ww 1#)) }
+                                GHC.Types.True -> GHC.Types.[] @ Data.Aeson.Types.Internal.Value }
+                          } in
+                          Marshall.$fFromJSONTestData_go 0# ($wgo 0#)))
+                        `cast`
+                      (Sym (Data.Aeson.Types.Internal.N:Parser[0]
+                                <[Marshall.TestData]>_R)) } }) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fFromJSONTestData_go ::
+    GHC.Prim.Int#
+    -> [Data.Aeson.Types.Internal.Value]
+    -> [Data.Aeson.Types.Internal.Parser Marshall.TestData]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+d9d2432c7e9aeaaee9bce233ae4d8929
+  $fFromJSONTestData_msg1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "key "#
+                   Marshall.$fFromJSONTestData7) -}
+1ef61afacb10621a32dbba599ac0b745
+  $fFromJSONTestData_msg3 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "key "#
+                   Marshall.$fFromJSONTestData4) -}
+3b3ee945af59b11926742710f22dc6bd
+  $fFromJSONTestData_pathElem ::
+    Data.Aeson.Types.Internal.JSONPathElement
+  {- Unfolding: (Data.Aeson.Types.Internal.Key
+                   Marshall.$fFromJSONTestData2) -}
+539391a7990726386c129e0c0ad6b039
+  $fFromJSONTestData_pathElem1 ::
+    Data.Aeson.Types.Internal.JSONPathElement
+  {- Unfolding: (Data.Aeson.Types.Internal.Key
+                   Marshall.$fFromJSONTestData5) -}
+4b375943295f6593110b97f8a627f769
+  $fShowColor :: GHC.Show.Show Marshall.Color
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.Color
+                  Marshall.$fShowColor_$cshowsPrec
+                  Marshall.$fShowColor_$cshow
+                  Marshall.$fShowColor_$cshowList -}
+4b375943295f6593110b97f8a627f769
+  $fShowColor1 :: Marshall.Color -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: Marshall.Color) (w1 :: GHC.Base.String) ->
+                 Marshall.$w$cshowsPrec 0# w w1) -}
+81a3a0218c791e55bf3c916db480de0f
+  $fShowColor2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Yellow "#) -}
+f6a43e2a4270c268049dfb3a54c8ccd0
+  $fShowColor3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Blue "#) -}
+e596784b5419157294ff7ef21e414524
+  $fShowColor4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Red "#) -}
+4b375943295f6593110b97f8a627f769
+  $fShowColor_$cshow :: Marshall.Color -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Marshall.Color) ->
+                 Marshall.$fShowColor_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+4b375943295f6593110b97f8a627f769
+  $fShowColor_$cshowList :: [Marshall.Color] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Marshall.Color
+                   Marshall.$fShowColor1) -}
+4b375943295f6593110b97f8a627f769
+  $fShowColor_$cshowsPrec ::
+    GHC.Types.Int -> Marshall.Color -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Marshall.Color)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Marshall.$w$cshowsPrec ww1 w1 w2 }) -}
+70e43f3028050ffb986c52400d39f5c6
+  $fShowHost :: GHC.Show.Show Marshall.Host
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.Host
+                  Marshall.$fShowHost_$cshowsPrec
+                  Marshall.$fShowHost_$cshow
+                  Marshall.$fShowHost_$cshowList -}
+70e43f3028050ffb986c52400d39f5c6
+  $fShowHost1 :: Marshall.Host -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: Marshall.Host) (w1 :: GHC.Base.String) ->
+                 Marshall.$w$cshowsPrec1 0# w w1) -}
+3dac4cc9ecb3353be74766bf44aa2215
+  $fShowHost2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Host "#) -}
+70e43f3028050ffb986c52400d39f5c6
+  $fShowHost_$cshow :: Marshall.Host -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Marshall.Host) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n Marshall.$fShowHost2)
+                   (GHC.Types.:
+                      @ GHC.Types.Char
+                      GHC.Show.shows6
+                      (GHC.Show.showLitString
+                         x `cast` (Marshall.N:Host[0])
+                         (GHC.Types.:
+                            @ GHC.Types.Char
+                            GHC.Show.shows6
+                            (GHC.Types.[] @ GHC.Types.Char))))) -}
+70e43f3028050ffb986c52400d39f5c6
+  $fShowHost_$cshowList :: [Marshall.Host] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Marshall.Host
+                   Marshall.$fShowHost1) -}
+70e43f3028050ffb986c52400d39f5c6
+  $fShowHost_$cshowsPrec ::
+    GHC.Types.Int -> Marshall.Host -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Marshall.Host)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Marshall.$w$cshowsPrec1 ww1 w1 w2 }) -}
+6e5ca06dbd1ce7fee98c632ad48d3a63
+  $fShowNumberOrString :: GHC.Show.Show Marshall.NumberOrString
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.NumberOrString
+                  Marshall.$fShowNumberOrString_$cshowsPrec
+                  Marshall.$fShowNumberOrString_$cshow
+                  Marshall.$fShowNumberOrString_$cshowList -}
+6e5ca06dbd1ce7fee98c632ad48d3a63
+  $fShowNumberOrString1 :: Marshall.NumberOrString -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: Marshall.NumberOrString)
+                   (w1 :: GHC.Base.String) ->
+                 Marshall.$w$cshowsPrec2 0# w w1) -}
+6b52f4678825f10c0c90f673c75bfaff
+  $fShowNumberOrString2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Stringy "#) -}
+6efdf8c3800c680eaa6313d608f9a8b4
+  $fShowNumberOrString3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Numba "#) -}
+6e5ca06dbd1ce7fee98c632ad48d3a63
+  $fShowNumberOrString_$cshow ::
+    Marshall.NumberOrString -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Marshall.NumberOrString) ->
+                 Marshall.$fShowNumberOrString_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+6e5ca06dbd1ce7fee98c632ad48d3a63
+  $fShowNumberOrString_$cshowList ::
+    [Marshall.NumberOrString] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Marshall.NumberOrString
+                   Marshall.$fShowNumberOrString1) -}
+6e5ca06dbd1ce7fee98c632ad48d3a63
+  $fShowNumberOrString_$cshowsPrec ::
+    GHC.Types.Int -> Marshall.NumberOrString -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Marshall.NumberOrString)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Marshall.$w$cshowsPrec2 ww1 w1 w2 }) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fShowTestData :: GHC.Show.Show Marshall.TestData
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Marshall.TestData
+                  Marshall.$fShowTestData_$cshowsPrec
+                  Marshall.$fShowTestData_$cshow
+                  Marshall.$fShowTestData_$cshowList -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fShowTestData1 :: Marshall.TestData -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: Marshall.TestData) (w1 :: GHC.Base.String) ->
+                 case w of ww { Marshall.TestData ww1 ww2 ->
+                 Marshall.$w$cshowsPrec3 0# ww1 ww2 w1 }) -}
+ccc7f6ab62aca528b50b98c1d119aa19
+  $fShowTestData2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+a55c028219851d6755696228905dca34
+  $fShowTestData3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "what = "#) -}
+0dc1078f88af3f94de938f6b6a0ad054
+  $fShowTestData4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
+bb2cc7a35eac5c710443c7c14a2ff450
+  $fShowTestData5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "section = "#) -}
+c4b9c8ec69dc844858eca0f06f6ab1d6
+  $fShowTestData6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "TestData {"#) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fShowTestData_$cshow :: Marshall.TestData -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Marshall.TestData) ->
+                 Marshall.$fShowTestData_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fShowTestData_$cshowList :: [Marshall.TestData] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Marshall.TestData
+                   Marshall.$fShowTestData1) -}
+4b0a0166bcc2d40dbb3694c903df842c
+  $fShowTestData_$cshowsPrec ::
+    GHC.Types.Int -> Marshall.TestData -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Marshall.TestData)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Marshall.TestData ww3 ww4 ->
+                 Marshall.$w$cshowsPrec3 ww1 ww3 ww4 w2 } }) -}
+351d87f3ae6a3e4be7ee42307246f0d2
+  $tc'Blue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14604129234943798253##
+                   3468335763482838467##
+                   Marshall.$trModule
+                   Marshall.$tc'Blue1) -}
+92f05e7444f743732a23a532df223d89
+  $tc'Blue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Blue"#) -}
+feec8cdff40a3f8c592a349b623da5ad
+  $tc'Host :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10323588611615055179##
+                   2874983610454714835##
+                   Marshall.$trModule
+                   Marshall.$tc'Host1) -}
+201a6736f268f8cb4d3dc0cf24aa809c
+  $tc'Host1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Host"#) -}
+267439e89da0e036efb49f2b092cf253
+  $tc'Numba :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12783109214084004874##
+                   13206471018711418733##
+                   Marshall.$trModule
+                   Marshall.$tc'Numba1) -}
+b5caf69779096851dacf3fd9d490252f
+  $tc'Numba1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Numba"#) -}
+cda45161d679f3bb05c81d0033f8b6cf
+  $tc'Red :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18050369104633423165##
+                   12332973768934596095##
+                   Marshall.$trModule
+                   Marshall.$tc'Red1) -}
+1ea1c41a149b2ad93fce7f02700f3cc3
+  $tc'Red1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Red"#) -}
+c7a3c006f9a5cbaafa6e4fe80f92fdd6
+  $tc'Stringy :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4104803049553845799##
+                   5418100708057048707##
+                   Marshall.$trModule
+                   Marshall.$tc'Stringy1) -}
+cf2d84fdfa15021cff361296394d2c51
+  $tc'Stringy1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Stringy"#) -}
+1d99a464bda5d518b1a40ec4108243c8
+  $tc'TestData :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7934917166449502893##
+                   5450431503493535620##
+                   Marshall.$trModule
+                   Marshall.$tc'TestData1) -}
+eda848a22f44ea236e4075b4f3f3e4e1
+  $tc'TestData1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'TestData"#) -}
+8231995d169792753f03176160d841e4
+  $tc'Yellow :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10988685842739542399##
+                   9090728131310585208##
+                   Marshall.$trModule
+                   Marshall.$tc'Yellow1) -}
+8e6bd1f05c0121881483b5ade4dc39a2
+  $tc'Yellow1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Yellow"#) -}
+74c9b6b6a4fc712f7ccdb9197fd42cbe
+  $tcColor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9655544039385402390##
+                   9879233050309484515##
+                   Marshall.$trModule
+                   Marshall.$tcColor1) -}
+c207bc948614f1dc10c6dbdeb876fbca
+  $tcColor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Color"#) -}
+94c3a11306cd853857e97a6324d8d256
+  $tcHost :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3121454671207977378##
+                   16224808411161356187##
+                   Marshall.$trModule
+                   Marshall.$tcHost1) -}
+1d373ce483d1b80c6d5fdcfd8fbc6d24
+  $tcHost1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Host"#) -}
+85e8947bb677b2395fa29e99e60991b3
+  $tcNumberOrString :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15612928834118596640##
+                   2166655346245031030##
+                   Marshall.$trModule
+                   Marshall.$tcNumberOrString1) -}
+d0adcaf5a91df1c884564b946f2b46c7
+  $tcNumberOrString1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "NumberOrString"#) -}
+812b793d00df5c0b922289ba9c50ffde
+  $tcTestData :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2634448580079225437##
+                   14803596967344105386##
+                   Marshall.$trModule
+                   Marshall.$tcTestData1) -}
+46cf84e4d79c1d5193e25134a5c0777a
+  $tcTestData1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "TestData"#) -}
+e09a24273c5b3420e2a6cb06b0ca472b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Marshall.$trModule2
+                   Marshall.$trModule1) -}
+5125f4aa2ead3181c4e681e854477059
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Marshall"#) -}
+26edddea6d8cbdb2eeb50aaab1c21d87
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "marshall-0.1.0.0-FB3YpekJN4GKN0Kfg9yf7I"#) -}
+1021c37188dcc909b46e65c7c21bb7da
+  $w$c/= ::
+    Marshall.Host
+    -> Marshall.Color
+    -> Marshall.Host
+    -> Marshall.Color
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Marshall.Host)
+                   (ww1 :: Marshall.Color)
+                   (ww2 :: Marshall.Host)
+                   (ww3 :: Marshall.Color) ->
+                 case GHC.Base.eqString
+                        ww `cast` (Marshall.N:Host[0])
+                        ww2 `cast` (Marshall.N:Host[0]) of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True
+                   -> case Marshall.$fEqColor_$c== ww1 ww3 of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False } }) -}
+6b5c2a76ed08845e691c6e4b1c9e3d5e
+  $w$c== ::
+    Marshall.Host
+    -> Marshall.Color
+    -> Marshall.Host
+    -> Marshall.Color
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: Marshall.Host)
+                   (ww1 :: Marshall.Color)
+                   (ww2 :: Marshall.Host)
+                   (ww3 :: Marshall.Color) ->
+                 case GHC.Base.eqString
+                        ww `cast` (Marshall.N:Host[0])
+                        ww2 `cast` (Marshall.N:Host[0]) of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True -> Marshall.$fEqColor_$c== ww1 ww3 }) -}
+4b375943295f6593110b97f8a627f769
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Marshall.Color -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Marshall.Color)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Marshall.Red b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             Marshall.$fShowColor4
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.shows6
+                                (GHC.Show.showLitString
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w1)))
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Marshall.$fShowColor4
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.shows6
+                                   (GHC.Show.showLitString
+                                      b1
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.shows6
+                                         (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w1))))) }
+                   Marshall.Blue b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             Marshall.$fShowColor3
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.shows6
+                                (GHC.Show.showLitString
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w1)))
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Marshall.$fShowColor3
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.shows6
+                                   (GHC.Show.showLitString
+                                      b1
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.shows6
+                                         (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w1))))) }
+                   Marshall.Yellow b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             Marshall.$fShowColor2
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.shows6
+                                (GHC.Show.showLitString
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w1)))
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Marshall.$fShowColor2
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.shows6
+                                   (GHC.Show.showLitString
+                                      b1
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.shows6
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.shows4
+                                            w1))))) } }) -}
+70e43f3028050ffb986c52400d39f5c6
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> Marshall.Host -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Marshall.Host)
+                   (w1 :: GHC.Base.String) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Marshall.$fShowHost2
+                        (GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.shows6
+                           (GHC.Show.showLitString
+                              w `cast` (Marshall.N:Host[0])
+                              (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w1)))
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Marshall.$fShowHost2
+                           (GHC.Types.:
+                              @ GHC.Types.Char
+                              GHC.Show.shows6
+                              (GHC.Show.showLitString
+                                 w `cast` (Marshall.N:Host[0])
+                                 (GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.shows6
+                                    (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w1))))) }) -}
+6e5ca06dbd1ce7fee98c632ad48d3a63
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int#
+    -> Marshall.NumberOrString -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Marshall.NumberOrString)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Marshall.Numba b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             Marshall.$fShowNumberOrString3
+                             (case GHC.Show.$w$cshowsPrec1 11# b1 w1 of ww2 { (#,#) ww3 ww4 ->
+                              GHC.Types.: @ GHC.Types.Char ww3 ww4 })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Marshall.$fShowNumberOrString3
+                                (case GHC.Show.$w$cshowsPrec1
+                                        11#
+                                        b1
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.shows4
+                                           w1) of ww2 { (#,#) ww3 ww4 ->
+                                 GHC.Types.: @ GHC.Types.Char ww3 ww4 })) }
+                   Marshall.Stringy b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             Marshall.$fShowNumberOrString2
+                             (case Data.Text.Show.$w$cshowsPrec b1 w1 of ww1 { (#,#) ww2 ww3 ->
+                              GHC.Types.: @ GHC.Types.Char ww2 ww3 })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Marshall.$fShowNumberOrString2
+                                (case Data.Text.Show.$w$cshowsPrec
+                                        b1
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.shows4
+                                           w1) of ww1 { (#,#) ww2 ww3 ->
+                                 GHC.Types.: @ GHC.Types.Char ww2 ww3 })) } }) -}
+14205ec79ed5ddbe266e68af7e8e6218
+  $w$cshowsPrec3 ::
+    GHC.Prim.Int#
+    -> Marshall.Host
+    -> Marshall.Color
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Marshall.Host)
+                   (ww2 :: Marshall.Color)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Marshall.$fShowTestData6
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          Marshall.$fShowTestData5
+                          (Marshall.$w$cshowsPrec1
+                             0#
+                             ww1
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Marshall.$fShowTestData4
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   Marshall.$fShowTestData3
+                                   (Marshall.$w$cshowsPrec
+                                      0#
+                                      ww2
+                                      (GHC.Base.++ @ GHC.Types.Char Marshall.$fShowTestData2 x))))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p w
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w)) }) -}
+a973b584e0c15d3d30a744ae94b2ed45
+  type Annotation = GHC.Base.String
+4b375943295f6593110b97f8a627f769
+  data Color
+    = Red Marshall.Annotation
+    | Blue Marshall.Annotation
+    | Yellow Marshall.Annotation
+70e43f3028050ffb986c52400d39f5c6
+  newtype Host = Host GHC.Base.String
+6e5ca06dbd1ce7fee98c632ad48d3a63
+  data NumberOrString
+    = Numba GHC.Integer.Type.Integer | Stringy Data.Text.Internal.Text
+4b0a0166bcc2d40dbb3694c903df842c
+  data TestData
+    = TestData {section :: Marshall.Host, what :: Marshall.Color}
+e00f7956094ca4b3b1c103fff3542bff
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Marshall.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+60c17c663bf0c275e8620f1da3f80df8
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Marshall.main2
+                   GHC.Types.True
+                   eta) -}
+d12d4acdcb20100d01855cf85d1a22c1
+  main2 :: GHC.Base.String
+  {- Unfolding: (case Marshall.sectionJson of wild {
+                   Data.ByteString.Lazy.Internal.Empty
+                   -> case Marshall.main4 of wild1 {
+                        Data.Attoparsec.ByteString.Lazy.Fail ipv ipv1 ipv2
+                        -> GHC.Show.$fShowMaybe3
+                        Data.Attoparsec.ByteString.Lazy.Done ds v
+                        -> case (Marshall.$fFromJSONTestData_$cparseJSON v)
+                                  `cast`
+                                (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.TestData>_R)
+                                  @ Data.Aeson.Types.Internal.Result
+                                  @ Marshall.TestData
+                                  (GHC.Types.[] @ Data.Aeson.Types.Internal.JSONPathElement)
+                                  Marshall.main3
+                                  (Data.Aeson.Types.Internal.Success @ Marshall.TestData) of wild2 {
+                             Data.Aeson.Types.Internal.Error ipv -> GHC.Show.$fShowMaybe3
+                             Data.Aeson.Types.Internal.Success a1
+                             -> GHC.Base.++
+                                  @ GHC.Types.Char
+                                  GHC.Show.$fShowMaybe1
+                                  (case a1 of ww { Marshall.TestData ww1 ww2 ->
+                                   Marshall.$w$cshowsPrec3
+                                     11#
+                                     ww1
+                                     ww2
+                                     (GHC.Types.[] @ GHC.Types.Char) }) } }
+                   Data.ByteString.Lazy.Internal.Chunk dt dt1 dt2 dt3 xs
+                   -> case Data.Attoparsec.ByteString.Lazy.parse_go
+                             @ Data.Aeson.Types.Internal.Value
+                             (Data.Aeson.Parser.Internal.$wjsonEOF
+                                @ Data.Aeson.Types.Internal.Value
+                                dt
+                                dt1
+                                dt2
+                                dt3
+                                dt3
+                                0#
+                                0#
+                                Data.Attoparsec.Internal.Types.Incomplete
+                                (Data.Attoparsec.ByteString.Internal.failK
+                                   @ Data.Aeson.Types.Internal.Value)
+                                  `cast`
+                                (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateByteString[0]))
+                                 ->_R <Data.Attoparsec.Internal.Types.Pos
+                                       -> Data.Attoparsec.Internal.Types.More
+                                       -> [GHC.Base.String]
+                                       -> GHC.Base.String
+                                       -> Data.Attoparsec.Internal.Types.IResult
+                                            Data.ByteString.Internal.ByteString
+                                            Data.Aeson.Types.Internal.Value>_R)
+                                (Data.Attoparsec.ByteString.Internal.successK
+                                   @ Data.Aeson.Types.Internal.Value)
+                                  `cast`
+                                (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateByteString[0]))
+                                 ->_R <Data.Attoparsec.Internal.Types.Pos
+                                       -> Data.Attoparsec.Internal.Types.More
+                                       -> Data.Aeson.Types.Internal.Value
+                                       -> Data.Attoparsec.Internal.Types.IResult
+                                            Data.ByteString.Internal.ByteString
+                                            Data.Aeson.Types.Internal.Value>_R))
+                             xs of wild1 {
+                        Data.Attoparsec.ByteString.Lazy.Fail ipv ipv1 ipv2
+                        -> GHC.Show.$fShowMaybe3
+                        Data.Attoparsec.ByteString.Lazy.Done ds v
+                        -> case (Marshall.$fFromJSONTestData_$cparseJSON v)
+                                  `cast`
+                                (Data.Aeson.Types.Internal.N:Parser[0] <Marshall.TestData>_R)
+                                  @ Data.Aeson.Types.Internal.Result
+                                  @ Marshall.TestData
+                                  (GHC.Types.[] @ Data.Aeson.Types.Internal.JSONPathElement)
+                                  Marshall.main3
+                                  (Data.Aeson.Types.Internal.Success @ Marshall.TestData) of wild2 {
+                             Data.Aeson.Types.Internal.Error ipv -> GHC.Show.$fShowMaybe3
+                             Data.Aeson.Types.Internal.Success a1
+                             -> GHC.Base.++
+                                  @ GHC.Types.Char
+                                  GHC.Show.$fShowMaybe1
+                                  (case a1 of ww { Marshall.TestData ww1 ww2 ->
+                                   Marshall.$w$cshowsPrec3
+                                     11#
+                                     ww1
+                                     ww2
+                                     (GHC.Types.[] @ GHC.Types.Char) }) } } }) -}
+654ca189d9233fde6afe751b0de56d09
+  main3 ::
+    Data.Aeson.Types.Internal.JSONPath
+    -> GHC.Base.String
+    -> Data.Aeson.Types.Internal.Result Marshall.TestData
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (ds :: Data.Aeson.Types.Internal.JSONPath)
+                   (eta :: GHC.Base.String) ->
+                 Data.Aeson.Types.Internal.Error @ Marshall.TestData eta) -}
+cc01c5e4f95a4fbbdc5e2437f099f38f
+  main4 ::
+    Data.Attoparsec.ByteString.Lazy.Result
+      Data.Aeson.Types.Internal.Value
+  {- Unfolding: (Data.Attoparsec.ByteString.Lazy.parse_$sgo
+                   @ Data.Aeson.Types.Internal.Value
+                   Marshall.main5) -}
+e29ff42e1a0d17ff6800dcb06bba312d
+  main5 ::
+    Data.Attoparsec.Internal.Types.IResult
+      Data.ByteString.Internal.ByteString Data.Aeson.Types.Internal.Value
+  {- Unfolding: (Data.Aeson.Parser.Internal.$wjsonEOF
+                   @ Data.Aeson.Types.Internal.Value
+                   __NULL
+                   Data.ByteString.Internal.$fMonoidByteString3
+                   0#
+                   0#
+                   0#
+                   0#
+                   0#
+                   Data.Attoparsec.Internal.Types.Incomplete
+                   (Data.Attoparsec.ByteString.Internal.failK
+                      @ Data.Aeson.Types.Internal.Value)
+                     `cast`
+                   (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateByteString[0]))
+                    ->_R <Data.Attoparsec.Internal.Types.Pos
+                          -> Data.Attoparsec.Internal.Types.More
+                          -> [GHC.Base.String]
+                          -> GHC.Base.String
+                          -> Data.Attoparsec.Internal.Types.IResult
+                               Data.ByteString.Internal.ByteString
+                               Data.Aeson.Types.Internal.Value>_R)
+                   (Data.Attoparsec.ByteString.Internal.successK
+                      @ Data.Aeson.Types.Internal.Value)
+                     `cast`
+                   (Sub (Sym (Data.Attoparsec.Internal.Types.D:R:StateByteString[0]))
+                    ->_R <Data.Attoparsec.Internal.Types.Pos
+                          -> Data.Attoparsec.Internal.Types.More
+                          -> Data.Aeson.Types.Internal.Value
+                          -> Data.Attoparsec.Internal.Types.IResult
+                               Data.ByteString.Internal.ByteString
+                               Data.Aeson.Types.Internal.Value>_R)) -}
+515c9021ab6447ad61325612d90f6c4e
+  section :: Marshall.TestData -> Marshall.Host
+  RecSel Left Marshall.TestData
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Marshall.TestData) ->
+                 case ds of wild { Marshall.TestData ds1 ds2 -> ds1 }) -}
+a5ecfb246687f9b4aafce7a046c58195
+  sectionJson :: Data.ByteString.Lazy.Internal.ByteString
+  {- Unfolding: (Data.ByteString.Lazy.Internal.$wpackChunks1
+                   32#
+                   Marshall.sectionJson1) -}
+fa319a972f8ec27dc3cda0f29aa0b370
+  sectionJson1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \{ \"section\": {\"host\": \"wikipedia.org\"},\n\
+                   \  \"whatisit\": {\"red\": \"intoothandclaw\"}\n\
+                   \}\n"#) -}
+fee18b52d5e2b5d7f339303750ec0d68
+  what :: Marshall.TestData -> Marshall.Color
+  RecSel Left Marshall.TestData
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Marshall.TestData) ->
+                 case ds of wild { Marshall.TestData ds1 ds2 -> ds2 }) -}
+instance GHC.Classes.Eq [Marshall.Color] = Marshall.$fEqColor
+instance GHC.Classes.Eq [Marshall.Host] = Marshall.$fEqHost
+instance GHC.Classes.Eq [Marshall.NumberOrString]
+  = Marshall.$fEqNumberOrString
+instance GHC.Classes.Eq [Marshall.TestData] = Marshall.$fEqTestData
+instance Data.Aeson.Types.FromJSON.FromJSON [Marshall.Color]
+  = Marshall.$fFromJSONColor
+instance Data.Aeson.Types.FromJSON.FromJSON [Marshall.Host]
+  = Marshall.$fFromJSONHost
+instance Data.Aeson.Types.FromJSON.FromJSON [Marshall.TestData]
+  = Marshall.$fFromJSONTestData
+instance GHC.Show.Show [Marshall.Color] = Marshall.$fShowColor
+instance GHC.Show.Show [Marshall.Host] = Marshall.$fShowHost
+instance GHC.Show.Show [Marshall.NumberOrString]
+  = Marshall.$fShowNumberOrString
+instance GHC.Show.Show [Marshall.TestData]
+  = Marshall.$fShowTestData
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

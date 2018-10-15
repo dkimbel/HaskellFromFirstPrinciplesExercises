@@ -1,0 +1,437 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-29 02:51:23.003474 UTC
+
+interface ipAddresses-0.1.0.0-3tYiFlT2FLxHGaORRLWEZU:IPAddresses 8002
+  interface hash: f55a9dae175af8d97f9e7c785a56f28f
+  ABI hash: 19c16eb4c409e465bc08dc4d99c5d89d
+  export-list hash: 99ce3dedbaba47b348ad5fcc4347fded
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4f8cee337f717799b182576d5fd6650c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  IPAddresses.IPAddress{IPAddresses.IPAddress}
+module dependencies:
+package dependencies: HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI
+                      QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu
+                      StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
+                      adjunctions-4.3@adjunctions-4.3-6nMo9ca9E95L1lsN6Br4XL
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-3RTqikoQf47ajVD9m8zgB
+                      ansi-wl-pprint-0.6.7.3@ansi-wl-pprint-0.6.7.3-A79v826bgPr574HtaZPPqC
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-8bUdsjh6UCE83aHCxOEHna
+                      base-4.9.1.0
+                      base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p
+                      blaze-markup-0.8.0.0@blaze-markup-0.8.0.0-GsxkVbRgODkgUQDmmDVob
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      call-stack-0.1.0@call-stack-0.1.0-FYVrCPXGP9EGAuTW32963O
+                      charset-0.3.7.1@charset-0.3.7.1-8XzlqAFUmfXDSOZRmiDkgy
+                      comonad-5.0.1@comonad-5.0.1-2dOTQljdUSmGwatNHkYwW3
+                      containers-0.5.7.1@containers-0.5.7.1
+                      contravariant-1.4@contravariant-1.4-29zF0Im431177ovfbHYCGv
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      distributive-0.5.2@distributive-0.5.2-KlkgfUmuqy3Z181VSjKfJ
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      fingertree-0.1.1.0@fingertree-0.1.1.0-Aiaf912zjZGHvH3XyjxrYA
+                      free-4.12.4@free-4.12.4-JUYfwQOGje1F6ljlwhsQfP
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      hspec-2.4.4@hspec-2.4.4-Ct0Af2AzisB8bPqGMHHFvj
+                      hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E
+                      hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-92lMiWV9mmYAwfMEYgfQ0D
+                      kan-extensions-5.0.2@kan-extensions-5.0.2-5SVDrYVManyKLFvHkx6yaS
+                      lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      parsers-0.12.5@parsers-0.12.5-GnYuXhr66xHG7QyPR4udRA
+                      prelude-extras-0.4.0.3@prelude-extras-0.4.0.3-BhL9U5k7NtGJn1itwIHt2Y
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      profunctors-5.2@profunctors-5.2-7ONvCmXw8M9Co9mYrudYx
+                      quickcheck-io-0.2.0@quickcheck-io-0.2.0-4pLO1WRxoBW9gt8EnME0zS
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      reducers-3.12.1@reducers-3.12.1-9f8Ic9ruWZ1FsGrCfB0ZLr
+                      reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4
+                      scientific-0.3.5.1@scientific-0.3.5.1-JHsAAp34Yyd8e5v3sK3O5Q
+                      semigroupoids-5.2@semigroupoids-5.2-8RI6HtO1LKLE496qmzB9Po
+                      setenv-0.1.1.3@setenv-0.1.1.3-8dEhk6JWvlmCmVyBammSpu
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      tf-random-0.5@tf-random-0.5-CJZw1ZWS5MOJlR60HqKEZL
+                      th-abstraction-0.2.3.0@th-abstraction-0.2.3.0-IC8R8TEnxiaENlxvcI4gyL
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-IuFogs8HAVUJBWVNMhtssu
+                      trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm
+                      unix-2.7.2.1@unix-2.7.2.1
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         quickcheck-io-0.2.0@quickcheck-io-0.2.0-4pLO1WRxoBW9gt8EnME0zS:Test.QuickCheck.IO
+         reducers-3.12.1@reducers-3.12.1-9f8Ic9ruWZ1FsGrCfB0ZLr:Data.Semigroup.Instances
+         reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4:Data.Reflection
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta.Instances
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: adjunctions-4.3@adjunctions-4.3-6nMo9ca9E95L1lsN6Br4XL:Data.Functor.Rep
+                         attoparsec-0.13.1.0@attoparsec-0.13.1.0-8bUdsjh6UCE83aHCxOEHna:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Biff
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Clown
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Fix
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Flip
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Join
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Joker
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Product
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Sum
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Tannen
+                         bifunctors-5.4.2@bifunctors-5.4.2-5j5AtkN8t5O1W8mEe1pi0q:Data.Bifunctor.Wrapped
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E:Test.Hspec.Core.Example
+                         kan-extensions-5.0.2@kan-extensions-5.0.2-5SVDrYVManyKLFvHkx6yaS:Data.Functor.Day
+                         kan-extensions-5.0.2@kan-extensions-5.0.2-5SVDrYVManyKLFvHkx6yaS:Data.Functor.Yoneda
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.At
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.Internal.Indexed
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.Reified
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.Tuple
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.Wrapped
+                         lens-4.15.3@lens-4.15.3-5Jg3WKTSlS050icgk0CLIX:Control.Lens.Zoom
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         profunctors-5.2@profunctors-5.2-7ONvCmXw8M9Co9mYrudYx:Data.Profunctor.Rep
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-abstraction-0.2.3.0@th-abstraction-0.2.3.0-IC8R8TEnxiaENlxvcI4gyL:Language.Haskell.TH.Datatype
+                         trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta.Delta
+                         trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta.Rendering
+                         trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta.Rope
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashSet
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Data.Word 77f42e01d0fb6b071f1ea2176d87fa6c
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:GHC.Word 2f8cb4e909eeef2f95e1563807dd9268
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  hspec-2.4.4@hspec-2.4.4-Ct0Af2AzisB8bPqGMHHFvj:Test.Hspec 04ea8eba4a0731a497f82df2f1be76d5
+import  -/  trifecta-1.6.2.1@trifecta-1.6.2.1-ErZ9MJa2zIqLpxrGHQVKNm:Text.Trifecta 0a6f21b55919d63da58a1e1018300625
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fEqIPAddress :: GHC.Classes.Eq IPAddresses.IPAddress
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ IPAddresses.IPAddress
+                  IPAddresses.$fEqIPAddress_$c==
+                  IPAddresses.$fEqIPAddress_$c/= -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fEqIPAddress_$c/= ::
+    IPAddresses.IPAddress -> IPAddresses.IPAddress -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(1*U(U))><S(S(S)),1*U(1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: IPAddresses.IPAddress) (b :: IPAddresses.IPAddress) ->
+                 case a of wild { IPAddresses.IPAddress a1 ->
+                 case b of wild1 { IPAddresses.IPAddress b1 ->
+                 case a1 of wild2 { GHC.Word.W32# x ->
+                 case b1 of wild3 { GHC.Word.W32# y ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.eqWord# x y) of wild4 {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False } } } } }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fEqIPAddress_$c== ::
+    IPAddresses.IPAddress -> IPAddresses.IPAddress -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(1*U(U))><S(S(S)),1*U(1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: IPAddresses.IPAddress) (ds1 :: IPAddresses.IPAddress) ->
+                 case ds of wild { IPAddresses.IPAddress a1 ->
+                 case ds1 of wild1 { IPAddresses.IPAddress b1 ->
+                 GHC.Word.eqWord32 a1 b1 } }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fOrdIPAddress :: GHC.Classes.Ord IPAddresses.IPAddress
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ IPAddresses.IPAddress
+                  IPAddresses.$fEqIPAddress
+                  IPAddresses.$fOrdIPAddress_$ccompare
+                  IPAddresses.$fOrdIPAddress_$c<
+                  IPAddresses.$fOrdIPAddress_$c<=
+                  IPAddresses.$fOrdIPAddress_$c>
+                  IPAddresses.$fOrdIPAddress_$c>=
+                  IPAddresses.$fOrdIPAddress_$cmax
+                  IPAddresses.$fOrdIPAddress_$cmin -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fOrdIPAddress_$c< ::
+    IPAddresses.IPAddress -> IPAddresses.IPAddress -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(1*U(U))><S(S(S)),1*U(1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: IPAddresses.IPAddress) (b :: IPAddresses.IPAddress) ->
+                 case a of wild { IPAddresses.IPAddress a1 ->
+                 case b of wild1 { IPAddresses.IPAddress b1 ->
+                 GHC.Word.ltWord32 a1 b1 } }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fOrdIPAddress_$c<= ::
+    IPAddresses.IPAddress -> IPAddresses.IPAddress -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(1*U(U))><S(S(S)),1*U(1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: IPAddresses.IPAddress) (b :: IPAddresses.IPAddress) ->
+                 case a of wild { IPAddresses.IPAddress a1 ->
+                 case b of wild1 { IPAddresses.IPAddress b1 ->
+                 GHC.Word.leWord32 a1 b1 } }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fOrdIPAddress_$c> ::
+    IPAddresses.IPAddress -> IPAddresses.IPAddress -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(1*U(U))><S(S(S)),1*U(1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: IPAddresses.IPAddress) (b :: IPAddresses.IPAddress) ->
+                 case a of wild { IPAddresses.IPAddress a1 ->
+                 case b of wild1 { IPAddresses.IPAddress b1 ->
+                 GHC.Word.gtWord32 a1 b1 } }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fOrdIPAddress_$c>= ::
+    IPAddresses.IPAddress -> IPAddresses.IPAddress -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(1*U(U))><S(S(S)),1*U(1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: IPAddresses.IPAddress) (b :: IPAddresses.IPAddress) ->
+                 case a of wild { IPAddresses.IPAddress a1 ->
+                 case b of wild1 { IPAddresses.IPAddress b1 ->
+                 GHC.Word.geWord32 a1 b1 } }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fOrdIPAddress_$ccompare ::
+    IPAddresses.IPAddress
+    -> IPAddresses.IPAddress -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(1*U(U))><S(S(S)),1*U(1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: IPAddresses.IPAddress) (b :: IPAddresses.IPAddress) ->
+                 case a of wild { IPAddresses.IPAddress a1 ->
+                 case b of wild1 { IPAddresses.IPAddress b1 ->
+                 GHC.Word.$fOrdWord32_$ccompare a1 b1 } }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fOrdIPAddress_$cmax ::
+    IPAddresses.IPAddress
+    -> IPAddresses.IPAddress -> IPAddresses.IPAddress
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(U(U))><S(S(S)),1*U(U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: IPAddresses.IPAddress) (y :: IPAddresses.IPAddress) ->
+                 case x of wild { IPAddresses.IPAddress a1 ->
+                 case y of wild1 { IPAddresses.IPAddress b1 ->
+                 case a1 of wild2 { GHC.Word.W32# x1 ->
+                 case b1 of wild3 { GHC.Word.W32# y1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.leWord# x1 y1) of wild4 {
+                   GHC.Types.False -> wild GHC.Types.True -> wild1 } } } } }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fOrdIPAddress_$cmin ::
+    IPAddresses.IPAddress
+    -> IPAddresses.IPAddress -> IPAddresses.IPAddress
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)),1*U(U(U))><S(S(S)),1*U(U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: IPAddresses.IPAddress) (y :: IPAddresses.IPAddress) ->
+                 case x of wild { IPAddresses.IPAddress a1 ->
+                 case y of wild1 { IPAddresses.IPAddress b1 ->
+                 case a1 of wild2 { GHC.Word.W32# x1 ->
+                 case b1 of wild3 { GHC.Word.W32# y1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.leWord# x1 y1) of wild4 {
+                   GHC.Types.False -> wild1 GHC.Types.True -> wild } } } } }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fShowIPAddress :: GHC.Show.Show IPAddresses.IPAddress
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ IPAddresses.IPAddress
+                  IPAddresses.$fShowIPAddress_$cshowsPrec
+                  IPAddresses.$fShowIPAddress_$cshow
+                  IPAddresses.$fShowIPAddress_$cshowList -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fShowIPAddress1 :: IPAddresses.IPAddress -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: IPAddresses.IPAddress)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { IPAddresses.IPAddress ww1 ->
+                 IPAddresses.$w$cshowsPrec 0# ww1 w1 }) -}
+aad8105d208e8d1b4c6874912024342c
+  $fShowIPAddress2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "IPAddress "#) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fShowIPAddress_$cshow :: IPAddresses.IPAddress -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(U))>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: IPAddresses.IPAddress) ->
+                 case w of ww { IPAddresses.IPAddress ww1 ->
+                 IPAddresses.$w$cshow ww1 }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fShowIPAddress_$cshowList ::
+    [IPAddresses.IPAddress] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ IPAddresses.IPAddress
+                   IPAddresses.$fShowIPAddress1) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  $fShowIPAddress_$cshowsPrec ::
+    GHC.Types.Int -> IPAddresses.IPAddress -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: IPAddresses.IPAddress)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { IPAddresses.IPAddress ww3 ->
+                 IPAddresses.$w$cshowsPrec ww1 ww3 w2 } }) -}
+dc8f9323da16f837f478cb5c92ebf47a
+  $tc'IPAddress :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6814459040537908534##
+                   3184172682746153888##
+                   IPAddresses.$trModule
+                   IPAddresses.$tc'IPAddress1) -}
+055bd45a0c75af5705f26c1dc445ddb8
+  $tc'IPAddress1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'IPAddress"#) -}
+a842e6fed34b7ac4bc33019a798c53c5
+  $tcIPAddress :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3110188804324510650##
+                   3218159176174735504##
+                   IPAddresses.$trModule
+                   IPAddresses.$tcIPAddress1) -}
+28a8cfc3fa687ff7d9f84d4d526c7927
+  $tcIPAddress1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "IPAddress"#) -}
+d2ee8ad6b774158cd6ca9b050657fcaf
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   IPAddresses.$trModule2
+                   IPAddresses.$trModule1) -}
+7c2acf2fe66edc544beabf4b6644b0b0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "IPAddresses"#) -}
+339ffb4edaae7d87e3ae778a1001414d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "ipAddresses-0.1.0.0-3tYiFlT2FLxHGaORRLWEZU"#) -}
+9733ebf6b1224043b3573a15659a3f62
+  $w$cshow :: GHC.Word.Word32 -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Word.Word32) ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   IPAddresses.$fShowIPAddress2
+                   (case ww of wild { GHC.Word.W32# x# ->
+                    case GHC.Show.$wshowSignedInt
+                           11#
+                           (GHC.Prim.word2Int# x#)
+                           (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                    GHC.Types.: @ GHC.Types.Char ww5 ww6 } })) -}
+711387be1e2bc4b287cf1f46580a5643
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Word.Word32 -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U(U)><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Word.Word32)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       IPAddresses.$fShowIPAddress2
+                       (case ww1 of wild { GHC.Word.W32# x# ->
+                        case GHC.Show.$wshowSignedInt
+                               11#
+                               (GHC.Prim.word2Int# x#)
+                               x of ww4 { (#,#) ww5 ww6 ->
+                        GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p w
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w)) }) -}
+ccaa4c831083b4b6e5185e75a27b6fc3
+  data IPAddress = IPAddress GHC.Word.Word32
+instance GHC.Classes.Eq [IPAddresses.IPAddress]
+  = IPAddresses.$fEqIPAddress
+instance GHC.Classes.Ord [IPAddresses.IPAddress]
+  = IPAddresses.$fOrdIPAddress
+instance GHC.Show.Show [IPAddresses.IPAddress]
+  = IPAddresses.$fShowIPAddress
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
